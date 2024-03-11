@@ -1,0 +1,397 @@
+html
+{
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero form {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+#hero form input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #333;
+}
+
+#hero form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #ffc107;
+    color: #333;
+    cursor: pointer;
+}
+
+#popular-destinations {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    text-align: center;
+}
+
+#popular-destinations h3 {
+    margin-bottom: 1rem;
+}
+
+#popular-destinations ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#popular-destinations li {
+    margin-right: 1rem;
+}
+
+#popular-destinations a {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+#popular-destinations a:hover {
+    background-color: #444;
+}
+
+#featured-trips {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+#featured-trips h3 {
+    margin-bottom: 1rem;
+}
+
+#featured-trips ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#featured-trips li {
+    margin-right: 1rem;
+    text-align: left;
+}
+
+#featured-trips img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+#featured-trips div {
+    background-color: #f2f2f2;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+#featured-trips h4 {
+    margin: 0;
+}
+
+#featured-trips p {
+    margin: 0;
+    font-weight: bold;
+ }
+ 
+ footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+ }
+ 
+ footer p {
+    margin: 0;
+ }@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ body{
+     background-color:#fff;
+     
+     display: flex;
+     
+     
+     flex-direction: column;
+     height: 100vh;
+ }
+ 
+ .container{
+    
+     background-color: #fff;
+     border-radius: 30px;
+   
+     position: relative;
+     overflow: hidden;
+     width: 1010px;
+   
+     height: 620px;
+     zoom:1.9;
+ }
+ 
+ .container p{
+     font-size: 14px;
+     line-height: 20px;
+     letter-spacing: 0.3px;
+     margin: 20px 0;
+ }
+ 
+ .container span{
+     font-size: 12px;
+ }
+ 
+ .container a{
+     color: #333;
+     font-size: 13px;
+     text-decoration: none;
+     margin: 15px 0 10px;
+ }
+ 
+ .container button{
+     background-color: #31b8da;
+     color: #fff;
+     font-size: 12px;
+     padding: 10px 45px;
+     border: 1px solid transparent;
+     border-radius: 10px;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+     text-transform: uppercase;
+     margin-top: 10px;
+     cursor: pointer;
+ }
+ 
+ .container button.hidden{
+     background-color: transparent;
+     border-color: #fff;
+ }
+ 
+ .container form{
+     background-color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 0 40px;
+     height: 100%;
+ }
+ 
+ .container input{
+     background-color: #eee;
+     border: none;
+     margin: 8px 0;
+     padding: 10px 15px;
+     font-size: 13px;
+     border-radius: 10px;
+     width: 100%;
+     outline: none;
+ }
+ 
+ .form-container{
+     position: absolute;
+     top: 0;
+     height: 100%;
+     transition: all 0.6s ease-in-out;
+ }
+ 
+ .sign-in{
+     left: 0;
+     width: 50%;
+     z-index: 2;
+ }
+ 
+ .container.active .sign-in{
+     transform: translateX(100%);
+ }
+ 
+ .sign-up{
+     left: 0;
+     width: 50%;
+     opacity: 0;
+     z-index: 1;
+ }
+ 
+ .container.active .sign-up{
+     transform: translateX(100%);
+     opacity: 1;
+     z-index: 5;
+     animation: move 0.6s;
+ }
+ 
+ @keyframes move{
+     0%, 49.99%{
+         opacity: 0;
+         z-index: 1;
+     }
+     50%, 100%{
+         opacity: 1;
+         z-index: 5;
+     }
+ }
+ 
+ .social-icons{
+     margin: 20px 0;
+ }
+ 
+ .social-icons a{
+     border: 1px solid #ccc;
+     border-radius: 20%;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 3px;
+     width: 40px;
+     height: 40px;
+ }
+ 
+ .toggle-container{
+     position: absolute;
+     top: 0;
+     left: 50%;
+     width: 50%;
+     height: 100%;
+     overflow: hidden;
+     transition: all 0.6s ease-in-out;
+     border-radius: 150px 0 0 100px;
+     z-index: 1000;
+ }
+ 
+ .container.active .toggle-container{
+     transform: translateX(-100%);
+     border-radius: 0 150px 100px 0;
+ }
+ 
+ .toggle{
+     background-color: #009688;
+     height: 100%;
+     background: linear-gradient(to right, #85e4e7, #009688);
+     color: #fff;
+     position: relative;
+     left: -100%;
+     height: 100%;
+     width: 200%;
+     transform: translateX(0);
+     transition: all 0.6s ease-in-out;
+ }
+ 
+ .container.active .toggle{
+     transform: translateX(50%);
+ }
+ 
+ .toggle-panel{
+     position: absolute;
+     width: 50%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 0 30px;
+     text-align: center;
+     top: 0;
+     transform: translateX(0);
+     transition: all 0.6s ease-in-out;
+ }
+ 
+ .toggle-left{
+     transform: translateX(-200%);
+ }
+ 
+ .container.active .toggle-left{
+     transform: translateX(0);
+ }
+ 
+ .toggle-right{
+     right: 0;
+     transform: translateX(0);
+ }
+ 
+ .container.active .toggle-right{
+     transform: translateX(200%);
+ }
+ #userType {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+  }
+  #birthDate {
+    text-transform: uppercase;
+  }
+
