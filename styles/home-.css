@@ -1,0 +1,1482 @@
+
+html {
+	font-size:82.6%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.home--UNa {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(0.2rem);
+  background-color: #ffffff;
+}
+.home--UNa .auto-group-pfcr-agW {
+  margin-bottom: 7.326rem;
+  width: 100%;
+  height: 222.474rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.home--UNa .auto-group-pfcr-agW .weird0{
+  width: 55.3rem;
+  height: 45.5rem;
+  position: absolute;
+  left: -10rem;
+  top: 37.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .weird1{
+  width: 55.3rem;
+  height: 45.5rem;
+  position: absolute;
+  left: 120rem;
+  top: 49rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .item--Kg2 {
+  width: 16.9rem;
+  height: 30rem;
+  position: absolute;
+  left: 0.6rem;
+  top: 106.5rem;
+  display: flex;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 0.9rem;
+  color: #0082ae;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .eva-flash-fill-kWS {
+  width: 9.2017rem;
+  height: 11.3667rem;
+  position: absolute;
+  left: 111.4rem;
+  top: 77.5rem;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/vector-QGE.png');
+}
+.home--UNa .auto-group-pfcr-agW .eva-flash-fill-kWS .vector-sb4 {
+  width: 9.2017rem;
+  height: 11.3667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .pourquoi-tu-nous-choisis-mwL {
+  width: 57.6rem;
+  height: 4.7rem;
+  position: absolute;
+  left: 49.5rem;
+  top: 60.1rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  text-transform: capitalize;
+  color: #046076;
+  font-family: Roboto Serif, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .eco-voit-rht {
+  width: 9.6rem;
+  height: 3rem;
+  position: absolute;
+  left: 24.3rem;
+  top: 3.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: rgba(109, 174, 204, 0.3000000119);
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .ellipse-37-9S6 {
+  width: 65rem;
+  height: 28.2rem;
+  position: absolute;
+  left: 55.1rem;
+  top: 139.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-6-Gmc {
+  width: 32.3rem;
+  height: 7.4rem;
+  position: absolute;
+  left: 75.3rem;
+  top: 163rem;
+  border-right: solid 1rem #014f68;
+  border-bottom: solid 1rem #014f68;
+  box-sizing: border-box;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #a8d8f3 -0%, #147f99 0.01%, #147f99 100%);
+  border-radius: 4rem;
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-6-Gmc:hover {
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-379-u3t {
+  width: 32.3rem;
+  height: 7.4rem;
+  position: absolute;
+  left: 20rem;
+  top: 214.5rem;
+  border-right:solid 1rem #A2C9C9;
+  border-bottom:solid 1rem #A2C9C9;
+  
+  box-sizing: border-box;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background: #e3f1f6;
+  border-radius: 4rem;
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-379-u3t:hover {
+  box-shadow: 0 0 2rem #A2C9C9, 0 0 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .decouvrir-notre-offre-kaJ {
+  width: 21.2rem;
+  height: 2.6rem;
+  position: fixed;
+  left: 80.9rem;
+  top: 165.1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .en-savoir-plus-ST8 {
+  width: 14.4rem;
+  height: 2.6rem;
+ position: fixed;
+  left: 28.1rem;
+  top: 216.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #158099;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-2-Wxn {
+  width: 144.3rem;
+  height: 20.1rem;
+  position: absolute;
+  left: 0;
+  top: 115.5rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #0082ae;
+}
+.home--UNa .auto-group-pfcr-agW .recherchez-cliquez-et-rservez-DMQ {
+  width: 31.2rem;
+  height: 7.1rem;
+  position: absolute;
+  left: 100.45rem;
+  top: 90.2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .dvoilez-leurs-charmes-cachs-et-plongez-dans-lexcitation-de-linconnu-laissez-nous-vous-guider-vers-des-aventures-urbaines-inoubliables-7r6 {
+  width: 54.5rem;
+  height: 7.1rem;
+  position: absolute;
+  left: 62.6rem;
+  top: 153.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  color: #707070;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .ou-allez-vous--LTx {
+  width: 26.4rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 13.6rem;
+  top: 83.6rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.171875;
+  text-transform: lowercase;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+}
+.home--UNa .auto-group-pfcr-agW .ou-allez-vous--LTx .ou-allez-vous--LTx-sub-0 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  text-transform: lowercase;
+  color: #ffffff;
+  font-family: Roboto Slab, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .ou-allez-vous--LTx .ou-allez-vous--LTx-sub-1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  text-transform: lowercase;
+  color: #ffffff;
+  font-family: Roboto Slab, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .ou-allez-vous--LTx .ou-allez-vous--LTx-sub-2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  text-transform: lowercase;
+  color: #ffffff;
+  font-family: Roboto Slab, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .dcouvrez-de-nouvelles-villes-sans-vous-ruiner-avec-les-bus-fi-tri9i--mLJ {
+  width: 54.8rem;
+  height: 8.3rem;
+  position: absolute;
+  left: 62.6rem;
+  top: 144.3rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #147f99;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .rechercher-dtJ {
+  width: 6.7rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 65.2rem;
+  top: 4.3rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: rgba(109, 174, 204, 0.3000000119);
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .item--LXp {
+  width: 16.9rem;
+  height: 30rem;
+  position: absolute;
+  left: 125.8rem;
+  top: 128.1rem;
+  display: flex;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 0.9rem;
+  color: #0082ae;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .text{
+  color: #346751;
+  font-size: 35px;
+  font-weight: bold;
+  position: relative;
+  top: 2.2rem;
+  left: 2rem;
+ 
+  
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-279-oRQ {
+  width: 36.2rem;
+  height: 7.4rem;
+  position: absolute;
+  left: 8.6rem;
+  top: 121.3rem;
+  background-color: #f5f5f5;
+  border-radius: 3.9rem;
+  text-decoration: none;
+transition: all 0.3s ease;
+
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-279-oRQ:hover {
+
+  box-shadow: 0 0 20px rgb(255, 255, 255); 
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-283-i2a {
+  width: 36.2rem;
+  height: 7.4rem;
+  position: absolute;
+  left: 99.5rem;
+  top: 121.5rem;
+  background-color: #f5f5f5;
+  border-radius: 3.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-283-i2a:hover {
+
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-282-dfL {
+  width: 36.2rem;
+  height: 7.4rem;
+  position: absolute;
+  left: 53.7rem;
+  top: 121.5rem;
+  background-color: #f5f5f5;
+  border-radius: 3.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-282-dfL:hover {
+
+  box-shadow: 0 0 20px rgb(255, 255, 255); 
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .alger-ZYz {
+  width: 5.7rem;
+  height: 3rem;
+  position: absolute;
+  left: 10.4rem;
+  top: 123.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .bejaya-fc2 {
+  width: 7.4rem;
+  height: 3rem;
+  position: absolute;
+  left: 20.3rem;
+  top: 123.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .dda-nAr {
+  width: 9.3rem;
+  height: 3rem;
+  position: absolute;
+  left: 28.3rem;
+  top: 123.6rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .bi-arrow-right-H7c {
+  width: 2.5rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 17.2rem;
+  top: 124.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .ep-arrow-right-CkN {
+  width: 0.8022rem;
+  height: 1.5234rem;
+  position: absolute;
+  left: 42.9812rem;
+  top: 124.2883rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .chelef-8P8 {
+  width: 7.3rem;
+  height: 3rem;
+  position: absolute;
+  left: 101.8rem;
+  top: 123.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .bejaya-dqg {
+  width: 7.4rem;
+  height: 3rem;
+  position: absolute;
+  left: 114.9rem;
+  top: 123.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .da-YSr {
+  width: 5.6rem;
+  height: 2.3rem;
+  position: absolute;
+  left: 123.5rem;
+  top: 124rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .bi-arrow-right-TJv {
+  width: 2.5rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 110.8rem;
+  top: 124.1rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .ep-arrow-right-nMC {
+  width: 0.8022rem;
+  height: 1.5234rem;
+  position: absolute;
+  left: 133.4812rem;
+  top: 123.8883rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .oran-iVk {
+  width: 5.4rem;
+  height: 3rem;
+  position: absolute;
+  left: 55.5rem;
+  top: 123.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .constantine-cb8 {
+  width: 13.3rem;
+  height: 3rem;
+  position: absolute;
+  left: 66.2rem;
+  top: 123.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-371-vLv {
+  width: 56.5876rem;
+  height: 36.8559rem;
+  position: absolute;
+  left: -10rem;
+  top: 142.3rem;
+  background: linear-gradient(21.27deg, #4658ff 41.97% , #a3d7f5 80.62%, #0082ae 170.3%, #0082ae 198.05%);
+  border-radius: 10rem;
+  rotate: 10deg;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-372-17U {
+  width: 66.4126rem;
+  height: 46.874rem;
+  position: absolute;
+  left: 82.3rem;
+  top: 175.4rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 10rem;
+}
+.home--UNa .auto-group-pfcr-agW .da-XLi {
+  width: 6.9rem;
+  height: 2.3rem;
+  position: absolute;
+  left: 80.3rem;
+  top: 124.2rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  color: #346751;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .bi-arrow-right-SCn {
+  width: 2.5rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 62.9rem;
+  top: 124.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .ep-arrow-right-NcE {
+  width: 0.8022rem;
+  height: 1.5234rem;
+  position: absolute;
+  left: 88.6812rem;
+  top: 124.2883rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.home--UNa .auto-group-pfcr-agW .two-people-in-a-car-looking-back-and-smiling-1-WCe {
+  width: 44.7rem;
+  height: 37.8rem;
+  position: absolute;
+  left: 0;
+  top: 142.2rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 4.8rem;
+  transition: all 0.6s ease;
+}
+.home--UNa .auto-group-pfcr-agW .two-people-in-a-car-looking-back-and-smiling-1-WCe:hover {
+  width: 56.5876rem;
+  height: 36.8559rem;
+  position: absolute;
+  left: -10rem;
+  top: 142.3rem;
+  transition: all 0.6s ease;
+  border-radius: 10rem;
+  rotate: 10deg;
+}
+
+.home--UNa .auto-group-pfcr-agW .indiquer-dans-la-barre-ci-dessous-votre-itinraire-oxS {
+  width: 41.8rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 50.5rem;
+  top: 24.2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #7e7e7e;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-2-J8W {
+  width: 144rem;
+  height: 46.1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/rectangle-2-bg.png');
+  border-radius: 0.2rem;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-381-1Hp {
+  width: 144rem;
+  height: 7.9rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+.home--UNa .auto-group-pfcr-agW .item--kFQ {
+  width: 13rem;
+  height: 20rem;
+  position: absolute;
+  left: 31rem;
+  top: 146.4rem;
+  font-weight: bold;
+  display: flex;
+  font-size: 3rem;
+  line-height: 0.6666666667;
+  letter-spacing: 0.51rem;
+  color: #0082ae;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .pub {
+  width: 16.9rem;
+  height: 2.5178rem;
+  position: absolute;
+  left: 104rem;
+  top: 2.2rem;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.home--UNa .auto-group-pfcr-agW .pub:hover {
+  transform: translateY(-7px);
+transition: all 0.3s ease;
+  }
+.home--UNa .auto-group-pfcr-agW .pub .vector-vZC {
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2.3236rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--UNa .auto-group-pfcr-agW .pub .publier-un-trajet-T3L {
+  margin-bottom: 0.1178rem;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+ 
+}
+.home--UNa .auto-group-pfcr-agW .trouver-votre-prochaine-destination-m42 {
+  width: 117.2rem;
+  height: 7.1rem;
+  position: absolute;
+  left: 14.8rem;
+  top: 13.7rem;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto Serif, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+}
+.home--UNa .auto-group-pfcr-agW .trouver-votre-prochaine-destination-m42 .trouver-votre-prochaine-destination-m42-sub-0 {
+}
+.home--UNa .auto-group-pfcr-agW .trouver-votre-prochaine-destination-m42 .trouver-votre-prochaine-destination-m42-sub-1 {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1.1725;
+  color: #f3935d;
+  font-family: Roboto Serif, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .coins-1-39x {
+  width: 13.8rem;
+  height: 12.4rem;
+  position: absolute;
+  left: 24.3rem;
+  top: 76.7rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .rech {
+  width: 12.1rem;
+  height: 2.6178rem;
+  position: absolute;
+  left: 84rem;
+  top: 2.3rem;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.home--UNa .auto-group-pfcr-agW .rech:hover {
+  transform: translateY(-7px);
+ transition: all 0.3s ease;
+  }
+.home--UNa .auto-group-pfcr-agW .rech .vector-uCA {
+  margin-right: 1.1rem;
+  width: 2rem;
+  height: 2.3236rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.home--UNa .auto-group-pfcr-agW .rech .recherche-RgJ {
+  margin-bottom: 0.2178rem;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--UNa .auto-group-pfcr-agW .home-ZGi {
+  width: 12.1rem;
+  height: 2.6178rem;
+  position: absolute;
+  left: 68.3rem;
+  top: 2.05rem;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease ;
+}
+.home--UNa .auto-group-pfcr-agW .home-ZGi:hover{
+  transform: translateY(-7px);
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .home-ZGi .home-ZGi-sub-0 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto, 'Source Sans Pro';
+}
+
+.home--UNa .auto-group-pfcr-agW .home-ZGi .home_pic {
+  margin-right: 1.1rem;
+  width: 4rem;
+  height: 4.3236rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+  position: relative;
+  top: 12px;
+}
+
+.home--UNa .auto-group-pfcr-agW .vector-eBg {
+  width: 4.1096rem;
+  height: 4.7785rem;
+  position: absolute;
+  left: 129rem;
+  top: 1.1618rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+
+.home--UNa .auto-group-pfcr-agW .menu-container {
+  width: 2.1096rem;
+  height: 2.7785rem;
+  position: absolute;
+  left: 134.2rem;
+  top: 2.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.home--UNa .auto-group-pfcr-agW .arrow {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  vertical-align: top;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home--UNa .auto-group-pfcr-agW .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  z-index: 1;
+  min-width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.home--UNa .auto-group-pfcr-agW .dropdown-content a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.home--UNa .auto-group-pfcr-agW .group-n2z {
+  width: 7rem;
+  height: 6.9709rem;
+  position: absolute;
+  left: 7.8rem;
+  top: 0.1rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .fi-tri9i-KHp {
+  width: 9.8rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 15.9rem;
+  top: 0.1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2102272034;
+  text-transform: uppercase;
+  color: #046076;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+}
+.home--UNa .auto-group-pfcr-agW .fi-tri9i-KHp .fi-tri9i-KHp-sub-0 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-transform: uppercase;
+  color: #046076;
+  font-family: Russo One, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .fi-tri9i-KHp .fi-tri9i-KHp-sub-1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  text-transform: uppercase;
+  color: #046076;
+  font-family: Russo One, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .go-where-you-want-NvJ {
+  width: 11.9rem;
+  height: 1.2rem;
+  position: absolute;
+  left: 15.9rem;
+  top: 3.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  text-transform: uppercase;
+  color: #393939;
+  font-family: Roboto Serif, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--UNa .auto-group-pfcr-agW .shield-1-65c {
+  width: 14.7642rem;
+  height: 12.4rem;
+  position: absolute;
+  left: 66.4rem;
+  top: 76.7rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfcr-agW .item--Dvv {
+  width: 14.8rem;
+  height: 28rem;
+  position: absolute;
+  left: 126.9rem;
+  top: 27.7rem;
+  display: flex;
+  font-size: 3rem;
+  line-height: 0.9333333333;
+  letter-spacing: 0.69rem;
+  color: #fea258;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .item--VdY {
+  width: 24.7rem;
+  height: 50rem;
+  position: absolute;
+  font-weight: bolder;
+  left: 58.4rem;
+  top: 171.3rem;
+  display: flex;
+  font-size: 5rem;
+  line-height: 1;
+  letter-spacing: 1.15rem;
+  color: #c84b31;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .item--xn2 {
+  width: 14.8rem;
+  height: 28rem;
+  position: absolute;
+  left: 0;
+  top: 8.5rem;
+  display: flex;
+  font-size: 3rem;
+  line-height: 0.9333333333;
+  letter-spacing: 0.69rem;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.card0{
+transition: all 0.3s ease;
+}
+.card0:hover{
+ transform: translateY(-40px);
+ transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-376-SSJ {
+  width: 33.4rem;
+  height: 27.8rem;
+  position: absolute;
+  left: 14rem;
+  top: 84.3rem;
+  background-color: rgba(0, 129, 174, 0.1099999994);
+  border-radius: 7.9rem;
+}
+
+.home--UNa .auto-group-pfcr-agW .rectangle-377-MJN {
+  width: 33.4rem;
+  height: 28.3rem;
+  position: absolute;
+  left: 99.3rem;
+  top: 83.8rem;
+  background-color: rgba(0, 129, 174, 0.1099999994);
+  border-radius: 7.9rem;
+}
+.home--UNa .auto-group-pfcr-agW .ellipse-36-sXc {
+  width: 65rem;
+  height: 24.1rem;
+  position: absolute;
+  left: 2.2rem;
+  top: 188rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.card1{
+  transition: all 0.5s ease;
+}
+.card1:hover{
+  transform: translateY(-60px);
+  transition: all 0.5s ease;
+}
+.home--UNa .auto-group-pfcr-agW .rectangle-378-ow4 {
+  width: 33.4rem;
+  height: 28.3rem;
+  position: absolute;
+  left: 56.7rem;
+  top: 83.6rem;
+  background-color: rgba(0, 129, 174, 0.5400000215);
+  border-radius: 7.9rem;
+}
+.home--UNa .auto-group-pfcr-agW .vos-trajets-prfrs-petits-prix-wGa {
+  width: 29.7rem;
+  height: 7.1rem;
+  position: absolute;
+  left: 15.85rem;
+  top: 90rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .voyagez-en-toute-confiance-RhY {
+  width: 24.1rem;
+  height: 7.1rem;
+  position: absolute;
+  left: 60.25rem;
+  top: 90.2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #e3f1f6;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .o-que-vous-alliez-en-bus-ou-en-covoiturage-trouvez-le-trajet-idal-parmi-notre-large-choix--vuC {
+  width: 21.5rem;
+  height: 8.8rem;
+  position: absolute;
+  left: 16.4rem;
+  top: 98.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  text-transform: uppercase;
+  color: #393939;
+  font-family: Roboto Serif, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .o-que-vous-alliez-en-bus-ou-en-covoiturage-trouvez-le-trajet-idal-parmi-notre-large-choix--mev {
+  width: 21.5rem;
+  height: 8.8rem;
+  position: absolute;
+  left: 102rem;
+  top: 98.3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  text-transform: uppercase;
+  color: #393939;
+  font-family: Roboto Serif, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .o-que-vous-alliez-en-bus-ou-en-covoiturage-trouvez-le-trajet-idal-parmi-notre-large-choix--eCv {
+  width: 21.5rem;
+  height: 8.8rem;
+  position: absolute;
+  left: 60.8rem;
+  top: 98.3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  text-transform: uppercase;
+  color: #393939;
+  font-family: Roboto Serif, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .aidez-nous-vous-protger-contre-les-arnaques-WW2 {
+  width: 52rem;
+  height: 8.3rem;
+  position: absolute;
+  left: 9.4rem;
+  top: 191.1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.1725;
+  text-transform: uppercase;
+  color: #158099;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .chez-blablacar-nous-mettons-tout-en-uvre-pour-vous-proposer-une-plateforme-aussi-scurise-que-possible-mais-les-tentatives-darnaque-demeurent-une-ralit-Cte {
+  width: 54.5rem;
+  height: 9.4rem;
+  position: absolute;
+  left: 9.5rem;
+  top: 200.1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  text-transform: uppercase;
+  color: #707070;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .imagesines-1-EqL {
+  width: 55.2rem;
+  height: 33.3rem;
+  position: absolute;
+  left: 83rem;
+  top: 179.8rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 10.5rem;
+  transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .imagesines-1-EqL:hover {
+
+rotate: -7deg;
+width: 65.2rem;
+height: 43.3rem;
+top: 178.8rem;;
+transition: all 0.3s ease;
+}
+.home--UNa .auto-group-pfcr-agW .item--M9G {
+  width: 16.9rem;
+  height: 30rem;
+  position: absolute;
+  left: 116.9rem;
+  top: 179.9rem;
+  display: flex;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 0.9rem;
+  color: #df5356;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfcr-agW .voiture-musclee-1-c5C {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  left: 133rem;
+  top: 105.5rem;
+  object-fit: cover;
+  vertical-align: top;
+  transition: all 1s ease;
+}
+.home--UNa .auto-group-pfq8-XT4 {
+  margin: 0rem 8.9rem 5rem 9rem;
+  width: calc(100% - 17.9rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-e11p-EsG {
+margin: 0.5rem 12.1rem 0rem 0rem;
+  width: 33.4rem;
+  height: 33.8rem;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 7.9rem;
+  overflow: hidden; /* Make sure the content is clipped to the rounded corners */
+  
+  transition : all 0.3s ease
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-e11p-EsG:hover {
+
+  box-shadow: 0 8px 32px 0 grey;
+      transition : all 0.3s ease
+    
+  }
+.home--UNa .auto-group-pfq8-XT4 .auto-group-e11p-EsG .carbon-user-multiple-8xe {
+  width: 5.8625rem;
+  height: 5.5125rem;
+  position: absolute;
+  left: 13.1188rem;
+  top: 2.1938rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-e11p-EsG .lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-lorem-ipsum-has-been-rte {
+  width: 24rem;
+  height: 9.4rem;
+  position: absolute;
+  left: 4.4rem;
+  top: 13.1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  color: #707070;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-e11p-EsG .en-savoir-plus-Xjt {
+  width: 12.2rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 4.4rem;
+  top: 28.2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #161616;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+
+
+.home--UNa .auto-group-pfq8-XT4 .auto-group-e11p-EsG .propos-2ge {
+  width: 10.6rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 4.4rem;
+  top: 9.1rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.home--UNa .auto-group-pfq8-XT4 .auto-group-e11p-EsG .rectangle-373-G5C {
+  width: 33.4rem;
+  height: 33.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 129, 174, 0.1099999994);
+  border-radius: 7.9rem;
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-zgty-abg {
+  margin: 0.5rem 12.1rem 0rem 0rem;
+  width: 33.4rem;
+  height: 33.8rem;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 7.9rem;
+  overflow: hidden; /* Make sure the content is clipped to the rounded corners */
+  transition : all 0.3s ease
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-zgty-abg:hover {
+
+  box-shadow: 0 8px 32px 0 grey;
+    transition : all 0.3s ease
+  
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-zgty-abg .en-savoir-plus-udx {
+  width: 12.2rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 3.4rem;
+  top: 28.7rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #161616;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  text-decoration: underline;
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-zgty-abg .lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-d4A {
+  width: 24rem;
+  height: 7.1rem;
+  position: absolute;
+  left: 3.1rem;
+  top: 12.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  color: #707070;
+  font-family: Roboto, 'Source Sans Pro';
+  
+ 
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-zgty-abg .espace-presse-hZp {
+  width: 17rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 3.4rem;
+  top: 9.6rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.home--UNa .auto-group-pfq8-XT4 .auto-group-zgty-abg .rectangle-375-YqL {
+  width: 33.4rem;
+  height: 33.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 129, 174, 0.5400000215);
+  border-radius: 7.9rem;
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-zgty-abg .vector-GmL {
+  width: 5.1rem;
+  height: 7.3194rem;
+  position: absolute;
+  left: 14.7rem;
+  top: 1.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-hmjt-Qce {
+  margin: 0.5rem 12.1rem 0rem 0rem;
+  width: 33.4rem;
+  height: 33.8rem;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 7.9rem;
+  overflow: hidden; /* Make sure the content is clipped to the rounded corners */
+  transition : all 0.3s ease
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-hmjt-Qce:hover {
+
+  box-shadow: 0 8px 32px 0 grey;
+    transition : all 0.3s ease
+  
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-hmjt-Qce .en-savoir-plus-9aE {
+  width: 12.2rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 5.6rem;
+  top: 28.3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #161616;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  text-decoration: underline;
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-hmjt-Qce .lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-emt {
+  width: 21rem;
+  height: 9.4rem;
+  position: absolute;
+  left: 5.1rem;
+  top: 12.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  color: #707070;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-hmjt-Qce .citoyens-du-monde-j2e {
+  width: 22.5rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 4.7rem;
+  top: 9rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #046076;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.home--UNa .auto-group-pfq8-XT4 .auto-group-hmjt-Qce .vector-xRC {
+  width: 5.7rem;
+  height: 7.7842rem;
+  position: absolute;
+  left: 14.1rem;
+  top: 0.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-pfq8-XT4 .auto-group-hmjt-Qce .rectangle-374-tZk {
+  width: 33.4rem;
+  height: 33.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 129, 174, 0.1099999994);
+  border-radius: 7.9rem;
+}
+.home--UNa .auto-group-7qou-Dc2 {
+  width: 100%;
+  height: 22.6rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.home--UNa .auto-group-7qou-Dc2 .rectangle-380-MTL {
+  width: 144rem;
+  height: 22.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #0082ae;
+}
+.home--UNa .auto-group-7qou-Dc2 .information-lgale-uDx {
+  width: 15.9rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 48.2rem;
+  top: 6.65rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #e3f1f6;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  text-decoration: none;
+}
+.home--UNa .auto-group-7qou-Dc2 .information-lgale-QAi {
+  width: 15.9rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 48.2rem;
+  top: 15.85rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #e3f1f6;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  text-decoration: none;
+}
+.home--UNa .auto-group-7qou-Dc2 .information-lgale-7L2 {
+  width: 15.9rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 48.2rem;
+  top: 10.65rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #e3f1f6;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  text-decoration: none;
+}
+.home--UNa .auto-group-7qou-Dc2 .destinations-populaires-en-covoiturage-trajets-populaires-en-covoiturage-Rbc {
+  width: 20.6rem;
+  height: 11.8rem;
+  position: absolute;
+  left: 5.4rem;
+  top: 7.2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #e3f1f6;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-7qou-Dc2 .foot_text
+{
+text-decoration: none;
+color: #e3f1f6;
+font-size: 2rem;
+font-weight: 300;
+line-height: 1.1725;
+font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-7qou-Dc2 .destinations-populaires-en-covoiturage-trajets-populaires-en-covoiturage-gGe {
+  width: 20.6rem;
+  height: 11.8rem;
+  position: absolute;
+  left: 91rem;
+  top: 7.2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1725;
+  color: #e3f1f6;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-7qou-Dc2 .voyagez-avec-nous-ASi {
+  width: 17.3rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 5.4rem;
+  top: 3.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1725;
+  color: #e3f1f6;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  text-decoration: none;
+}
+.home--UNa .auto-group-7qou-Dc2 .covoiturage-5Jn {
+  width: 10.9rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 91.4rem;
+  top: 2.65rem;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #161616;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  align-items: baseline;
+}
+.home--UNa .auto-group-7qou-Dc2 .covoiturage-5Jn .covoiturage-5Jn-sub-0 {
+}
+.home--UNa .auto-group-7qou-Dc2 .covoiturage-5Jn .covoiturage-5Jn-sub-1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1725;
+  color: #e3f1f6;
+  font-family: Roboto, 'Source Sans Pro';
+}
+.home--UNa .auto-group-7qou-Dc2 .fa-brands-twitter-square-RGA {
+  width: 3.2rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 122.3rem;
+  top: 7.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-7qou-Dc2 .vector-k3Y {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  left: 128.7rem;
+  top: 7.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--UNa .auto-group-7qou-Dc2 .cib-instagram-H3U {
+  width: 3.1996rem;
+  height: 3.1996rem;
+  position: absolute;
+  left: 135.1002rem;
+  top: 7.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
