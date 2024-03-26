@@ -1,0 +1,409 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFFFFF;
+
+}
+
+.paste
+{
+position: absolute;
+width: 30px;
+top: 255px;
+left: 21px;
+transition: rotate 0.3s ease , width 0.3s ease ,left 0.3s ease , bottom 0.3s ease 
+}
+.paste:hover
+{
+rotate: 1deg;
+position: absolute;
+width: 34px;
+bottom: 23px;
+left: 19px;
+
+}
+
+.navbar{
+
+
+  background-color: white;
+  align-items: top;
+  display: flex;
+  align-items: center;
+ 
+  
+  height: 100px;
+  width: 100%;
+  align-items: top;
+  justify-content: top;
+  top: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.logo{
+position: absolute;
+height: 75px;
+width: fit-content;
+margin: 20px;
+border-radius: 20px;
+}
+
+
+
+
+.container {
+zoom: 1.05;
+  max-width: 950px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.box {
+ 
+ background-color: white;
+ 
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 100px;
+  display: flex;
+  background-image: url(pics/back.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-position: center ;
+  border-radius: 20px;
+
+  overflow: hidden;
+  animation: scaleIn 1s ease-out;
+  
+  justify-content:center;
+  align-items: center ;
+  height: 700px;
+  width: 950px;
+
+}
+
+.for
+{
+
+
+margin-top: -140px;
+margin-right: -300px;
+width: 310px;
+height: 470px;
+background-image: url(pics/form.svg);
+background-size: cover;
+background-repeat: no-repeat;
+animation: scaleIn 1s ease-out;
+
+overflow: hidden;
+display: flex;
+justify-content:center ;
+align-items: center ;
+transition: all 0.3 ease;
+}
+
+
+.error-message {
+
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 8px;
+
+  /* Add any other styles you want */
+}
+
+
+fieldset {
+  color: #555;
+  font-family: sans-serif;
+  border: none;
+  position: relative;
+  
+  font-size: large;
+  font-weight: 1000;
+  color: #116a91;
+}
+
+
+
+fieldset::after {
+  content: "__  __  __  __  __  __";
+  display: block;
+  position: absolute;
+  top: 270px;
+  white-space: pre;
+  left: 60px;
+  
+}
+
+
+
+input {
+  padding: 12px;
+  padding-left: 52px;
+  letter-spacing: 21.5px; 
+  position: relative;
+  margin-top: 240px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s;
+  background-color: #E3F1F6;
+  border: none;
+  height: 50px;
+  width: 245px;
+font-size: 25px;
+font-weight: bolder;
+ 
+}
+
+input:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+.button 
+{
+  padding: 12px;
+
+position: absolute;
+margin-top: 360px;
+box-sizing: border-box;
+border-radius: 10px;
+border: 2px solid #ccc;
+transition: border-color 0.3s;
+background-color: #2693AF;
+font-weight: bold;
+font-size: large;
+color: #E3F1F6;
+border: none;
+height: 50px;
+width: 245px;
+transition: all 0.3s ease;
+}
+#timerButton:hover {
+  background-color: #1C7F9F;
+}
+
+
+
+
+/* timer style  */
+
+
+
+
+
+
+.timerLineContainer {
+  position: fixed;
+ margin-top: 440px;
+ margin-left: 145px;
+
+  width: 80px;
+ 
+}
+
+.timerLine {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 8px;
+  background-color: #3498db;
+  width: 80%; /* Set width for the line */
+  transform-origin: right;
+  transform: scaleX(1);
+   transition: width 1s linear;
+}
+
+.countdown {
+
+border-radius: 20px;
+  position: absolute;
+
+  top: -12px;
+  left: -148px;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  width: 40%; /* Set width for the countdown */
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 15s linear;
+}
+
+#timerButton:hover .timerLine {
+  transform: scaleX(0);
+}
+
+#timerButton:hover .countdown {
+  transform: scaleX(0);
+}
+
+
+#timerButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+@media screen and (max-width: 619px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .logo {
+    height: 40px;
+    margin: 10px;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .box {
+    background-image: none;
+    background-color: white ;
+    margin: 0px;
+   padding: 0px;
+   animation: scaleIn 0.6s ease-out;
+  }
+  .for{
+    background-color: white;  
+ 
+    display: flex;
+    background-image: url(pics/form.svg );
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    background-position: center ;
+    border-radius: 20px;
+  
+    overflow: hidden;
+    animation: none;
+    
+    justify-content:center;
+    align-items: center ;
+   margin: 0px;
+   padding: 0px;
+   height: 820px;
+   width: 445px;
+   
+  }
+
+  fieldset::after {
+ 
+    top: 330px;
+   
+  }
+
+  input {
+   
+    margin-top: 300px;
+   
+  }
+
+
+  .button 
+  {
+
+  margin-top: 420px;
+ 
+  }
+  .paste{
+    top: 315px;
+  }
+
+.timerLineContainer {
+ 
+ margin-top: 510px;
+ margin-left: 145px;
+
+ 
+}
+
+}
+
+/* Styles for screens between 600px and 800px (tablet) */
+@media screen and (min-width: 620px) and (max-width: 768px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .logo {
+    height: 60px;
+    margin: 15px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .box {
+    background-color: white;
+
+  }
+
+ .for{
+
+
+  margin-bottom:20px ;
+  margin-right: -220px;
+  width: 280px;
+  height: 460px;
+  transition: all 0.3 ease;
+ }
+ 
+
+}
+
+
+

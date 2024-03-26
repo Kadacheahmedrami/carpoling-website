@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <nav class="navbar">
+    <img src="pics/fi_tri9i.jpg" alt="image" class="logo"> 
+  </nav>
+  
+  <main class="container">
+    <div class="box">
+     <form class="for">
+        
+      <fieldset>
+     
+          <input type="password" inputmode="numeric" minlength="6" class="input" maxlength="6" size="6" value="" id="passwordInput">
+      
+          <img src="pics/paste.png" class="paste" id="pasteButton" alt="Paste">
+        
+       
+        <div id="errorMessage" class="error-message"></div>
+      
+      </fieldset>
+
+      
+      <button type="submit" id="timerButton" class="button" >Send reset link</button>
+      <div class="timerLineContainer">
+        <div class="timerLine" id="timerLine"></div>
+        <div class="countdown" id="countdown">15</div>
+        
+      </div>
+
+        
+     </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
