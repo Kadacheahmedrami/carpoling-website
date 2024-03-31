@@ -46,6 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
       passwordInput.style.borderColor = '';
       confirmPasswordInput.style.borderColor = '';
       submitButton.disabled = false;
+      window.open("../../homepage/home-.html", "_self");
+    
+    
     }
   }
 
@@ -67,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     checkPasswordsMatch();
     if (errorDiv.textContent !== "") {
       event.preventDefault(); // Prevent form submission
+      
     }
   });
 });

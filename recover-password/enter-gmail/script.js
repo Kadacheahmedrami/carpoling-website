@@ -11,20 +11,23 @@ function validateEmail(email) {
 document.getElementById("enter-gmail").addEventListener("click", function(event) {
  
   
- 
+  event.preventDefault();
   var emailInput = document.getElementById("passwordInput").value.trim();
 
+  const submitButton = document.getElementById('enter-gmail');
 
   var errorMessage = document.getElementById("errorMessage");
 
 
   if (validateEmail(emailInput)) {
-  
-    errorMessage.textContent = "";
     
-    console.log("Email is valid:", emailInput);
+    window.open("../Confirmation-Code/pass.html", "_self");
+  
   } else {
-    window.open('../Confirmation-Code/pass.html')
+   
+    submitButton.disabled = true;
     errorMessage.textContent = "Please enter a valid Gmail address.";
   }
 });
+
+
