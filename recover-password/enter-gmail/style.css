@@ -1,0 +1,333 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFFFFF;
+
+}
+
+.paste
+{
+position: absolute;
+width: 30px;
+top: 255px;
+left: 21px;
+transition: rotate 0.3s ease , width 0.3s ease ,left 0.3s ease , bottom 0.3s ease 
+}
+.paste:hover
+{
+rotate: 1deg;
+position: absolute;
+width: 34px;
+bottom: 23px;
+left: 19px;
+
+}
+
+.navbar{
+
+
+  background-color: white;
+  align-items: top;
+  display: flex;
+  align-items: center;
+ 
+  
+  height: 100px;
+  width: 100%;
+  align-items: top;
+  justify-content: top;
+  top: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.logo{
+position: absolute;
+height: 75px;
+width: fit-content;
+margin: 20px;
+border-radius: 20px;
+}
+
+
+
+
+.container {
+
+  max-width: 950px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.box {
+ 
+ background-color: white;
+ 
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: -50px;
+  margin-top: 100px;
+ 
+  display: flex;
+  background-image: url(pics/back.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-position: center ;
+  border-radius: 20px;
+
+  overflow: hidden;
+  animation: scaleIn 1s ease-out;
+  
+  justify-content:center;
+  align-items: center ;
+  height: 700px;
+  width: 950px;
+  z-index: 1;
+}
+
+.plant{
+  z-index: 2;
+  position: relative;
+  left: 160px;
+  top: 174px;
+  width: 150px;
+}
+.what{
+  z-index: 2;
+  position: relative;
+  bottom: 160px;
+  left: 42px;
+  width: 120px;
+}
+
+.for
+{
+
+
+margin-top: -140px;
+margin-right: -200px;
+width: 310px;
+height: 470px;
+background-image: url(pics/form.svg);
+background-size: cover;
+background-repeat: no-repeat;
+animation: scaleIn 1s ease-out;
+
+overflow: hidden;
+display: flex;
+justify-content:center ;
+align-items: center ;
+transition: all 0.3 ease;
+}
+
+
+.error-message {
+
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 8px;
+
+  /* Add any other styles you want */
+}
+
+
+fieldset {
+  color: #555;
+  font-family: sans-serif;
+  border: none;
+  position: relative;
+  
+  font-size: large;
+  font-weight: 1000;
+  color: #116a91;
+}
+
+
+
+fieldset::after {
+ 
+  display: block;
+  position: absolute;
+  top: 270px;
+  white-space: pre;
+  left: 60px;
+  
+}
+
+
+
+input {
+  padding: 12px;
+  padding-left: 52px;
+  
+  position: relative;
+  margin-top: 240px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s;
+  background-color: #E3F1F6;
+  border: none;
+  height: 50px;
+  width: 245px;
+
+font-weight: bolder;
+ 
+}
+
+input:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+.button 
+{
+  padding: 12px;
+
+position: absolute;
+margin-top: 360px;
+box-sizing: border-box;
+border-radius: 10px;
+border: 2px solid #ccc;
+transition: border-color 0.3s;
+background-color: #2693AF;
+font-weight: bold;
+font-size: large;
+color: #E3F1F6;
+border: none;
+height: 50px;
+width: 245px;
+transition: all 0.3s ease;
+}
+#timerButton:hover {
+  background-color: #1C7F9F;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+@media screen and (max-width: 660px) {
+  .what{
+    display: none;
+  }
+  .plant{
+    display: none;
+  }
+  .navbar {
+    height: 60px;
+  }
+
+  .logo {
+    height: 40px;
+    margin: 10px;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .box {
+    background-image: none;
+    background-color: white ;
+    margin: 0px;
+   padding: 0px;
+   animation: scaleIn 0.6s ease-out;
+  }
+  .for{
+    background-color: white;  
+ 
+    display: flex;
+    background-image: url(pics/form.svg );
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    background-position: center ;
+    border-radius: 20px;
+  
+    overflow: hidden;
+    animation: none;
+    
+    justify-content:center;
+    align-items: center ;
+   margin: 0px;
+   padding: 0px;
+   height: 820px;
+   width: 445px;
+   
+  }
+
+  fieldset::after {
+ 
+    top: 330px;
+   
+  }
+
+  input {
+   
+    margin-top: 300px;
+   
+  }
+
+
+  .button 
+  {
+
+  margin-top: 420px;
+ 
+  }
+  .paste{
+    top: 315px;
+  }
+
+.timerLineContainer {
+ 
+ margin-top: 510px;
+ margin-left: 145px;
+
+ 
+}
+
+}
