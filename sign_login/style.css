@@ -1,4 +1,9 @@
-
+html{
+    zoom: 1.3;
+    overflow-y: hidden;
+    position: relative;
+    bottom: 100px;
+}
 body {
     font-family: Arial, sans-serif;
     
@@ -377,6 +382,7 @@ header nav a {
      transform: translateX(200%);
  }
  #userType {
+
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -389,3 +395,26 @@ header nav a {
   #birthDate {
     text-transform: uppercase;
   }
+
+
+
+  /* Styles for tablets (around 768px wide) */
+@media only screen and (max-width: 768px) {
+    .container{
+        height: 80%;
+    }
+    .toggle{
+        width: 200%;
+        position: relative;
+  
+    
+    }
+}
+
+
+/* Styles for phones (around 576px wide) */
+@media only screen and (max-width: 576px) {
+    .container{
+        height: 80%;
+    }
+}

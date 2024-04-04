@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       passwordInput.style.borderColor = '';
       confirmPasswordInput.style.borderColor = '';
       submitButton.disabled = false;
-      window.open("../../homepage/home-.html", "_self");
+    
     
     
     }
@@ -68,9 +68,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   submitButton.addEventListener('click', function (event) {
     checkPasswordsMatch();
-    if (errorDiv.textContent !== "") {
-      event.preventDefault(); // Prevent form submission
-      
+    event.preventDefault(); 
+    if (errorDiv.textContent === "") 
+    {
+   
+      window.open("../../sign_login/auth.html", "_self");
     }
   });
 });

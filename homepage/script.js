@@ -12,7 +12,7 @@ let user={
     nom:'kadache',
     prenom:'ahmed rami',
     age:20,    
-    type:types[3], 
+    type:types[0], 
 
 }
 
@@ -20,17 +20,81 @@ let user={
 let admin_options=['vos trajet','Messages','Profile','Paiment','statistic','rapport','Deconxion'];
 let driver_options=['vos trajet','Messages','Profile','Paiment','Deconxion'];
 let client_options=['vos trajet','Messages','Profile','Deconxion'];
-let guest_options=['sign up','log in']
+let guest_options=['log in','sign up'];
+
+
+let admin_imglist=[
+'pics/menu-icons/trajet.png',
+'pics/menu-icons/message.png',
+'pics/menu-icons/profile.png',
+'pics/menu-icons/pay.svg',
+'pics/menu-icons/statistic.png',
+'pics/menu-icons/report.png',
+'pics/menu-icons/log-out.png'
+];
+let driver_imglist=[
+'pics/menu-icons/trajet.png',
+'pics/menu-icons/message.png',
+'pics/menu-icons/profile.png',
+'pics/menu-icons/pay.svg',
+'pics/menu-icons/log-out.png'
+];
+let client_imglist=[
+'pics/menu-icons/trajet.png',
+'pics/menu-icons/message.png',
+'pics/menu-icons/profile.png',
+'pics/menu-icons/log-out.png'
+];
+let guest_imglist=[
+'pics/menu-icons/log.png',
+'pics/menu-icons/sign.png',
+];
+
+
+let admin_pagelist=[
+'notready.html',
+'notready.html',
+'notready.html',
+'notready.html',
+'notready.html',
+'notready.html',
+'notready.html'
+];
+let driver_pagelist=[
+'notready.html',
+'notready.html',
+'notready.html',
+'notready.html',
+'notready.html'
+]
+client_pagelist=[
+
+'notready.html',
+'notready.html',
+'notready.html',
+'notready.html'
+]
+guest_pagelist=[
+'../sign_login/auth.html',
+'../sign_login/auth.html'
+]
+    
 
 
 
-
+parameterValue="sign";
 
 // fonction pour ajouter un option
-function addoption(content , img_src){
-    let element = document.createElement('div');
+function addoption(content , img_src ,page){
+    let element = document.createElement('a');
+    if(page === '../sign_login/auth.html' && img_src === 'pics/menu-icons/sign.png' && user.type=== types[0])
+    {
+        page= page+'?param=';
+        page= page+parameterValue; 
+     }
+    element.href = page;
     let Im = document.createElement('img');
-    Im.src=img_src;
+    Im.src=img_src; 
     Im.classList.add("icon");
     
     let text = document.createElement('p');
@@ -63,18 +127,18 @@ function addline(){
 
 
 
-function create(options)
+function create(options,imglist,pagelist)
 {   
     let name = document.getElementById('user-name');
     let i=0;
     while (i<options.length-1)
     {   
        
-        addoption(options[i],'pics/pfp.svg');
+        addoption(options[i],imglist[i],pagelist[i]);
         i++;
         addline() 
     }
-    addoption(options[i],'pics/pfp.svg');
+    addoption(options[i],imglist[i],pagelist[i]);
     name.innerText=user.nom+' '+user.prenom;
 }
 
@@ -82,10 +146,10 @@ function create(options)
 
 switch(user.type){
 
-    case types[0]: create(guest_options); break;
-    case types[1]: create(client_options);break;
-    case types[2]: create(driver_options);break;
-    case types[3]: create(admin_options);break;
+    case types[0]: create(guest_options,guest_imglist,guest_pagelist); break;
+    case types[1]: create(client_options,client_imglist,client_pagelist);break;
+    case types[2]: create(driver_options,driver_imglist,driver_pagelist);break;
+    case types[3]: create(admin_options,admin_imglist,admin_pagelist);break;
 
 }
 

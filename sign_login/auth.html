@@ -26,7 +26,7 @@
         <input type="email" placeholder="Email" required>
         <input type="password" placeholder="Password" required>
 
-        <select name="type" id="userType" placeholder="TYPE">
+        <select name="type" id="userType" placeholder="TYPE" >
             <option value="driver">Driver</option>
             <option value="passenger">Passenger</option>
         </select>
@@ -70,7 +70,14 @@
       </div>
     </div>
   </div>
-
+  <script >
+  let params = new URLSearchParams(window.location.search);
+    let paramValue = params.get('param');
+    if(paramValue === 'sign')
+    {
+      container.classList.add("active");
+      resetForm(document.querySelector('.sign-up form'));
+    }</script>
   <script src="script.js"></script>
 </body>
 

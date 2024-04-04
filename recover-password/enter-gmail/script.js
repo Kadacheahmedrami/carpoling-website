@@ -20,12 +20,12 @@ document.getElementById("enter-gmail").addEventListener("click", function(event)
 
 
   if (validateEmail(emailInput)) {
-    
+  
     window.open("../Confirmation-Code/pass.html", "_self");
   
   } else {
    
-    submitButton.disabled = true;
+    
     errorMessage.textContent = "Please enter a valid Gmail address.";
   }
 });

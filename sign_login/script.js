@@ -2,6 +2,12 @@ const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 
+
+
+
+
+
+
 registerBtn.addEventListener('click', () => {
     container.classList.add("active");
     resetForm(document.querySelector('.sign-up form'));
@@ -12,13 +18,19 @@ loginBtn.addEventListener('click', () => {
     resetForm(document.querySelector('.sign-in form'));
 });
 
+
+
+
 function resetForm(form) {
     const formFields = form.querySelectorAll('input');
     formFields.forEach(field => {
         field.value = '';
     });
 }
+
+
 const userTypeSelect = document.getElementById('userType');
+
 
 userTypeSelect.addEventListener('click', () => {
   const selectedOption = userTypeSelect.options[userTypeSelect.selectedIndex];
