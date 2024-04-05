@@ -12,7 +12,7 @@ let user={
     nom:'kadache',
     prenom:'ahmed rami',
     age:20,    
-    type:types[0], 
+    type:types[1], 
 
 }
 
@@ -54,7 +54,7 @@ let guest_imglist=[
 let admin_pagelist=[
 'notready.html',
 'notready.html',
-'notready.html',
+'../Profile/pass.html',
 'notready.html',
 'notready.html',
 'notready.html',
@@ -63,7 +63,7 @@ let admin_pagelist=[
 let driver_pagelist=[
 'notready.html',
 'notready.html',
-'notready.html',
+'../Profile/pass.html',
 'notready.html',
 'notready.html'
 ]
@@ -71,7 +71,7 @@ client_pagelist=[
 
 'notready.html',
 'notready.html',
-'notready.html',
+'../Profile/pass.html',
 'notready.html'
 ]
 guest_pagelist=[
