@@ -89,6 +89,7 @@ h1{
 }
 .calendar .month .prev,
 .calendar .month .next {
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .calendar .month .prev:hover,
@@ -124,6 +125,7 @@ h1{
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 .calendar .days .day {
   width: 13.28%;
@@ -133,7 +135,7 @@ h1{
   justify-content: center;
   cursor: pointer;
   color: black;
-
+  transition: all 0.3s ease;
 }
 
 
