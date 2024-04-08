@@ -1,4 +1,18 @@
 
+
+/* nice scroll bar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0082ae;
+  border-radius: 50px;
+}
+
 html {
    
   overflow-x:hidden ;
