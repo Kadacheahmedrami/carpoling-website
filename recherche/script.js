@@ -239,3 +239,81 @@ arrow.addEventListener('click',function(){
     
 
 })
+
+
+
+
+
+
+
+function getQueryParams() {
+    var params = {};
+    var queryString = window.location.search.substring(1);
+    var pairs = queryString.split("&");
+    for (var i = 0; i < pairs.length; i++) {
+        var pair = pairs[i].split("=");
+        params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+    }
+    return params;
+}
+
+// Get the query parameters
+var queryParams = getQueryParams();
+
+// Access the parameter valuesif
+
+var input1 = queryParams.input1;
+var input2 = queryParams.input2;
+var input3 = queryParams.input3;
+
+
+let arslane = document.getElementById('arslane');
+
+let input_1 = document.getElementById('input1');
+let input_2 = document.getElementById('input2');
+let input_3 = document.getElementById('input3');
+
+if(input1 !== undefined)
+{
+arslane.style.display='flex';
+input_1.value=input1;
+input_2.value=input2;
+input_3.value=input3;
+}
+
+
+
+
+
+
+
+var card = document.querySelectorAll("#card");
+console.log(card)
+
+card.forEach(function(element)
+{
+element.addEventListener('click',function(){
+
+
+    window.location.href='../trajet/pass.html';
+
+
+});
+});
+
+
+
+
+document.getElementById('look').addEventListener('click', function() {
+
+  
+  
+    if (input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5) {
+        console.log(arslane);
+        return;
+    }
+    arslane.style.display="flex";
+   
+ 
+
+});

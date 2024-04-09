@@ -3,7 +3,8 @@ document.getElementById('accueilBtn').addEventListener('click', function() {
      window.location.href = '../../homepage/pass.html';
 });
 
-document.getElementById('backBtn').addEventListener('click', function() {
-    window.history.back();
-  
+
+document.getElementById('backBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    window.history.back(); // Go back to the previous page
 });

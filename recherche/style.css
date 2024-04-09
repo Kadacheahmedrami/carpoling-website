@@ -23,7 +23,7 @@ body{
   padding: 0;
   width: 100%;
   overflow-x:hidden ;
-  background-image: url(pics/body.svg);
+
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0px 140px;
@@ -333,6 +333,11 @@ transform: translateY(-200%);
   transition: all 0.3s ease;
 }
 
+a {
+  text-decoration: none;
+
+}
+
 .look:hover{
 
   cursor: pointer;
@@ -613,11 +618,13 @@ input[type='radio']:checked {
 }
 
 .arslane{
+  animation:slideDown1 1s ;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  display: none;
 }
 
 
@@ -923,6 +930,11 @@ display: none;
   @keyframes slideDown {
     from { transform: translateY(-20%); }
     to { transform: translateY(0); }
+}
+
+@keyframes slideDown1 {
+  from { transform: translateY(-5%); }
+  to { transform: translateY(0); }
 }
 
 @keyframes slideUp {
