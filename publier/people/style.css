@@ -263,12 +263,12 @@ main{
   flex-direction: column;
   max-width: 1200px;
   padding: 0;
-  gap: 76px;
+  gap: 85px;
 }
 
 
 
-.row1{
+.row , .row1{
  gap: 40px;
 width: 100%;
   display: flex;
@@ -277,6 +277,60 @@ width: 100%;
   flex-direction: row;
 
   
+}
+
+
+.img{
+  margin-right: auto;
+  width: 55%;
+}
+
+.minuss , .pluss{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: #0082AE;
+  color: white;
+  border-radius: 100px;
+  width: 70px;
+  height: 70px;
+  font-size: 70px;
+  transition: all 0.2s ease;
+}
+
+.minuss:hover , .pluss:hover {
+  color: #0082ae;
+  background-color: #E3F1F6;
+  font-size: 85px;
+  
+}
+
+.tikline{
+  height: 8px;
+  width: 40px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.prix{
+  appearance: none;
+  font-size: 80px;
+  border: none;
+  background-color: transparent;
+  width: min-content;
+  height: min-content;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ text-align: center;
+}
+
+.prix:focus{
+  appearance: none;
+
 }
 
 .precedent , .prochaine{
@@ -306,20 +360,7 @@ font-size: 35px;
 }
 
 
-.in{
-  font-size: 30px;
-  padding: 20px;
-  height: 350px;
-  width: 80%;
-  border: 3px solid #0082AE;
-  border-radius: 52px;
-  background-color: #E3F1F6;
-  text-align: top;
-  display: flex;
-  color: rgba(0, 0, 0, 0.7);
-  justify-content: start;
-  align-items: start;
-}
+
 
 
 
@@ -342,7 +383,11 @@ font-size: 35px;
     right: 8.2%;
   }
 
- 
+  main{
+    width: 160%;
+  zoom: 0.9;
+  gap: 50px;
+  }
  }
 
 
@@ -357,9 +402,9 @@ font-size: 35px;
 
         }
         main{
-        text-align: center;
-    
-        gap: 20px;
+          width: 160%;
+        zoom: 0.9;
+        gap: 50px;
         }
  .menu{
   right: 3.4%;
@@ -424,12 +469,30 @@ font-size: 35px;
   }
 
   main{
-  text-align: center;
-  gap: 40px;
-  zoom:0.67
+    width: 180%;
+  zoom: 0.55;
+  gap: 120px;
+  margin: 180px;
+  margin-bottom: 0px;
+  }
+  .title{
+    font-size: 40px;
+  }
+  .row{
+    flex-direction: column-reverse;
+  }
+  .img{
+   margin: 10px;
+    width: 100%;
+  }
+  .date{
+    font-size: 24px;
+  }
+  .Container0{
+    gap: 20px;
+    height: 200px;
   }
 
- 
 .vertical-line{
 
 display: none;

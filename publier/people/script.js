@@ -179,6 +179,65 @@ arrow.addEventListener('click',function(){
 
 
 
+plusbtn=document.getElementById('pluss');
+minusbtn=document.getElementById('minuss');
+prix=document.getElementById('prix');
+
+
+function adjust_color()
+{    
+if(parseInt(prix.value) <= 3 && parseInt(prix.value) > 1)
+{
+    prix.style.color='green';
+
+  
+}
+else 
+{
+if(parseInt(prix.value) > 3)
+{
+    prix.style.color='#e05457'; 
+  
+  
+    
+
+}
+else{
+    prix.style.color='black'; 
+}
+}
+}
+
+
+prix.addEventListener('input',function(event){
+
+    adjust_color();
+})
+
+
+plusbtn.addEventListener('click',function(){
+if(parseInt(prix.value) < 6)
+{
+    prix.value=parseInt(prix.value)+1;
+    adjust_color();
+}
+
+})
+
+
+minusbtn.addEventListener('click',function(){
+if(parseInt(prix.value) > 1)
+{
+    prix.value=parseInt(prix.value)-1;
+    adjust_color();
+}
+
+     
+ })
+
+
+
+
  // Get references to the buttons
 const precedentButton = document.getElementById('precedent');
 const prochaineButton = document.getElementById('prochaine');
@@ -192,5 +251,5 @@ precedentButton.addEventListener('click', function() {
 // Add event listener to the "prochaine" button
 prochaineButton.addEventListener('click', function() {
     // Navigate to a new page
-    window.location.href = 'new_page.html'; // Replace 'new_page.html' with the URL of the new page
+    window.location.href = '../heure/pass.html'; // Replace 'new_page.html' with the URL of the new page
 });

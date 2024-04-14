@@ -256,5 +256,5 @@ precedentButton.addEventListener('click', function() {
 // Add event listener to the "prochaine" button
 prochaineButton.addEventListener('click', function() {
     // Navigate to a new page
-    window.location.href = 'new_page.html'; // Replace 'new_page.html' with the URL of the new page
+    window.location.href = '../description/pass.html'; // Replace 'new_page.html' with the URL of the new page
 });
