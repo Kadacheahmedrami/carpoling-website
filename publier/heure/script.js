@@ -173,72 +173,49 @@ arrow.addEventListener('click',function(){
 
 })
 
-
-
-
-
-
-
-plusbtn=document.getElementById('pluss');
-minusbtn=document.getElementById('minuss');
-prix=document.getElementById('prix');
-
-
-function adjust_color()
-{    
-if(parseInt(prix.value) <= 900 && parseInt(prix.value)>400)
-{
-    prix.style.color='green';
-    if(prix.style.width=="280px")
-    {
-          prix.style.width="220px";
-    }
+let arr = document.getElementById('arr');
+let white = document.getElementById('white');
+let prix= document.getElementById("prix");
+function clockmenu(){
   
-}
-else 
-{
-if(parseInt(prix.value) > 900)
-{
-    prix.style.color='#e05457'; 
-  
-    
-        prix.style.width="280px";
-    
 
-}
-else{
-    prix.style.color='black'; 
-    prix.style.width="220px";
-}
-}
+        if( white.style.display == 'none'){
+            prix.style.display='none'
+            white.style.display = 'flex';
+            arr.style.rotate ='0deg';
+            
+        }
+        else
+        {
+            prix.style.display = 'flex';
+            white.style.display = 'none';
+            arr.style.rotate ='180deg';
+
+        }
+ 
 }
 
-
-prix.addEventListener('input',function(event){
-
-    adjust_color();
+arr.addEventListener('click',function(){
+       clockmenu()
 })
 
 
-plusbtn.addEventListener('click',function(){
-if(parseInt(prix.value) < 4000)
-{
-    prix.value=parseInt(prix.value)+100+'da';
-    adjust_color();
-}
+let clock =document.getElementById("clock");
+let time = document.querySelectorAll('#time-option');
+console.log(clock)
 
-})
+time.forEach(function(event) {
+    event.addEventListener('click', function() {
+        clock.value = event.innerText;
+        clockmenu()
+    });
+});
 
 
-minusbtn.addEventListener('click',function(){
-if(parseInt(prix.value) > 100)
-{
-    prix.value=parseInt(prix.value)-100+'da';
-    adjust_color();
-}
 
-     
- })
+
+
+
 
 
 
@@ -256,5 +233,5 @@ precedentButton.addEventListener('click', function() {
 // Add event listener to the "prochaine" button
 prochaineButton.addEventListener('click', function() {
     // Navigate to a new page
-    window.location.href = '../description/pass.html'; // Replace 'new_page.html' with the URL of the new page
+    window.location.href = '../people/pass.html'; // Replace 'new_page.html' with the URL of the new page
 });

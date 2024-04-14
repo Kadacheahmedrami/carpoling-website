@@ -20,6 +20,8 @@
 
 
 body {
+
+  zoom: 0.95;
   position: relative;
   height: 102vh;
   display: flex;
@@ -27,7 +29,8 @@ body {
   justify-content: center;
   padding-bottom: 30px;
   background-color: white;
-  
+
+  flex-direction: column;
 
   font-family: 'Roboto Serif', serif;
 }
@@ -36,6 +39,7 @@ h1{
 }
 
 .big{
+    margin-top: 60px;
   gap: 25px;
   display: flex;
   justify-content: center;
@@ -475,6 +479,61 @@ h1{
   background-color: transparent;
   color: #0082ae;
 }
+
+
+
+.precedent , .prochaine{
+  height: 74px;
+  width: 275px;
+  border-radius: 100px;
+  background-color: #0082AE;
+  color: #E3F1F6;
+  font-size: 31px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px;
+}
+
+.precedent{
+  background-color: #E3F1F6;
+  color: #0082AE;
+  cursor: pointer;
+}
+
+.precedent:hover , .prochaine:hover{
+  font-size: 35px;
+  }
+  
+  .precedent:hover {
+    font-size: 35px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media queries */
 

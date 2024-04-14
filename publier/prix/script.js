@@ -12,9 +12,9 @@ let user={
     nom:'kadache',
     prenom:'ahmed rami',
     age:20,    
-    type:types[0], 
-
+    type:types[1], 
 }
+
 
 
 let admin_options=['vos trajet','Messages','Profile','Paiment','statistic','rapport','Deconxion'];
@@ -156,16 +156,6 @@ switch(user.type){
 
 
 
-
-
-
-
-
-
-
-
-
-
 arrow.addEventListener('click',function(){
 
     if( !visible ){
@@ -189,21 +179,82 @@ arrow.addEventListener('click',function(){
 
 
 
+plusbtn=document.getElementById('pluss');
+minusbtn=document.getElementById('minuss');
+prix=document.getElementById('prix');
 
-document.getElementById('look').addEventListener('click', function() {
-    var input1 = document.getElementById('input1').value.trim();
-    var input2 = document.getElementById('input2').value.trim();
-    var input3 = parseInt(document.getElementById('input3').value);
 
-    if (input1 === '' || input2 === '' || isNaN(input3) || input3 < 1 || input3 > 5) {
-        alert('Veuillez remplir tous les champs correctement.');
-        return;
+function adjust_color()
+{    
+if(parseInt(prix.value) <= 900 && parseInt(prix.value)>400)
+{
+    prix.style.color='green';
+    if(prix.style.width=="280px")
+    {
+          prix.style.width="220px";
     }
+  
+}
+else 
+{
+if(parseInt(prix.value) > 900)
+{
+    prix.style.color='#e05457'; 
+  
+    
+        prix.style.width="280px";
+    
 
-    var parametre = [input1, input2, input3];
-    console.log('Paramètres:', parametre);
+}
+else{
+    prix.style.color='black'; 
+    prix.style.width="220px";
+}
+}
+}
 
-    var queryString = '?input1=' + encodeURIComponent(parametre[0]) + '&input2=' + encodeURIComponent(parametre[1]) + '&input3=' + encodeURIComponent(parametre[2]);
-    var nextPageURL = '../recherche/pass.html' + queryString;
-    window.location.href = nextPageURL; // Redirect to pass.html with parameters
+
+prix.addEventListener('input',function(event){
+
+    adjust_color();
+})
+
+
+plusbtn.addEventListener('click',function(){
+if(parseInt(prix.value) < 4000)
+{
+    prix.value=parseInt(prix.value)+100+'da';
+    adjust_color();
+}
+
+})
+
+
+minusbtn.addEventListener('click',function(){
+if(parseInt(prix.value) > 100)
+{
+    prix.value=parseInt(prix.value)-100+'da';
+    adjust_color();
+}
+
+     
+ })
+
+
+
+
+ // Get references to the buttons
+const precedentButton = document.getElementById('precedent');
+const prochaineButton = document.getElementById('prochaine');
+
+// Add event listener to the "precedent" button
+precedentButton.addEventListener('click', function() {
+    // Navigate to the previous page
+    window.history.back();
+});
+
+// Add event listener to the "prochaine" button
+prochaineButton.addEventListener('click', function() {
+    // Navigate to a new page
+    window.location.href = '../description/pass.html'; // Replace 'new_page.html' with the URL of the new page
 });

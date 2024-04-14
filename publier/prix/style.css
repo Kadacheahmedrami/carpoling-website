@@ -278,18 +278,34 @@ width: 100%;
 
   
 }
-.row1{
-  flex-direction: column;
-  gap: 0px;
-}
+
 
 .img{
   margin-right: auto;
   width: 55%;
- 
 }
 
+.minuss , .pluss{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: #0082AE;
+  color: white;
+  border-radius: 100px;
+  width: 70px;
+  height: 70px;
+  font-size: 70px;
+  transition: all 0.2s ease;
+}
 
+.minuss:hover , .pluss:hover {
+  color: #0082ae;
+  background-color: #E3F1F6;
+  font-size: 85px;
+  
+}
 
 .tikline{
   height: 8px;
@@ -298,95 +314,22 @@ width: 100%;
   border-radius: 30px;
 }
 
-.column{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-
 .prix{
-  font-family: 'Roboto Serif', serif;
-  text-align: center;
-  border: solid 4px #0082AE   ;
-  border-radius: 43px;
-  padding: 10px;
   appearance: none;
-  font-size: 60px;
-  z-index: 2;
+  font-size: 80px;
+  border: none;
   background-color: transparent;
   width: min-content;
   height: min-content;
-  width: 240px;
+  width: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 75px;
-  padding-left: 75px;
-  font-weight: bold;
-  background-color: white;
-
 
 }
-
-.time-menu , .whitebox{
-  animation: slideDown3 1s;
-  display: flex;
-  flex-direction: column;
-  height: 189px;
-  overflow-y: scroll;
-  z-index: 1;
-  border: solid 1px #0082AE;
-  width: 390px;
-  font-size: 25px;
-  padding-top: 50px;
-  position: relative;
-  bottom: 50px;
-  display: none;
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
-}
-
-.whitebox{
-  border: none;
-  overflow-y: hidden;
-  display: flex;
-}
-
-.time-option{
-  padding: 10px;
-
-}
-
-.time-option:hover{
-  cursor: pointer;
-  padding: 5px;
-  background-color: #E3F1F6;
-}
-
-.arr{
-  z-index: 3;
-  position: relative;
-  top: 94px;
-   left: 150px;
-   cursor: pointer;
-   border-radius: 40px;
-   padding: 34px;
-  transition: all 0.3s ease;
-}
-.arr:hover{
-  background-color: rgba(0,0,0,0.1);
-}
-
-
-
-
-
-
-
-
 
 .prix:focus{
-background-color: #E3F1F6;
+  appearance: none;
 
 }
 
@@ -625,9 +568,4 @@ display: none;
 @keyframes slideDown2 {
   from { transform: translateY(-8%); }
   to { transform: translateY(0); }
-}
-
-@keyframes slideDown3 {
-  from { transform: translateY(-12%); opacity: 0.2;}
-  to { transform: translateY(0); opacity: 1;}
 }

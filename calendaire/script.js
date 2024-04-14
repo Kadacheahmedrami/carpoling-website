@@ -1,3 +1,36 @@
+
+
+ // Get references to the buttons
+ const precedentButton = document.getElementById('precedent');
+ const prochaineButton = document.getElementById('prochaine');
+ 
+ // Add event listener to the "precedent" button
+ precedentButton.addEventListener('click', function() {
+     // Navigate to the previous page
+     window.history.back();
+ });
+ 
+ // Add event listener to the "prochaine" button
+ prochaineButton.addEventListener('click', function() {
+     // Navigate to a new page
+     window.location.href = '../publier/heure/pass.html'; // Replace 'new_page.html' with the URL of the new page
+ });
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const calendar = document.querySelector(".calendar"),
   date = document.querySelector(".date"),
   daysContainer = document.querySelector(".days"),
@@ -468,3 +501,5 @@ function convertTime(time) {
   time = timeHour + ":" + timeMin + " " + timeFormat;
   return time;
 }
+
+
