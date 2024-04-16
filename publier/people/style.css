@@ -13,6 +13,7 @@
 html {
    
   overflow-x:hidden ;
+  overflow-y: hidden;
   width: 100%;
  
 }
@@ -23,6 +24,7 @@ body{
   padding: 0;
   width: 100%;
   overflow-x:hidden ;
+  overflow-y: hidden;
   background-image: url(pics/body.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -360,8 +362,62 @@ font-size: 35px;
 }
 
 
+.pips{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+  height:200px;
+}
+.p1 , .p2 , .p3 , .p4 , .p5
+{
+position: absolute;
+}
+ .p5{
+
+  margin-bottom: 60px;
+  transform: translateX(200%);
+  display: none
+ }
+
+.p1{
+  margin-bottom: 60px;
+  transform: translateX(-200%);
+  display: none
+}
 
 
+.p2 {
+  margin-bottom: 120px;
+  display: none;
+  transform: translateX(-100%);
+  
+}
+ .p4{
+ 
+  margin-bottom: 120px;
+  transform: translateX(100%);
+  display: none;
+ }
+
+
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: inline;
+  padding: 5px;
+  border: 1px solid rgb(90, 88, 88);
+  position: relative;
+  margin: 40px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  top: 50px;
+}
 
 
 
@@ -448,9 +504,26 @@ font-size: 35px;
   width: 85%;
  
 }
+.row-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
 
+  margin: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  top: 50px;
+}
 
-
+.pips{
+  width: 135%;
+  height: 300px;
+}
 
 
 
@@ -469,9 +542,9 @@ font-size: 35px;
   }
 
   main{
-    width: 180%;
+    width: 300%;
   zoom: 0.55;
-  gap: 120px;
+  gap: 80px;
   margin: 180px;
   margin-bottom: 0px;
   }
@@ -555,7 +628,54 @@ display: none;
     color: rgba(0, 0, 0 ,0.4);
   }
 
+  .row{
 
+  }
+.pluss , .minuss{
+  height: 130px;
+  width: 130px;
+}
+.prix{
+  font-size: 180px;
+}
+.row1{
+  width: 120%;
+  gap: 20 px;
+}
+.precedent , .prochaine{
+  width: 36%;
+  height: 110px;
+  font-size: 45px;
+}
+
+.row-btn{
+ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+  width: 8%;
+  height: 300%;
+  margin: 12px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  top: 0px;
+}
+
+
+.p1 , .p2 , .p3 , .p4 , .p5
+{
+  width: 120px;
+}
+
+.pips{
+  gap: 0;
+  width: 100%;
+  height: 300px;
+}
 
   }
   

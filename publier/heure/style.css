@@ -27,10 +27,12 @@ body{
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0px 140px;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
-  font-family: 'Roboto Serif', serif;
+  font-family: Arial, Helvetica, sans-serif;
+  zoom: 0.98;
+  overflow-y: hidden;
 }
 
 
@@ -245,6 +247,7 @@ background-color: rgba(0,0,0,0.1);
 
 h1 , p{
   margin: 0;
+
 }
 
 
@@ -299,6 +302,9 @@ width: 100%;
 }
 
 .column{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -344,6 +350,11 @@ width: 100%;
   display: none;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
+
+}
+
+.time-menu{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .whitebox{
@@ -374,7 +385,7 @@ width: 100%;
   transition: all 0.3s ease;
 }
 .arr:hover{
-  background-color: rgba(0,0,0,0.1);
+ 
 }
 
 
@@ -413,8 +424,34 @@ font-size: 35px;
 
 .title{
   font-size: 45px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
+
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: inline;
+  padding: 5px;
+  border: 1px solid rgb(90, 88, 88);
+  position: relative;
+  margin: 40px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  top: 50px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -447,18 +484,16 @@ font-size: 35px;
 
 
 /* For tablets (e.g., iPad) */
-@media only screen and (min-width: 668px) and (max-width: 1024px) {
+@media only screen and (min-width: 451px) and (max-width: 1024px) {
     html {
 
     overflow-x:hidden ;
     width: 100%;
 
         }
-        main{
-          width: 160%;
-        zoom: 0.6;
-        gap: 50px;
-        }
+    main{
+      margin-top: 140px;
+    }
  .menu{
   right: 3.4%;
   width: 225px;
@@ -503,15 +538,56 @@ font-size: 35px;
 }
 
 
+.big{
+ 
+ width: 100%;
+}
 
+.img{
+  position: absolute;
+  width: 100%;
+}
+.prix{
+  margin-bottom: 130px;
+  position: relative;
+  bottom: 70px;
+}
+.arr{
+  position: relative;
+  top: 25px;
+}
 
+.time-menu , .whitebox{
 
+bottom: 250px;  
 
+}
+
+.prochaine ,.precedent{
+  
+ width: 210px;
+}
+
+.row-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+
+  margin: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  top: 50px;
+}
 }
 
 
 /* For phones (e.g., iPhone) */
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 450px) {
 
 /* fix this pls*/
    html {
@@ -522,24 +598,42 @@ font-size: 35px;
   }
 
   main{
+
     width: 180%;
-  zoom: 0.67;
-  gap: 50px;
-  margin: 180px;
-  margin-bottom: 0px;
+  zoom: 0.8;
+  gap: 0px;
+  margin: 0px;
+  margin-top: 260px;
   }
   .title{
     font-size: 40px;
   }
   .row{
     flex-direction: column-reverse;
+    gap: 0;
   }
   .img{
-   margin: 10px;
+    
+    margin: 0;
     width: 100%;
+    margin-top: auto;
+    position: relative;
+    bottom: 200px;
+  }
+ .prix{
+  margin: 0;
+ }
+
+  .whitebox , .time-menu{
+    bottom: 50px;
+  }
+  .time-menu{
+    background-color: white;
+   
   }
   .date{
     font-size: 24px;
+   
   }
   .Container0{
     gap: 20px;
@@ -579,6 +673,7 @@ display: none;
   
   
   .logo_img{
+
     width: 43px;
   }
 
@@ -591,6 +686,7 @@ display: none;
  
 
   .menu{
+    
     animation: slideDown2 0.6s;
     background: #0082AE;
     right: 2.5%;
@@ -607,9 +703,39 @@ display: none;
   .cotation{
     color: rgba(0, 0, 0 ,0.4);
   }
+.title{
+  position: relative;
+  top: 30px;
+  font-size: 30px;
+}
+.row{
+  gap: 0px;
+}
+.img{
+  width: 80%;
+  bottom: 240px;
+}
 
-
-
+.precedent , .prochaine{
+  width: 42%;
+  position: relative;
+  bottom: 220px;
+}
+.row-btn{
+ 
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+  width: 5%;
+  height: 200%;
+  margin: 12px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  top: 0px;
+}
   }
   
 

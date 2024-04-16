@@ -23,7 +23,7 @@ body {
 
   zoom: 0.95;
   position: relative;
-  height: 102vh;
+  height: 104vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,32 +36,42 @@ body {
 }
 h1{
   font-family: 'Roboto Serif', serif;
+  text-align: center;
+}
+.row{
+  z-index: 1;
+ margin-bottom: 40px;
+ 
 }
 
 .big{
-    margin-top: 60px;
-  gap: 25px;
+  
+    margin-top: 90px;
+  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 0;
 }
 .container {
   position: relative;
-  width: 1200px;
+  width: 1300px;
   min-height: 690px;
  
   margin: 0 auto;
   padding: 5px;
   color: #fff;
   display: flex;
-
+  gap: 30px;
   border-radius: 10px;
+  overflow: visible;
 
 }
 .left {
   width: 60%;
   padding: 20px;
+  
 }
 .calendar {
   position: relative;
@@ -246,6 +256,7 @@ h1{
   width: 60%;
   min-height: 100%;
   padding: 20px 0;
+
 }
 
 .right .today-date {
@@ -510,10 +521,29 @@ h1{
     font-size: 35px;
     }
     
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
-
-
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: inline;
+  padding: 5px;
+  border: 1px solid rgb(90, 88, 88);
+  position: relative;
+  margin: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  top: 50px;
+}
 
 
 
@@ -540,16 +570,40 @@ h1{
 @media screen and (max-width: 1205px) {
 body{
 
-  zoom: 0.77;
-  margin-top: 100px;
-  margin-bottom: auto;
+  
 }
+main{
+  width: 100%;
+}
+.big{
+  width: 100%;
+}
+.container{
+  width: 100%;
+  gap: 0px;
+  zoom: 0.8;
+}
+
+
 }
 @media screen and (max-width: 905px) {
   body{
-    margin-top: 250px;
+   
 
-    zoom: 0.57;
+  
+  }
+  .right{
+    padding: 0;
+  }
+  .container{
+   zoom:0.6
+  }
+  #btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+
+    margin: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: 50px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -557,18 +611,24 @@ body{
     width: 100%;
     overflow-x: hidden; 
      overflow-y: hidden;
-      
+     margin: 0;
   }
 
  body{
+  
+  margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  zoom: 1;
-  margin: 0;
 
+  margin: 0;
+ 
  }
 .big{
-  margin-top: 50px;
+ 
+  gap: 30px;
+  
+  margin: 0;
+  margin-bottom: 30px;
   overflow-y: hidden;
   overflow-x: hidden;
   display: flex;
@@ -577,6 +637,8 @@ body{
 
 }
   .container{
+  
+    margin: 0;
     overflow-y: hidden;
     overflow-x: hidden;
     width: 600px;
@@ -586,27 +648,76 @@ body{
     padding: 0;
     margin: 0;
     flex-direction: column;
-   
+    
 
   }
   .right{
 
     
-    zoom: 0.5;
+ 
     display: none;
-   background: none;
-    width: 100%;
-    height: 600px;
-    margin: 0;
+
   }
   .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
- 
+  
     overflow-y: hidden;
     overflow-x: hidden;
-    width: 75%;
-  
+    width: 120%;
+    height: 900px;
     margin: 0;
+  }
+  .row{
+    width: 100%;
+   
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .calendar{
+    border-right: solid 8px rgba(0, 0, 0, 0.4);
+    border-left: solid 8px rgba(0, 0, 0, 0.4);
+    border-bottom: solid 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.9);
+    background-color: white;
+    width: 90%;
+   
+  }
+  .day{
+    
+    font-size: 30px;
+  }
+  h1{
+
+    font-size: 27px;
+
+  }
+ .row{
+  gap: 15px;
+ }
+  .prochaine ,.precedent
+  {
+    margin: 0;
+    width: 45%;
+  }
+  .calendar .days .day:not(.prev-date, .next-date):hover{
+    font-size: 60px;
+  }
+
+  .goto-today{
+    zoom: 2;
+  }
+  #btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    margin-top: 0;
+    margin-bottom: 9px;
+    top: 50px;
   }
 }
 

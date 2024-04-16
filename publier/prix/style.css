@@ -13,16 +13,18 @@
 html {
    
   overflow-x:hidden ;
+  overflow-y: hidden;
   width: 100%;
  
 }
 
 body{
-
+ 
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x:hidden ;
+  overflow-y: hidden;
   background-image: url(pics/body.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -253,7 +255,7 @@ h1 , p{
 
 main{
   z-index: 1;
-  zoom: 0.92;
+  zoom: 0.85;
   margin-top: 120px;
   height: 86.9%;
   position: relative;
@@ -276,6 +278,7 @@ width: 100%;
   align-items: center;
   flex-direction: row;
 
+  ;
   
 }
 
@@ -283,6 +286,7 @@ width: 100%;
 .img{
   margin-right: auto;
   width: 55%;
+  margin-top: 50px;
 }
 
 .minuss , .pluss{
@@ -304,7 +308,7 @@ width: 100%;
   color: #0082ae;
   background-color: #E3F1F6;
   font-size: 85px;
-  
+
 }
 
 .tikline{
@@ -353,12 +357,34 @@ width: 100%;
 .precedent:hover , .prochaine:hover{
 font-size: 35px;
 }
+.column{
+  display :flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .title{
   font-size: 45px;
-  margin-top: 20px;
+  margin-top: 70px;
+  text-align: center;
+
 }
 
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: inline;
+  padding: 5px;
+  border: 1px solid rgb(90, 88, 88);
+  position: relative;
+  margin: 40px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  top: 50px;
+}
 
 
 
@@ -448,6 +474,12 @@ font-size: 35px;
 
 
 
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+
+width: 30px;
+height: 30px;
+}
+
 
 
 }
@@ -467,19 +499,22 @@ font-size: 35px;
   main{
     width: 180%;
   zoom: 0.67;
-  gap: 50px;
-  margin: 180px;
-  margin-bottom: 0px;
+  gap: 25px;
+  margin: 200px;
+  position: relative;
+  bottom: 45px;
   }
   .title{
     font-size: 40px;
+    position: relative;
+    bottom: 25px;
   }
   .row{
     flex-direction: column-reverse;
   }
   .img{
    margin: 10px;
-    width: 100%;
+    width: 400px;
   }
   .date{
     font-size: 24px;
@@ -552,6 +587,34 @@ display: none;
   }
 
 
+  .row1{
+    position: relative;
+    bottom: 26px;
+    width: 140%;
+    gap: 30px;
+  }
+  .precedent , .prochaine{
+    width: 37%;
+    height: 110px;
+    font-size: 40px;
+  }
+  
+.row-btn{
+ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+  width: 9%;
+  height: 300%;
+  margin: 1.4%;
+  margin-top: 0;
+  margin-bottom: 0px;
+  top: 0px;
+}
 
   }
   

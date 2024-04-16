@@ -54,7 +54,7 @@ let guest_imglist=[
 let admin_pagelist=[
 'notready.html',
 'notready.html',
-'../Profile/pass.html',
+'../../Profile/pass.html',
 'notready.html',
 'notready.html',
 'notready.html',
@@ -63,7 +63,7 @@ let admin_pagelist=[
 let driver_pagelist=[
 'notready.html',
 'notready.html',
-'../Profile/pass.html',
+'../../Profile/pass.html',
 'notready.html',
 'notready.html'
 ]
@@ -71,7 +71,7 @@ client_pagelist=[
 
 'notready.html',
 'notready.html',
-'../Profile/pass.html',
+'../../Profile/pass.html',
 'notready.html'
 ]
 guest_pagelist=[
@@ -173,9 +173,12 @@ arrow.addEventListener('click',function(){
 
 })
 
+let clock =document.getElementById("clock");
+let time = document.querySelectorAll('#time-option');
 let arr = document.getElementById('arr');
 let white = document.getElementById('white');
 let prix= document.getElementById("prix");
+
 function clockmenu(){
   
 
@@ -183,13 +186,14 @@ function clockmenu(){
             prix.style.display='none'
             white.style.display = 'flex';
             arr.style.rotate ='0deg';
-            
+            clock.style.backgroundColor='white'
         }
         else
         {
             prix.style.display = 'flex';
             white.style.display = 'none';
             arr.style.rotate ='180deg';
+            clock.style.backgroundColor='#E3F1F6'
 
         }
  
@@ -200,8 +204,7 @@ arr.addEventListener('click',function(){
 })
 
 
-let clock =document.getElementById("clock");
-let time = document.querySelectorAll('#time-option');
+
 console.log(clock)
 
 time.forEach(function(event) {
@@ -235,3 +238,74 @@ prochaineButton.addEventListener('click', function() {
     // Navigate to a new page
     window.location.href = '../people/pass.html'; // Replace 'new_page.html' with the URL of the new page
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const btn1 = document.getElementById('btn1');
+    const btn2 = document.getElementById('btn2');
+    const btn3 = document.getElementById('btn3');
+    const btn4 = document.getElementById('btn4');
+    const btn5 = document.getElementById('btn5');
+    const btn6 = document.getElementById('btn6');
+    const btn7 = document.getElementById('btn7');
+    const btn8 = document.getElementById('btn8');
+    const btn9 = document.getElementById('btn9');
+  
+    // Fonction pour réinitialiser la couleur de fond de tous les boutons
+    function resetButtons() {
+      btn1.style.backgroundColor = '#ffffff';
+      btn2.style.backgroundColor = '#ffffff';
+      btn3.style.backgroundColor = '#ffffff';
+      btn4.style.backgroundColor = '#ffffff';
+      btn5.style.backgroundColor = '#ffffff';
+      btn6.style.backgroundColor = '#ffffff';
+      btn7.style.backgroundColor = '#ffffff';
+      btn8.style.backgroundColor = '#ffffff';
+      btn9.style.backgroundColor = '#ffffff';
+    }
+  
+    // Initialiser la couleur de fond du premier bouton
+    btn6.style.backgroundColor = '#0082AE';
+  
+    btn1.addEventListener('click', function() {
+      resetButtons();
+      this.style.backgroundColor = '#0082AE';
+      window.location.href = '../pub1/pass.html'; 
+    });
+  
+    btn2.addEventListener('click', function() {
+      resetButtons();
+      this.style.backgroundColor = '#0082AE';
+      window.location.href = '../pub2/pass.html'; 
+    });
+  
+    btn3.addEventListener('click', function() {
+      resetButtons();
+      this.style.backgroundColor = '#0082AE';
+      window.location.href = '../pub3/pass.html'; 
+    });
+  
+    btn4.addEventListener('click', function() {
+      resetButtons();
+      this.style.backgroundColor = '#0082AE';
+      window.location.href = '../pub4/pass.html'; 
+    });
+  
+        btn5.addEventListener('click', function() {
+          resetButtons();
+          this.style.backgroundColor = '#0082AE';
+          window.location.href = '../calendaire/index.html'; 
+        });
+      
+        btn6.addEventListener('click', function() {
+          resetButtons();
+          this.style.backgroundColor = '#0082AE';
+        });
+      
+      
+  });
+  
+  
