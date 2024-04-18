@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(pics/b.svg);
+  background-repeat: no-repeat;
+  background-position: 400px 0px;
+  background-size: 950px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.column1 {
+   width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+   font-size: 30px;
+  justify-content: center;
+ z-index: 2;
+  margin-bottom: 280px;
+   
+}
+
+.column2 {
+  z-index: 1;
+  padding: 20px;
+   
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+h1{
+  position: relative;
+  left: 90px;
+}
+.box1 , .box2 {
+
+   display: flex ;
+   justify-content: end;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+   margin-left: auto;
+}
+.box2{
+  margin: 0;
+  width: auto;
+  justify-content: start;
+  padding-left: 10px;
+}
+
+.box2{
+  text-decoration: none;
+  color: #0082ae;
+}
+
+
+.pp{
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1186px) {
+  body{
+    background-position: 100px 0px;
+    background-size: cover;
+  }
+.img{
+  width: 100%;
+}
+.column1{
+  
+  width: 50%;
+}
+
+.box1 {
+  width: 300px;
+}
+.box2{
+ width: 200px;
+}
+
+h1{
+  margin-bottom: 0px;
+}
+}
+@media only screen and (max-width: 994px) {
+
+  body{
+    background-position: 100px 0px;
+  }
+  .column1{
+    
+font-size: 25px;
+  }
+  
+  }
+  @media only screen and (max-width: 843px) {
+
+body{
+  background-position: 100px 0px;
+}
+    .column1{
+      margin-bottom: 240px;
+  font-size: 20px;
+    }
+    
+    }
+
+
+      
+    @media only screen and (max-width: 672px) {
+      body , html {
+       
+        padding: 0;
+        margin: 0;
+        background-position: center;
+      }
+    .container{
+      flex-direction: column;
+      gap: 0px;
+      padding: 0;
+      width: 107%;
+    
+    }
+     main{
+      width: 100%;
+     }
+    h1{
+    left: 0px;
+    }
+      .column1{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+         font-size: 30px;
+        justify-content: center;
+       z-index: 2;
+      }
+      .column2{
+        margin: 0;
+      }
+      }
+
+      @media only screen and (max-width: 466px) {
+
+
+        .column1{
+        
+      font-size: 25px;
+        }
+        
+        }
+
+        @media only screen and (max-width: 396px) {
+
+
+          .column1{
+          
+        font-size: 20px;
+          }
+
+        
+          
+          }

@@ -15,6 +15,14 @@ let user={
     type:types[1], 
 }
 
+
+if( user.type==types[1])
+{
+    pub.style.display='none';
+    auth.style.marginLeft='auto';
+}
+
+
 let driver={
     nom:'mr',
     prenom:'Wallie',
@@ -228,15 +236,6 @@ switch(user.type){
 
 
 
-
-
-
-
-
-
-
-
-
 arrow.addEventListener('click',function(){
 
     if( !visible ){
@@ -253,3 +252,39 @@ arrow.addEventListener('click',function(){
     
 
 })
+
+
+let i=1
+let length = document.getElementById("lengh");
+let plus = document.getElementById("more")
+let minuss = document.getElementById("less")
+
+plus.addEventListener('click' , function(){
+
+    if( i <= 5)
+    {
+    i++;
+    updater();
+    }
+});
+
+minuss.addEventListener('click' , function(){
+
+    if( i > 0)
+    {
+    i--;
+    updater();
+    }
+});
+
+function updater(){
+    if(i==1)
+    {
+        length.style.width='21%';
+    }
+    else
+    {
+        length.style.width=i*20+'%';
+    }
+   
+}

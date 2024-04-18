@@ -1,7 +1,7 @@
-genders = ['male','female'];
+genders = ['male','female','fady'];
 user={
    nom:"kadache ahmed rami",
-   gender:genders[0],
+   gender:genders[3],
    rate: 5,
    adresse: 'a_kadache@estin.dz',
    numero:657898547,

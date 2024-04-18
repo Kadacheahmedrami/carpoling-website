@@ -218,7 +218,8 @@ p{
 
 .card{
   animation: slideFromLeft 1s;
-
+  
+  overflow: hidden;
   height: 750px;
   width: 1000px;
   background-color: #E3F1F6;
@@ -278,6 +279,7 @@ p{
 }
 
 .option , .option1{
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,6 +290,9 @@ p{
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 500;
+  transition: all 0.2s ease;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .option1{
@@ -300,11 +305,26 @@ p{
 }
 
 .subtit{
+  text-decoration: none;
   font-size: 27px;
   color: #0082AE;
   margin: 0;
-}
+  transition: all 0.3s ease;
 
+}
+.subtit:hover ,.option:hover , .option1:hover{
+ 
+background-color: rgba(0,0,0,0.07);
+padding: 10px;
+cursor: pointer;
+color: #0082AE;
+width: 97%;
+display: flex;
+align-items: center;
+justify-content: start;
+border-radius: 10px;
+font-size: 28px;
+}
 .black-vertical ,.black-vertical1{
   border-radius: 100px;
   margin-top: 20px;
@@ -371,6 +391,9 @@ p{
 }
 
 
+.slideFromTop {
+  animation-name: slideFromTop;
+}
 
 
 
@@ -471,14 +494,20 @@ p{
 /* Styles for phones (around 576px wide) */
 @media only screen and (max-width:  576px) {
 
-
-
+  
+  body , html , main{
+    width: 100%;
+  }
+  
   .card{
+    animation: none;
+    animation: slideFromtop 1s;
     margin: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
     height: 100%;
+ 
   }
 
   .num{
@@ -487,11 +516,13 @@ p{
     
   }
   .numbox{
-    
-   
+    margin: 20px;
+ 
    font-weight: bold;
   }
   .adjust{
+    padding-left: 10px;
+    width: 100%;
     font-size: 30px;
     margin: 0;
     margin-top: -20px;
@@ -499,12 +530,18 @@ p{
     zoom: 0.90;
   }
   .adjust1{
-   zoom: 0.85;
+    width: 100%;
     font-size: 30px;
     margin: 0;
     height: 90%;
-    margin-left: 100px;
+ 
     margin-top: 145px;
+  }
+  
+  .option1{
+    width: 90%;
+    margin: 6px;
+    
   }
   .band{
   width: 100%;
@@ -614,7 +651,10 @@ p{
 }
 
 
-
+#inform , #data{
+   animation: none;
+  transition: all 0.3s ease;
+}
 
 
 }

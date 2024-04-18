@@ -257,47 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.backgroundColor = '#0082AE';
     });
   
-    btn2.addEventListener('click', function() {
-      resetButtons();
-      this.style.backgroundColor = '#0082AE';
-    });
   
-    btn3.addEventListener('click', function() {
-      resetButtons();
-      this.style.backgroundColor = '#0082AE';
-    });
-  
-    btn4.addEventListener('click', function() {
-      resetButtons();
-      this.style.backgroundColor = '#0082AE';
-    });
-
-      // Initialiser la couleur de fond du premier bouton
-      btn1.style.backgroundColor = '#0082AE';
-
-      btn5.addEventListener('click', function() {
-        resetButtons();
-        this.style.backgroundColor = '#0082AE';
-      });
-    
-      btn6.addEventListener('click', function() {
-        resetButtons();
-        this.style.backgroundColor = '#0082AE';
-      });
-    
-      btn7.addEventListener('click', function() {
-        resetButtons();
-        this.style.backgroundColor = '#0082AE';
-      });
-    
-      btn8.addEventListener('click', function() {
-        resetButtons();
-        this.style.backgroundColor = '#0082AE';
-      });
-      btn9.addEventListener('click', function() {
-        resetButtons();
-        this.style.backgroundColor = '#0082AE';
-      });
 });
 
 

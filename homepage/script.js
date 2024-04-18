@@ -9,13 +9,24 @@ types=['guest','client','conducteur','admine'];
 
 let user={
 
-    nom:'kadache',
-    prenom:'ahmed rami',
+    nom:'Ziad',
+    prenom:'Rafik',
     age:20,    
     type:types[0], 
 
 }
+let pub = document.getElementById("pub");
+let rech = document.getElementById("rech");
+if( user.type==types[1])
+{
+    pub.style.display='none'
+}
 
+if( user.type==types[0])
+{
+    pub.href="../inscr/pass.html";
+    rech.href="../inscr/pass.html";
+}
 
 let admin_options=['vos trajet','Messages','Profile','Paiment','statistic','rapport','Deconxion'];
 let driver_options=['vos trajet','Messages','Profile','Paiment','Deconxion'];
@@ -80,9 +91,11 @@ guest_pagelist=[
 ]
     
 
-
-
 parameterValue="sign";
+
+
+
+
 
 // fonction pour ajouter un option
 function addoption(content , img_src ,page){

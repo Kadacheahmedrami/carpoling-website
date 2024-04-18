@@ -15,6 +15,14 @@ let user={
     type:types[1], 
 }
 
+
+if( user.type==types[1])
+{
+    pub.style.display='none'
+    auth.style.marginLeft='auto'
+}
+
+
 let driver={
     nom:'mr',
     prenom:'Wallie',
