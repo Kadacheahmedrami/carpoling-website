@@ -12,7 +12,7 @@ let user={
     nom:'Ziad',
     prenom:'Rafik',
     age:20,    
-    type:types[0], 
+    type:types[3], 
 
 }
 let pub = document.getElementById("pub");

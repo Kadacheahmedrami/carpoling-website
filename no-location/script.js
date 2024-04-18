@@ -203,6 +203,7 @@ switch(user.type){
 if( user.type==types[1])
 {
     pub.style.display='none'
+    auth.style.marginLeft='auto'
 }
 
 
