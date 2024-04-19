@@ -477,6 +477,8 @@ text-align: center;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 
@@ -830,13 +832,19 @@ margin-bottom: auto;
 }
 
 
+.bugatti , .bugatti1{
+  cursor: pointer;
+  position: absolute;
+  top: 1100px;
+  right: 0px;
+   transition: all 2s ease;
+   z-index: 3;
+}
 
 
-
-
-
-
-
+.bugatti1{
+  transform: translateX(100%);
+}
 
 
 
