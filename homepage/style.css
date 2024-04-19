@@ -606,7 +606,7 @@ color: #157f99;
 
   cursor: pointer;
   position: absolute;
-  top: 1710px;
+  top: 1810px;
   width: 340px;
   height: 75px;
   display: flex;
@@ -644,7 +644,7 @@ color: #157f99;
 }
 
 .but1{
-  top: 2240px;
+  top: 2340px;
   background-color: #E3F1F6;
   background: linear-gradient(170deg,#E3F1F6,#E3F1F6,#A2C9C9);
   border-right-color: #A2C9C9;
@@ -1039,12 +1039,12 @@ margin-bottom: auto;
     margin-top: 720px;
    }
    .but0 ,.but1{
-    top: 2070px;
+    top: 2170px;
     height: 60px;
     margin-right: 40px;
    }
 .but1{
-  top: 2520px;
+  top: 2620px;
 
 }
 .color1{
@@ -1085,6 +1085,11 @@ margin-bottom: auto;
 }
 
 
+.bugatti , .bugatti1{
+
+  top: 1100px;
+ 
+}
 
 
 }
@@ -1323,12 +1328,12 @@ margin-bottom: auto;
    }
    .but0 ,.but1{
     margin-right: 80px;
-    top: 2305px;
+    top: 2405px;
     height: 60px;
  
    }
 .but1{
-  top: 2750px;
+  top: 2850px;
   margin-left: 80px;
 
 }
@@ -1389,6 +1394,12 @@ font-size: 25px;
   margin-top: -120px;
 }
 
+
+.bugatti , .bugatti1{
+
+  top: 1350px;
+ 
+}
 
   }
   
