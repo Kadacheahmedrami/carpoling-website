@@ -179,6 +179,34 @@ let arr = document.getElementById('arr');
 let white = document.getElementById('white');
 let prix= document.getElementById("prix");
 
+
+
+document.addEventListener('click', function(event) {
+   
+    let isClickInside = prix.contains(event.target);
+    let isClickInside1 = clock.contains(event.target);
+    let isClickInside2 = arr.contains(event.target);
+  
+    if(!isClickInside && !isClickInside1 && !isClickInside2) 
+    {
+       
+            prix.style.display = 'none';
+            white.style.display = 'flex';
+            if( arr.style.rotate='180deg')
+            {
+                  arr.style.rotate ='0deg';
+            }
+    }
+
+  
+
+        
+    
+});
+
+
+
+
 function clockmenu(){
   
 
@@ -201,6 +229,7 @@ function clockmenu(){
 
 arr.addEventListener('click',function(){
        clockmenu()
+       
 })
 
 
