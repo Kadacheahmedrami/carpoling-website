@@ -442,15 +442,18 @@ font-size: 40px;
   padding-left: 20px;
   padding-right: 20px;
   flex-direction: column;
-  transition: all 0.6s ease;
+  transition: transform 2s ease-out ,box-shadow 0.6s ease, width 1s ease , margin-bottom 0.6s ease;
 }
-.subbox0:hover , .subbox1:hover , .subbox2:hover
+.subbox0:hover , .subbox2:hover
 {
-transform: translateY(-20%);
+
 box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
-
+margin-bottom: 200px;
 }
-
+.subbox1:hover{
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 200px;
+}
 
 .subbox0{
 background-color: #E3F1F6;
