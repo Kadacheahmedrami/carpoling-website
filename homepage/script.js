@@ -63,7 +63,7 @@ let guest_imglist=[
 
 
 let admin_pagelist=[
-'notready.html',
+'../Vos-trajets/pass.html',
 'notready.html',
 '../Profile/pass.html',
 'notready.html',
@@ -72,15 +72,14 @@ let admin_pagelist=[
 'notready.html'
 ];
 let driver_pagelist=[
-'notready.html',
+'../Vos-trajets/pass.html',
 'notready.html',
 '../Profile/pass.html',
 'notready.html',
 'notready.html'
 ]
 client_pagelist=[
-
-'notready.html',
+'../Vos-trajets/pass.html',
 'notready.html',
 '../Profile/pass.html',
 'notready.html'

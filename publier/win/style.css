@@ -1,0 +1,113 @@
+
+body{
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x:hidden ;
+  background-image: url(pics/body.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0px 140px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Serif', serif;
+}
+
+
+ li , .logo , .logo_img , .plus {
+  float: left;
+  margin: 0;
+ 
+}
+
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.navbar{
+  z-index: 2;
+  padding: 10px;
+  
+  display: flex;
+
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: #0082AE;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+main{
+
+ 
+  margin-top: 120px;
+
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.titre{
+  font-size: 45px;
+  font-family: Roboto, serif;
+  font-weight: bold;
+}
+.photo{
+  animation: slideUp 2s;
+  display: flex;
+  position: relative;
+  top: 105px;
+  height: 470px;
+  width: 470px;
+
+}
+.btn{
+  
+  height: 61px;
+  width: 195px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  top: 170px;
+  background-color: #0082AE;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-family: Roboto, serif;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Roboto,sans-sherif;
+  display: inline;
+  position: relative;
+  
+  
+}
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+  
+  
+  @keyframes slideUP {
+    from { transform: translateY(20%); opacity: 0.2; }
+    to { transform: translateY(0);opacity: 1; } 
+}
