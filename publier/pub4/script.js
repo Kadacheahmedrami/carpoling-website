@@ -199,6 +199,25 @@ switch(user.type){
 
 
 
+arrow.addEventListener('click',function(){
+
+  if( !visible ){
+      visible= !visible;
+      menu.style.display = 'flex';
+      arrow.style.rotate ='180deg';
+  }
+  else
+  {
+      visible= !visible;
+      menu.style.display = 'none';
+      arrow.style.rotate ='0deg';
+  }
+  
+
+})
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const btn1 = document.getElementById('btn1');
   const btn2 = document.getElementById('btn2');

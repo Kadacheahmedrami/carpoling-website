@@ -175,6 +175,9 @@ switch(user.type){
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("input2").min = new Date().toISOString().split("T")[0];
+  });
 
 
 

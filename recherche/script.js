@@ -409,92 +409,105 @@ let filteredCards = [];
 
 
 
-function show(){
+    function show(){
 
-  
-  if (input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5) 
-  {
-    return
-  }
-  filteredCards=searchCards(input_2.value,input_1.value,input_4.value,  input_3.value+" places");
-   
-  column2.style.display='none';
-  filteredCards.forEach((data, index) => {
-      const { departure, arrival, price, driver, available_places } = data;
-      const card = createCard(
-          departure.date,
-          departure.place,
-          price,
-          arrival.date,
-          arrival.place,
-          driver.name,
-          driver.rate,
-          available_places
-      );
+        arslane.style.display="none";
+        column1.innerHTML = "";
+        column2.innerHTML = "";
+        adjust1.innerHTML ="";
+        adjust2.innerHTML ="";
+    if (input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5) 
+    {
+        return
+    }
+    filteredCards=searchCards(input_2.value,input_1.value,input_4.value,  input_3.value+" places");
     
-      if (index % 2 === 0) {
-        
-          column1.appendChild(card);
-      } else {
-        column2.style.display='block';
-          column2.appendChild(card);
-      }
-  });
-
-     let cheapest = findCheapestCard(filteredCards);
-
-
-    let mostComfortable = findMostComfortableCard(filteredCards);
-    
-
-    let cd1 = createCard_s(
-    cheapest.departure.date,
-    cheapest.departure.place,
-    cheapest.price,
-    cheapest.arrival.date,
-    cheapest.arrival.place,
-    cheapest.driver.name,
-    cheapest.driver.rate,
-    cheapest.available_places
-    );
-    let cd2 = createCard_s(
-        mostComfortable.departure.date,
-        mostComfortable.departure.place,
-        mostComfortable.price,
-        mostComfortable.arrival.date,
-        mostComfortable.arrival.place,
-        mostComfortable.driver.name,
-        mostComfortable.driver.rate,
-        mostComfortable.available_places
+    column2.style.display='none';
+    filteredCards.forEach((data, index) => {
+        const { departure, arrival, price, driver, available_places } = data;
+        const card = createCard(
+            departure.date,
+            departure.place,
+            price,
+            arrival.date,
+            arrival.place,
+            driver.name,
+            driver.rate,
+            available_places
         );
+        
+        if (index % 2 === 0) {
+            
+            column1.appendChild(card);
+        } else {
+            column2.style.display='block';
+            column2.appendChild(card);
+        }
+    });
+    console.log(filteredCards)
+    if(filteredCards.length !== 0)
+    {
 
+        let cheapest = findCheapestCard(filteredCards);
+        let mostComfortable = findMostComfortableCard(filteredCards);
+        
+
+        let cd1 = createCard_s(
+        cheapest.departure.date,
+        cheapest.departure.place,
+        cheapest.price,
+        cheapest.arrival.date,
+        cheapest.arrival.place,
+        cheapest.driver.name,
+        cheapest.driver.rate,
+        cheapest.available_places
+        );
+        let cd2 = createCard_s(
+            mostComfortable.departure.date,
+            mostComfortable.departure.place,
+            mostComfortable.price,
+            mostComfortable.arrival.date,
+            mostComfortable.arrival.place,
+            mostComfortable.driver.name,
+            mostComfortable.driver.rate,
+            mostComfortable.available_places
+            );
+
+            adjust1.innerHTML ="  <p class='tit'>Le moins cher</p>";
+            adjust2.innerHTML ="  <p class='tit'>Le plus comfort</p>";
+        
+        adjust1.appendChild(cd1);
+        adjust2.appendChild(cd2);
 
     
-     adjust1.appendChild(cd1);
-     adjust2.appendChild(cd2);
-
-  arslane.style.display="flex";
- 
-  
+    arslane.style.display="flex";
+    
+    
 
 
 
-  var cards = document.querySelectorAll("#card");
- 
+    var cards = document.querySelectorAll("#card");
+    
 
-  cards.forEach(function(element)
-  {
-  element.addEventListener('click',function(){
-
-
-      window.location.href='../trajet/pass.html';
+    cards.forEach(function(element)
+    {
+    element.addEventListener('click',function(){
 
 
+        window.location.href='../trajet/pass.html';
+
+
+    });
+    });
+    }
+    
+
+    }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("input2").min = new Date().toISOString().split("T")[0];
   });
-  });
-}
-
-
 
 
 
