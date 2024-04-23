@@ -47,7 +47,7 @@ body{
 
 ul{
   height: 99%;
-  width: 70%;
+  width: 82%;
 
   display: flex;
   align-items: center;
@@ -66,13 +66,13 @@ ul{
   margin: 0;
 }
 .navbar{
-  z-index: 2;
+  z-index: 5;
   padding: 10px;
   
   display: flex;
 
   position: fixed;
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: #0082AE;
   justify-content: center;
@@ -87,6 +87,7 @@ li{
   color: #E3F1F6;
 }
 .logo{
+  zoom: 0.82;
   cursor: pointer;
   margin-left : 40px ;
   font-size: 35px;
@@ -166,8 +167,8 @@ width: 34px;
   animation: slideDown1 0.6s;
   width: 234px;
   position: absolute;
-  right: 15.4%;
-  top: 90px;
+  right: 9.4%;
+  top: 80px;
   background-color: #E3F1F6;
   padding-top: 5px;
   justify-content: center;
@@ -292,11 +293,11 @@ main{
 .search
 {
 background-color: white;
-width: 70%;
-height: 17%;
+width: 80%;
+height: 16%;
 margin-top: auto;
 position: relative;
-top: 50px;
+top: 45px;
 border-radius:50px ;
 display: flex;
 justify-content: start;
@@ -311,10 +312,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   border: solid 2px #046076;
   background-color: #046076;
   border-radius: 50px;
-  margin: 10px;
+  
 }
 
-.input1 , .input2 , .input3 {
+.input1 , .input2 , .input3 , .input4 {
     transition: all 0.3s ease;
   outline: none;
   padding: 10px;
@@ -332,6 +333,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 .input3{
   margin-right:10px ;
   width: 10%;
+}
+.input4{
+ 
+  width: 30%;
 }
 
 .input1{
@@ -363,22 +368,27 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
 }
 
-.input1:focus , .input2:focus , .input3:focus{
+.input1:focus , .input2:focus , .input3:focus , .input4:focus{
   box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.8);
   background-color: rgba(0,0,0,0.1);
   border-radius: 5px;
+ 
 }
-.pos{
-  margin-left:30px ;
-  margin-right:20px ;
+.pos ,.pos2 {
+  
+  margin-left:20px ;
+  margin-right:10px ;
+}
+.pos2{
+  margin-left: 10px;
 }
 .cal{
-  margin-left:20px ;
-  margin-right:20px ;
+  margin-left: 10px;
+  margin-right:10px ;
 }
 .pp{
-  margin-left:20px ;
-  margin-right:20px ;
+  margin-left: 10px;
+  margin-right:10px ;
 }
 
 .sanction0{
@@ -848,7 +858,9 @@ margin-bottom: auto;
 
 
 
-
+pos1{
+  width: 15px;
+}
 
 
 
@@ -917,13 +929,18 @@ margin-bottom: auto;
     zoom: 0.9;
   }
 
+
+  .search{
+    zoom: 0.9;
+    width: 90%;
+  }
  }
 
 
 
 
 /* For tablets (e.g., iPad) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 868px) and (max-width: 1024px) {
     html {
    
     overflow-x:hidden ;
@@ -971,9 +988,6 @@ margin-bottom: auto;
  
 }
 
-.pp ,.pos,.cal {
-  display: none;
-}
 .input1{
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px ;
@@ -1090,13 +1104,16 @@ margin-bottom: auto;
   top: 1100px;
  
 }
-
+.search{
+  zoom: 0.8;
+  width: 90%;
+}
 
 }
 
 
 /* For phones (e.g., iPhone) */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 420px) and (max-width: 867px)  {
 
 /* fix this pls*/
    html {
@@ -1126,11 +1143,11 @@ margin-bottom: auto;
   }
   .plus{
     margin-right: 0px;
-    width: 60px;
+    width: 50px;
   }
   .rech{
     margin-right: 10px;
-    width: 60px;
+    width: 50px;
   }
   
   .pub{
@@ -1152,7 +1169,8 @@ margin-bottom: auto;
     animation: slideDown 1s;
     width: 85%;
     flex-direction: column;
-    height: 800px;
+    height: 1000px;
+
   }
   .look{
     border-top-right-radius: 0px;
@@ -1164,36 +1182,382 @@ margin-bottom: auto;
     margin-top: 10px;
     
   }
+.vertical{
+  margin: 0;
+}
 
-
-  .pp ,.pos,.cal {
+  .pp ,.pos,.cal ,.pos2 {
    position: absolute;
    top: 6%;
-   left: 2% ;
+   left: 10px;
   }
   .pos{
-    left: 1%;
+    left: 0px;
+  
+  }
+
+  .pos2{
+    margin-left: 20px;
+    left: 0px;
+    top: 27%;
   
   }
   .cal{
-    top: 33%;
+    left: 10px;
+    top: 43%;
   }
   .pp{
-    top: 59%;
+    top: 63%;
+    left: 10px;
   }
 
-  .input1 , .input2 , .input3{
+  .input1 , .input2 , .input3 , .input4{
 
    width: 75%;
    padding: 20px;
    padding-left: 70px;
    height: 50px;
-   margin: 0;
+ 
   }
+.vertical{
+  margin: 0px;
+}
+
 
 .input1{
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
+  margin-bottom: 0;
+}
+
+.input1:focus , .input2:focus , .input3:focus , .input4:focus{
+ width: 75%;
+ 
+}
+.input1:focus{
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+
+}
+
+  .vertical{
+    height: 2px;
+    border: none;
+    width: 90%;
+  }
+  
+  .Publiertrajet{
+    display: none;
+  }
+  .R{
+    display: none;
+  }
+
+  .user-name{
+    display: none;
+  }
+  .menu{
+    animation: slideDown2 0.6s;
+    background: #0082AE;
+    right: 2.5%;
+    margin-top: 20px;
+  }
+  .option{
+    color: white;
+    background: #0082AE;
+  }
+  .option:hover{
+    color: #0082AE;
+    background: white;
+  }
+  .cotation{
+    color: rgba(0, 0, 0 ,0.4);
+  }
+
+
+  .subtit0{
+    text-align: center;
+    margin-top: 400px;
+  }
+
+  .sanction0{
+    margin-top: 250px;
+    width: 100%;
+ 
+  }
+  
+  .subsac0{
+    width: 100%;
+    margin-bottom: 250px;
+    
+  }
+  .subbox0 , .subbox1 , .subbox2 {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    max-height: 40%;
+    max-width: 35%;
+    padding: 0px;
+    border-radius: 50px;
+   
+   
+  }
+  .tit0 , .tit1 , .tit2 {
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-bottom: 100px;
+  
+  }
+  
+  .tex0 ,.tex1 ,.tex2
+  {
+   display: none;
+  } 
+  .subimg{
+    width: 120px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  .shortcut{
+    margin: 10px;
+    height: 120px;
+    font-size: 16px;
+  }
+  .c{
+    margin-right: 5px;
+    font-size: 50px;
+ 
+  }
+
+
+
+  .sanction1{
+    width: 1000px;
+    margin-top: 150px;
+  }
+
+  .half0 , .half1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  
+  }
+  .color0{
+    margin-right: 220px;
+  
+    width: 40%;
+  }
+  .element0{
+  
+    width: 40%;
+    margin-left:0px ;
+    padding-left: 50px;
+  }
+
+  .element1{
+    margin-right:0px ;
+    margin-top: 720px;
+    width: 40%;
+    margin-left:0px ;
+    padding-left: 50px;
+   }
+   .but0 ,.but1{
+    margin-right: 80px;
+    top: 2405px;
+    height: 60px;
+ 
+   }
+.but1{
+  top: 2850px;
+  margin-left: 80px;
+
+}
+.color1{
+  width: 40%;
+  margin: 0;
+  margin-top:180px ;
+  margin-left: 0px;
+}
+
+.ht{
+  
+font-size: 25px;
+}
+.sub-ht{
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+
+
+.sanction2{
+  margin-top: 480px;
+  width: 100%;
+}
+
+.card0 , .card1{
+  border-radius: 40px;
+  height: 150px;
+  margin: 15px;
+  width: 14%;
+}
+
+.smallt{
+  
+  display: none;
+}
+
+.bigt0 , .bigt1{
+  margin-bottom: auto;
+  font-size: 15px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.last-img0 , .last-img1 , .last-img2{
+  margin-top: auto;
+}
+
+.more{
+ display: none;
+}
+
+
+.foot{
+  zoom: 0.5;
+  margin-top: -120px;
+}
+
+
+.bugatti , .bugatti1{
+
+  top: 1350px;
+ 
+}
+
+  }
+  @media only screen and (max-width: 420px)
+  {
+
+
+    /* fix this pls*/
+   html {
+   
+    overflow-x:hidden ;
+    width: 100%;
+    zoom: 0.8;
+  }
+
+
+
+  ul{
+    width: 100%;
+  }
+  .logo{
+    position: relative;
+    
+   
+    width: 92px;
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  .auth{
+    width: 100px;
+    margin-right: 15px;
+    margin-left: 20px;
+  }
+  .plus{
+    margin-right: 0px;
+    width: 50px;
+  }
+  .rech{
+    margin-right: 10px;
+    width: 50px;
+  }
+  
+  .pub{
+   margin-left: 20px;
+  }
+  
+  
+  .logo_img{
+    width: 43px;
+  }
+
+  .part1{
+    margin-top: 500px;
+    font-size: 45px;
+    width: 85%;
+  }
+
+  .search{
+    animation: slideDown 1s;
+    width: 85%;
+    flex-direction: column;
+    height: 1000px;
+
+  }
+  .look{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin-top: 10px;
+    
+  }
+.vertical{
+  margin: 0;
+}
+
+  .pp ,.pos,.cal ,.pos2 {
+   position: absolute;
+   top: 6%;
+   left: 10px;
+  }
+  .pos{
+    left: 0px;
+  
+  }
+
+  .pos2{
+    margin-left: 20px;
+    left: 0px;
+    top: 27%;
+  
+  }
+  .cal{
+    left: 10px;
+    top: 43%;
+  }
+  .pp{
+    top: 63%;
+    left: 10px;
+  }
+
+  .input1 , .input2 , .input3 , .input4{
+
+   width: 75%;
+   padding: 20px;
+   padding-left: 70px;
+   height: 50px;
+ 
+  }
+ 
+.vertical{
+  margin: 0px;
+}
+
+
+.input1{
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-bottom: 0;
 }
 
 .input1:focus{
@@ -1401,8 +1765,16 @@ font-size: 25px;
  
 }
 
-  }
+.input1:focus , .input2:focus , .input3:focus , .input4:focus{
+  width: 74%;
   
+ }
+  }
+
+
+
+
+
 
   @keyframes slideDown {
     from { transform: translateY(-20%); }

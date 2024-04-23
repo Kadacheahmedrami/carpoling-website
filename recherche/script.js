@@ -3,7 +3,8 @@ let arrow = document.getElementById('arrow');
 let menu = document.getElementById('menu');
 let visible = false;
 
-
+let adjust1 = document.getElementById('adjust1')
+let adjust2 = document.getElementById('adjust2')
 
 types=['guest','client','conducteur','admine'];
 
@@ -45,19 +46,6 @@ prix: 1200,
 
 
 }
-
-
-//let jour= document.getElementById('jour');
-//let nb= document.getElementById('nb');
-//let month= document.getElementById('month');
-//let depart_date= document.getElementById('depart-date');
-//let depart_place= document.getElementById('depart-place');
-//let arrive_date= document.getElementById('arrive-date');
-//let arrive_place= document.getElementById('arrive-place');
-//let driver_name= document.getElementById('name');
-//let prix=document.getElementById('Prix')
-//let rate= document.getElementById('rate');
-//let avis= document.getElementById('avis');
 
 
 
@@ -155,8 +143,8 @@ function addoption(content , img_src ,page){
     if(page === '../sign_login/auth.html' && img_src === 'pics/menu-icons/sign.png' && user.type=== types[0])
     {
         page= page+'?param=';
-        page= page+parameterValue; 
-     }
+        page= page+parameterValue;  
+    }
     element.href = page;
     let Im = document.createElement('img');
     Im.src=img_src; 
@@ -273,13 +261,14 @@ var queryParams = getQueryParams();
 var input1 = queryParams.input1;
 var input2 = queryParams.input2;
 var input3 = queryParams.input3;
-
+var input4 = queryParams.input4;
 
 let arslane = document.getElementById('arslane');
 
 let input_1 = document.getElementById('input1');
 let input_2 = document.getElementById('input2');
 let input_3 = document.getElementById('input3');
+let input_4 = document.getElementById('input4');
 
 if(input1 !== undefined)
 {
@@ -287,6 +276,8 @@ arslane.style.display='flex';
 input_1.value=input1;
 input_2.value=input2;
 input_3.value=input3;
+input_4.value=input4;
+
 }
 
 
@@ -295,33 +286,240 @@ input_3.value=input3;
 
 
 
-var card = document.querySelectorAll("#card");
-console.log(card)
 
-card.forEach(function(element)
-{
-element.addEventListener('click',function(){
+function createCard(depart_date,depart_place,prix,arrive_date,arrive_place,driver_name,rate,places) {
+  const card = document.createElement('div');
+  card.classList.add('card');
+  let place = ''
+  if(places === "1 places")
+  {
+    place = '1 place'
+  }
+  else
+  {
+    place= places;
+  }
+  card.innerHTML = `
+      <div class="widget0">
+          <p class="depart" id="depart-date">`+ depart_date+`</p>
+          <img src="pics/pos.svg" class="pos1">
+          <p class="depart" id="depart">`+ depart_place+`</p>
+          <p class="prix" id="prix">`+ prix+`</p>
+      </div>
+      <div class="widget1">
+          <p class="difrence" id="defrence">`+ '4:00' +`</p>
+          <img src="pics/line.svg" class="line-img">
+          <p class="places" id="places">`+ place +`</p>
+      </div>
+      <div class="widget0">
+
+          <p class="depart" id="depart-date">`+ arrive_date+`</p>
+          <img src="pics/pos.svg" class="pos1">
+          <p class="depart" id="depart">`+ arrive_place+`</p>
+      </div>
+      <div class="line1"></div>
+      <div class="widget0">
+          <img src="pics/pfp.svg" class="driver-pfp">
+          <p class="deiver" id="driver-name">`+ driver_name+`</p>
+          <img src="pics/star.svg" class="star">
+          <p class="rating" id="rating">`+ rate +`</p>
+      </div>
+  `;
+  card.id = 'card';
+  return card;
+
+  
+}
 
 
-    window.location.href='../trajet/pass.html';
 
 
-});
-});
+function createCard_s(depart_date,depart_place,prix,arrive_date,arrive_place,driver_name,rate,places) {
+
+    const card = document.createElement('div');
+    card.classList.add('card-s');
+    let place = ''
+    if(places === "1 places")
+    {
+      place = '1 place'
+    }
+    else
+    {
+      place= places;
+    }
+    card.innerHTML = `
+        <div class="widget0">
+            <p class="depart" id="depart-date">`+ depart_date+`</p>
+            <img src="pics/pos.svg" class="pos1">
+            <p class="depart" id="depart">`+ depart_place+`</p>
+            <p class="prix" id="prix">`+ prix+`</p>
+        </div>
+        <div class="widget1">
+            <p class="difrence" id="defrence">`+ '4:00' +`</p>
+            <img src="pics/line.svg" class="line-img">
+            <p class="places" id="places">`+ place +`</p>
+        </div>
+        <div class="widget0">
+  
+            <p class="depart" id="depart-date">`+ arrive_date+`</p>
+            <img src="pics/pos.svg" class="pos1">
+            <p class="depart" id="depart">`+ arrive_place+`</p>
+        </div>
+        <div class="line1"></div>
+        <div class="widget0">
+            <img src="pics/pfp.svg" class="driver-pfp">
+            <p class="deiver" id="driver-name">`+ driver_name+`</p>
+            <img src="pics/star.svg" class="star">
+            <p class="rating" id="rating">`+ rate +`</p>
+        </div>
+    `;
+    card.id = 'card';
+    return card;
+  
+    
+  }
+
+
+
+
+  
+  
+function searchCards(date, departurePlace, arrivalPlace, availablePlaces) {
+  return cardData.filter(card => {
+      // Check if date matches
+      if (date && card.date != date) return false;
+
+      // Check if departure place matches
+      if (departurePlace && card.departure.place != departurePlace) return false;
+
+      // Check if arrival place matches
+      if (arrivalPlace && card.arrival.place != arrivalPlace) return false;
+
+      // Check if available places match
+      if (availablePlaces && card.available_places != availablePlaces) return false;
+
+      // If all criteria match, return true to keep the card in the filtered array
+      return true;
+  });
+}
+
+
+
+let filteredCards = [];
+
+
+
+function show(){
+
+  
+  if (input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5) 
+  {
+    return
+  }
+  filteredCards=searchCards(input_2.value,input_1.value,input_4.value,  input_3.value+" places");
+   
+  column2.style.display='none';
+  filteredCards.forEach((data, index) => {
+      const { departure, arrival, price, driver, available_places } = data;
+      const card = createCard(
+          departure.date,
+          departure.place,
+          price,
+          arrival.date,
+          arrival.place,
+          driver.name,
+          driver.rate,
+          available_places
+      );
+    
+      if (index % 2 === 0) {
+        
+          column1.appendChild(card);
+      } else {
+        column2.style.display='block';
+          column2.appendChild(card);
+      }
+  });
+
+     let cheapest = findCheapestCard(filteredCards);
+
+
+    let mostComfortable = findMostComfortableCard(filteredCards);
+    
+
+    let cd1 = createCard_s(
+    cheapest.departure.date,
+    cheapest.departure.place,
+    cheapest.price,
+    cheapest.arrival.date,
+    cheapest.arrival.place,
+    cheapest.driver.name,
+    cheapest.driver.rate,
+    cheapest.available_places
+    );
+    let cd2 = createCard_s(
+        mostComfortable.departure.date,
+        mostComfortable.departure.place,
+        mostComfortable.price,
+        mostComfortable.arrival.date,
+        mostComfortable.arrival.place,
+        mostComfortable.driver.name,
+        mostComfortable.driver.rate,
+        mostComfortable.available_places
+        );
+
+
+    
+     adjust1.appendChild(cd1);
+     adjust2.appendChild(cd2);
+
+  arslane.style.display="flex";
+ 
+  
+
+
+
+  var cards = document.querySelectorAll("#card");
+ 
+
+  cards.forEach(function(element)
+  {
+  element.addEventListener('click',function(){
+
+
+      window.location.href='../trajet/pass.html';
+
+
+  });
+  });
+}
+
+
+
+
+
+
 
 
 
 
 document.getElementById('look').addEventListener('click', function() {
 
-  
-  
+
     if (input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5) {
         console.log(arslane);
         return;
     }
-    arslane.style.display="flex";
+
+   show()
    
- 
+
 
 });
+
+
+
+
+  show()
+
+
