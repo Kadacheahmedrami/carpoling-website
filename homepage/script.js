@@ -215,7 +215,7 @@ document.getElementById('look').addEventListener('click', function() {
 
     var queryString = '?input1=' + encodeURIComponent(parametre[0]) + '&input2=' + encodeURIComponent(parametre[1]) + '&input3=' + encodeURIComponent(parametre[2])+'&input4=' + encodeURIComponent(parametre[3]);
     var nextPageURL = '../recherche/pass.html' + queryString;
-    window.location.href = nextPageURL; // Redirect to pass.html with parameters
+    window.location.href = nextPageURL; 
 });
 
 
@@ -280,11 +280,7 @@ function animate() {
         bugatti.style.transform = "translateX(-2000%)";
         bugatti1.style.display = 'flex';
     }, 1200);
-    setTimeout(() => {
-        
-        bugatti1.style.transform="translateX(0%)"
-       
-    }, 2000);
+
     setTimeout(() => {
         
         bugatti1.style.transform="translateX(0%)"
@@ -297,7 +293,7 @@ function animate() {
         bugatti.style.transform = "translateX(100%)";
        
     }, 4000);
-    setTimeout(() => {
+    setTimeout(() => { 
         
    
         bugatti.style.display = 'flex';

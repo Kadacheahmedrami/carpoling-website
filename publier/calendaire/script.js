@@ -13,7 +13,7 @@
  // Add event listener to the "prochaine" button
  prochaineButton.addEventListener('click', function() {
      // Navigate to a new page
-     window.location.href = '../heure/pass.html'; // Replace 'new_page.html' with the URL of the new page
+     window.location.href =url ; // Replace 'new_page.html' with the URL of the new page
  });
  
 
@@ -89,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 const calendar = document.querySelector(".calendar"),
   date = document.querySelector(".date"),
   daysContainer = document.querySelector(".days"),
@@ -110,9 +109,16 @@ const calendar = document.querySelector(".calendar"),
   addEventSubmit = document.querySelector(".add-event-btn ");
 
 let today = new Date();
+
 let activeDay;
 let month = today.getMonth();
 let year = today.getFullYear();
+
+let parameterValue;
+
+let url = `../heure/pass.html`;
+
+
 
 const months = [
   "January",
@@ -154,6 +160,7 @@ console.log(eventsArr);
 //function to add days in days with class day and prev-date next-date on previous month and next month days and active on today
 function initCalendar() {
   const firstDay = new Date(year, month, 1);
+
   const lastDay = new Date(year, month + 1, 0);
   const prevLastDay = new Date(year, month, 0);
   const prevDays = prevLastDay.getDate();
@@ -164,11 +171,18 @@ function initCalendar() {
   date.innerHTML = months[month] + " " + year;
 
   let days = "";
+// rember this
+if(
 
+  month >= new Date().getMonth()
+)
+{
   for (let x = day; x > 0; x--) {
     days += `<div class="day prev-date">${prevDays - x + 1}</div>`;
   }
 
+}
+ 
   for (let i = 1; i <= lastDate; i++) {
     //check if event is present on that day
     let event = false;
@@ -181,6 +195,7 @@ function initCalendar() {
         event = true;
       }
     });
+    
     if (
       i === new Date().getDate() &&
       year === new Date().getFullYear() &&
@@ -192,14 +207,37 @@ function initCalendar() {
       if (event) {
         days += `<div class="day today active event">${i}</div>`;
       } else {
+       
         days += `<div class="day today active">${i}</div>`;
+  
       }
     } else {
-      if (event) {
-        days += `<div class="day event">${i}</div>`;
-      } else {
+    if(
+      i < new Date().getDate() ||
+      year < new Date().getFullYear() ||
+      month < new Date().getMonth()
+    )
+    {
+      if( month > new Date().getMonth())
+      {
         days += `<div class="day ">${i}</div>`;
       }
+      else
+      {
+        days += `<div class="cant ">${i}</div>`;
+      }
+    
+      
+    }
+    else{
+      if (event) {
+        days += `<div class="day event">${i}</div>`;
+      }
+      else {
+        days += `<div class="day ">${i}</div>`;
+      }
+    }
+   
     }
   }
 
@@ -237,8 +275,10 @@ initCalendar();
 //function to add active on day
 function addListner() {
   const days = document.querySelectorAll(".day");
+
   days.forEach((day) => {
     day.addEventListener("click", (e) => {
+     
       getActiveDay(e.target.innerHTML);
       updateEvents(Number(e.target.innerHTML));
       activeDay = Number(e.target.innerHTML);
@@ -324,13 +364,17 @@ function gotoDate() {
 //function get active day day name and date and update eventday eventdate
 function getActiveDay(date) {
   const day = new Date(year, month, date);
+
   const dayName = day.toString().split(" ")[0];
   eventDay.innerHTML = dayName;
   eventDate.innerHTML = date + " " + months[month] + " " + year;
+
 }
 
 //function update events when a day is active
 function updateEvents(date) {
+  parameterValue= date+''+(month+1)+''+year;
+  url = `../heure/pass.html?param=${parameterValue}`;
   let events = "";
   eventsArr.forEach((event) => {
     if (

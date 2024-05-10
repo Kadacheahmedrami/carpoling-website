@@ -255,6 +255,7 @@ main{
 
   z-index: 1;
   background-image: url(pics/back7.svg);
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -281,7 +282,7 @@ main{
  display: flex;
  justify-content: center;
  align-items: center;
-  color: black;
+  color: #E3F1F6;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   background-color: rgba(0,0,0,0.1);
   width: 60%;

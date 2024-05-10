@@ -141,7 +141,7 @@ h1{
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
-.calendar .days .day {
+.calendar .days .day ,.cant{
   width: 13.28%;
   height: 70px;
   display: flex;
@@ -152,6 +152,10 @@ h1{
   transition: all 0.3s ease;
 }
 
+.cant{
+  color: red;
+
+}
 
 .calendar .days .day:not(.prev-date, .next-date):hover {
   color: #fff;
