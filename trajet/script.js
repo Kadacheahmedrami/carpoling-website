@@ -284,7 +284,7 @@ minuss.addEventListener('click' , function(){
 
 function updater(){
     let x = 5 - disp.innerText + i
-    console.log(x)
+
     if(x==1)
     {
 
@@ -310,5 +310,228 @@ look.addEventListener('click',function(){
     }
     else{
         window.location.href='../payment-confirmation/pay/pass.html'
+    }
+})
+
+let sig = document.getElementById("sig");
+let cnt = document.getElementById('cnt')
+let content = document.getElementById('content')
+
+let reason ="not yet";
+signialer = document.getElementById('sign')
+err = document.getElementById("err")
+
+let btn1 = document.getElementsByClassName("btn1");
+let btn2 = document.getElementsByClassName("btn2");
+let btn3 = document.getElementsByClassName("btn3");
+let btn4 = document.getElementsByClassName("btn4");
+let btn5 = document.getElementsByClassName("btn5");
+let btn6 = document.getElementsByClassName("btn6");
+
+
+
+
+
+    
+    sig.addEventListener("click",function(){
+       
+        if(reason === "not yet")
+        {
+        cnt.style.display='flex'
+    content.style.filter='blur(5px)';
+        }
+        else
+        {
+            error.innerText= "vous avez dija signialer cette conducteur"
+        }
+    })
+
+
+
+
+
+
+document.addEventListener('click', function(event) {
+   
+    let isClickInside = cnt.contains(event.target);
+    let isClickInside1 = sig.contains(event.target);
+    
+  
+
+    if(!isClickInside && !isClickInside1 ) 
+    {
+            cnt.style.display = 'none';  
+            content.style.filter='none';
+    }
+
+});
+
+
+
+
+
+ 
+btn1[0].addEventListener('click',function(){
+    btn1[0].style.backgroundColor="red"
+    btn1[0].style.color="white"
+
+
+    btn2[0].style.backgroundColor="white"
+    btn2[0].style.color="black"
+    btn3[0].style.backgroundColor="white"
+    btn3[0].style.color="black"
+    btn4[0].style.backgroundColor="white"
+    btn4[0].style.color="black"
+    btn5[0].style.backgroundColor="white"
+    btn5[0].style.color="black"
+    btn6[0].style.backgroundColor="white"
+    btn6[0].style.color="black"
+   
+})
+
+
+ 
+btn2[0].addEventListener('click',function(){
+    btn2[0].style.backgroundColor="red"
+    btn2[0].style.color="white"
+
+
+    btn1[0].style.backgroundColor="white"
+    btn1[0].style.color="black"
+    btn3[0].style.backgroundColor="white"
+    btn3[0].style.color="black"
+    btn4[0].style.backgroundColor="white"
+    btn4[0].style.color="black"
+    btn5[0].style.backgroundColor="white"
+    btn5[0].style.color="black"
+    btn6[0].style.backgroundColor="white"
+    btn6[0].style.color="black"
+   
+})
+
+ 
+btn6[0].addEventListener('click',function(){
+    btn6[0].style.backgroundColor="red"
+    btn6[0].style.color="white"
+
+
+    btn2[0].style.backgroundColor="white"
+    btn2[0].style.color="black"
+    btn3[0].style.backgroundColor="white"
+    btn3[0].style.color="black"
+    btn4[0].style.backgroundColor="white"
+    btn4[0].style.color="black"
+    btn5[0].style.backgroundColor="white"
+    btn5[0].style.color="black"
+    btn1[0].style.backgroundColor="white"
+    btn1[0].style.color="black"
+   
+})
+
+ 
+btn3[0].addEventListener('click',function(){
+    btn3[0].style.backgroundColor="red"
+    btn3[0].style.color="white"
+
+
+    btn2[0].style.backgroundColor="white"
+    btn2[0].style.color="black"
+    btn1[0].style.backgroundColor="white"
+    btn1[0].style.color="black"
+    btn4[0].style.backgroundColor="white"
+    btn4[0].style.color="black"
+    btn5[0].style.backgroundColor="white"
+    btn5[0].style.color="black"
+    btn6[0].style.backgroundColor="white"
+    btn6[0].style.color="black"
+   
+})
+
+ 
+btn4[0].addEventListener('click',function(){
+    btn4[0].style.backgroundColor="red"
+    btn4[0].style.color="white"
+
+
+    btn2[0].style.backgroundColor="white"
+    btn2[0].style.color="black"
+    btn3[0].style.backgroundColor="white"
+    btn3[0].style.color="black"
+    btn1[0].style.backgroundColor="white"
+    btn1[0].style.color="black"
+    btn5[0].style.backgroundColor="white"
+    btn5[0].style.color="black"
+    btn6[0].style.backgroundColor="white"
+    btn6[0].style.color="black"
+   
+})
+
+ 
+btn5[0].addEventListener('click',function(){
+    btn5[0].style.backgroundColor="red"
+    btn5[0].style.color="white"
+
+
+    btn2[0].style.backgroundColor="white"
+    btn2[0].style.color="black"
+    btn3[0].style.backgroundColor="white"
+    btn3[0].style.color="black"
+    btn4[0].style.backgroundColor="white"
+    btn4[0].style.color="black"
+    btn1[0].style.backgroundColor="white"
+    btn1[0].style.color="black"
+    btn6[0].style.backgroundColor="white"
+    btn6[0].style.color="black"
+   
+})
+
+
+
+signialer.addEventListener("click",function(){
+    if(
+        btn1[0].style.backgroundColor === 'red' || 
+        btn2[0].style.backgroundColor==='red' || 
+        btn3[0].style.backgroundColor==='red' || 
+        btn4[0].style.backgroundColor==='red' || 
+        btn5[0].style.backgroundColor==='red' ||
+        btn6[0].style.backgroundColor==='red' 
+    )
+    {
+        cnt.style.display = 'none';  
+        content.style.filter='none'; 
+        if(btn1[0].style.backgroundColor === 'red')
+        {
+            reason=" Non-respect des conditions de covoiturage"
+        }
+        else if ( btn2[0].style.backgroundColor==='red' )
+        {
+            reason=" Véhicule en mauvais état"
+        }
+        else if ( btn3[0].style.backgroundColor==='red' )
+        {
+            reason=" Comportement dangereux du conducteur"
+        }
+        else if ( btn4[0].style.backgroundColor==='red' )
+        {
+            reason=" Absence du conducteur au point de rendez-vous"
+        }
+        else if ( btn5[0].style.backgroundColor==='red' )
+        {
+            reason=" Exigences imprévues pendant le trajet"
+        }
+        else if ( btn6[0].style.backgroundColor==='red' )
+        {
+            reason=" Conflit conducteur-passager"
+        }
+        console.log(reason);
+
+        
+        // send 
+    }
+    else{
+        err.style.display="flex"
+        err.innerText="you have to select a reason";
+
+        
     }
 })

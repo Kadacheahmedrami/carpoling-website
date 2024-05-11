@@ -34,7 +34,7 @@ body{
   padding: 0;
   width: 100%;
   overflow-x:hidden ;
-  background-image: url(pics/body.svg);
+
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0px 140px;
@@ -584,6 +584,245 @@ border-radius:28px ;
   background-color: #0082AE;
   right: 5%;
 }
+
+
+
+
+
+
+
+
+
+
+
+.cnt{
+  z-index: 1;
+ 
+  margin-top: 120px;
+
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+ height: 100px;
+  padding: 0;
+  background-color: transparent;
+  zoom: 0.7;
+  display: none;
+}
+.pan{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #0082AE;
+  top: 100px;
+  border-radius: 50px;
+  width: 800px;
+}
+.titre{
+  display: flex;
+  position: relative;
+  top: 50px;
+  left: 5px;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+
+
+
+}
+#miaou{
+  height: 900px;
+  width: 580px;
+}
+.btn1{
+  display: flex;
+  position: relative;
+  height: 60px;
+  width: 470px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  bottom: 660px;
+color:black;
+  border: none;
+  background-color: #E3F1F6;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: 30px;
+  cursor: pointer;
+  
+  
+}
+.btn2{
+  display: flex;
+  position: relative;
+  height: 60px;
+  width: 470px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  bottom: 620px;
+color:black;
+  border: none;
+  background-color: #E3F1F6;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+.btn3{
+  display: flex;
+  position: relative;
+  height: 60px;
+  width: 470px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  bottom: 580px;
+color:black;
+  border: none;
+  background-color: #E3F1F6;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+.btn4{
+  display: flex;
+  position: relative;
+  height: 60px;
+  width: 470px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  bottom: 540px;
+color:black;
+  border: none;
+  background-color: #E3F1F6;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+.btn5{
+  display: flex;
+  position: relative;
+  height: 60px;
+  width: 470px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  bottom: 500px;
+color:black;
+  border: none;
+  background-color: #E3F1F6;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+.btn6{
+  display: flex;
+  position: relative;
+  height: 60px;
+  width: 470px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  bottom: 460px;
+color:black;
+  border: none;
+  background-color: #E3F1F6;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+.btn7{
+  display: flex;
+  position: relative;
+  height: 60px;
+  width: 170px;
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 42px;
+  bottom: 400px;
+  color: red;
+  border: none;
+  background-color: #E3F1F6;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+
+
+#btn1,#btn2,#btn3,#btn5,#btn4,#btn6{
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  text-align: start;
+width: 90%;
+}
+
+#btn1:hover,#btn2:hover,#btn3:hover,#btn5:hover,#btn4:hover,#btn6:hover{
+ background-color: rgba(255, 255, 255 ,0.8);
+ font-size: 20px;
+ color: #0082AE;
+}
+.err{
+  color: red;
+  background-color: rgba(255, 255, 255 ,0.8);
+ padding: 10px;
+ border-radius: 10px;
+  font-size: 35px;
+  position: relative;
+  bottom: 430px;
+  display: none;
+  transition: all 0.3s ease;
+  animation: slideDown 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
