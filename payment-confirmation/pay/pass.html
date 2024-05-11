@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <form class="container">
         <div class="top-left">
           <div class="logo_block"></div>
           <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.86/build/spline-viewer.js"></script>
@@ -41,12 +41,11 @@
             
          
             </div>
-            
-            <input id="submitButton" type="submit" value="Confirmer" style="background-color: #0d3B66; color: white; font-weight: bold;">
-        </div>
+            <button class="cnfm" id="submitButton">Confirmer</button> 
+              </div>
         <div class="bottom-left">
 
-            <form id="creditCardForm" class="fix">
+            <div id="creditCardForm" class="fix">
                 
                 <p class="Use">Utiliser la carte</p>
                 
@@ -60,7 +59,7 @@
                 
                 
                 <label for="fullName" class="fullName">Nom et Prénom :</label>
-                <input type="text" id="fullName" name="fullName" required class="name">
+                <input type="text" id="fullName" name="fullName" required class="name" >
                 <img src="pics/profile-tick.svg" class="person">
                 <label for="creditCardNumber" class="tnum">Numéro de la carte de crédit:</label>
                 <input type="number" id="creditCardNumber" name="creditCardNumber" required class="num">
@@ -72,9 +71,9 @@
                 <input type="password" id="ccv" name="ccv" required class="ccv">
                 <img src="pics/calendar-tick.svg" class="cal">
                
-            </form>
+              </div>
         </div>
-    </div>
+    </form>
     
     <script src="script.js"></script>
 </body>

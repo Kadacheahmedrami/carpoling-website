@@ -258,10 +258,15 @@ let i=1
 let length = document.getElementById("lengh");
 let plus = document.getElementById("more")
 let minuss = document.getElementById("less")
+let place =  document.getElementById('pc');
+let disp = document.getElementById("disponible");
+
+
+place.innerText=i;
 
 plus.addEventListener('click' , function(){
 
-    if( i <= 5)
+    if( i < disp.innerText)
     {
     i++;
     updater();
@@ -278,13 +283,32 @@ minuss.addEventListener('click' , function(){
 });
 
 function updater(){
-    if(i==1)
+    let x = 5 - disp.innerText + i
+    console.log(x)
+    if(x==1)
     {
+
         length.style.width='21%';
     }
     else
     {
-        length.style.width=i*20+'%';
+        length.style.width=x*20+'%';
     }
-   
+    place.innerText=i;
 }
+
+updater()
+
+
+let errir = document.getElementById("error");
+let look = document.getElementById("look")
+look.addEventListener('click',function(){
+
+    if( i== 0)
+    {
+        error.innerText='il faut reserver aux minimum une seulle place'
+    }
+    else{
+        window.location.href='../payment-confirmation/pay/pass.html'
+    }
+})

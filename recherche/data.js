@@ -2,7 +2,7 @@
 
 let cardData = [
   {
-    date: "2024-04-22",
+    date: "2024-05-12",
     departure: {
       date: "12:06",
       place: "Alger"
@@ -19,7 +19,7 @@ let cardData = [
     available_places: "2 places"
   },
   {
-    date: "2024-04-22",
+    date: "2024-05-12",
     departure: {
       date: "13:00",
       place: "Oran"
@@ -36,7 +36,7 @@ let cardData = [
     available_places: "1 places"
   },
   {
-    date: "2024-04-22",
+    date: "2024-05-12",
     departure: {
       date: "09:30",
       place: "Constantine"
@@ -53,7 +53,7 @@ let cardData = [
     available_places: "3 places"
   },
   {
-    date: "2024-04-22",
+    date: "2024-05-12",
     departure: {
       date: "08:15",
       place: "Annaba"
@@ -70,7 +70,25 @@ let cardData = [
     available_places: "2 places"
   },
   {
-    date: "2024-04-22",
+    date: "2024-05-12",
+    departure: {
+      date: "12:45",
+      place: "Batna"
+    },
+    arrival: {
+      date: "14:00",
+      place: "Setif"
+    },
+    price: "700 da",
+    driver: {
+      name: "ahmed rami",
+      rate: "8"
+    },
+    available_places: "3 places"
+  },
+ 
+  {
+    date: "2024-05-12",
     departure: {
       date: "10:45",
       place: "Batna"
@@ -79,102 +97,17 @@ let cardData = [
       date: "14:00",
       place: "Setif"
     },
-    price: "270 da",
+    price: "500 da",
     driver: {
       name: "ahmed rami",
-      rate: "5"
+      rate: "6"
     },
     available_places: "5 places"
   },
   {
-    date: "2024-04-22",
+    date: "2024-05-12",
     departure: {
-      date: "10:45",
-      place: "Batna"
-    },
-    arrival: {
-      date: "14:00",
-      place: "Setif"
-    },
-    price: "270 da",
-    driver: {
-      name: "ahmed rami",
-      rate: "5"
-    },
-    available_places: "5 places"
-  },
-  {
-    date: "2024-04-22",
-    departure: {
-      date: "10:45",
-      place: "Batna"
-    },
-    arrival: {
-      date: "14:00",
-      place: "Setif"
-    },
-    price: "270 da",
-    driver: {
-      name: "ahmed rami",
-      rate: "5"
-    },
-    available_places: "5 places"
-  },
-  {
-    date: "2024-04-22",
-    departure: {
-      date: "10:45",
-      place: "Batna"
-    },
-    arrival: {
-      date: "14:00",
-      place: "Setif"
-    },
-    price: "270 da",
-    driver: {
-      name: "ahmed rami",
-      rate: "5"
-    },
-    available_places: "5 places"
-  },
-  {
-    date: "2024-04-22",
-    departure: {
-      date: "10:45",
-      place: "Batna"
-    },
-    arrival: {
-      date: "14:00",
-      place: "Setif"
-    },
-    price: "270 da",
-    driver: {
-      name: "ahmed rami",
-      rate: "5"
-    },
-    available_places: "5 places"
-  },
-  {
-    date: "2024-04-22",
-    departure: {
-      date: "10:45",
-      place: "Batna"
-    },
-    arrival: {
-      date: "14:00",
-      place: "Setif"
-    },
-    price: "150 da",
-    driver: {
-      name: "ahmed rami",
-      rate: "3"
-    },
-    available_places: "5 places"
-  },
-  {
-    date: "2024-04-22",
-    departure: {
-      date: "10:45",
+      date: "9:45",
       place: "Batna"
     },
     arrival: {
@@ -184,9 +117,77 @@ let cardData = [
     price: "400 da",
     driver: {
       name: "ahmed rami",
+      rate: "5"
+    },
+    available_places: "4 places"
+  },
+  {
+    date: "2024-05-12",
+    departure: {
+      date: "06:45",
+      place: "Batna"
+    },
+    arrival: {
+      date: "14:00",
+      place: "Setif"
+    },
+    price: "1000 da",
+    driver: {
+      name: "ahmed rami",
       rate: "10"
     },
-    available_places: "5 places"
+    available_places: "1 places"
+  },
+  {
+    date: "2024-05-12",
+    departure: {
+      date: "8:45",
+      place: "Batna"
+    },
+    arrival: {
+      date: "14:00",
+      place: "Setif"
+    },
+    price: "300 da",
+    driver: {
+      name: "ahmed rami",
+      rate: "4"
+    },
+    available_places: "3 places"
+  },
+  {
+    date: "2024-05-12",
+    departure: {
+      date: "7:45",
+      place: "Batna"
+    },
+    arrival: {
+      date: "14:00",
+      place: "Setif"
+    },
+    price: "200 da",
+    driver: {
+      name: "ahmed rami",
+      rate: "3"
+    },
+    available_places: "2 places"
+  },  
+  {
+    date: "2024-05-12",
+    departure: {
+      date: "11:45",
+      place: "Batna"
+    },
+    arrival: {
+      date: "14:00",
+      place: "Setif"
+    },
+    price: "60 da",
+    driver: {
+      name: "ahmed rami",
+      rate: "7"
+    },
+    available_places: "2 places"
   },
 ];
 

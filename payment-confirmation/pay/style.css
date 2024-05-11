@@ -1,4 +1,29 @@
 /* nice scroll bar */
+.cnfm{
+  cursor: pointer;
+height: 70px;
+width: 300px;
+background-color: #0082ae;
+z-index: 3;
+top: -18%;
+border-radius: 10px;
+border: none;
+position: relative;
+color: white;
+font-size: 30px;
+border:1px solid black ;
+transition: all 0.2s ease;
+}
+
+.cnfm:hover{
+  background-color: #E3F1F6;
+  color: #0082ae;
+  border: 3px solid #0082ae ;
+}
+.cnfm:active{
+ background-color: #0082ae;
+ color: wheat;
+}
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -124,7 +149,7 @@ margin-bottom: -100px;
 }
 
 
-.text{ font-size: 24px; }
+.text{ font-size: 24px; z-index: 2;}
 
 .bold1{font-weight: bold; float: left;position: relative; top: 35px;left: -15px;}
 .blo{position: relative; top: 35px; left :-15px}

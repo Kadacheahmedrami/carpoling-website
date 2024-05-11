@@ -40,25 +40,131 @@
    
     <div class="box">
       <img src="pics/alger.svg" class="dz">
-      <div class="search">
+      <form class="search" id="myForm">
 
         <img src="pics/pos.svg" class="pos">
-        <input type="text" class="input1" id="input1" placeholder="place de depart">
+        <input type="text" class="input1" id="input1" placeholder="place de depart" required>
+        
+        <div class="suggest1" id="suggest1">
+          <div class="wilaya">Adrar</div>
+          <div class="wilaya">Chlef</div>
+          <div class="wilaya">Laghouat</div>
+          <div class="wilaya">Oum El Bouaghi</div>
+          <div class="wilaya">Batna</div>
+          <div class="wilaya">Bejaia</div>
+          <div class="wilaya">Biskra</div>
+          <div class="wilaya">Bechar</div>
+          <div class="wilaya">Blida</div>
+          <div class="wilaya">Bouira</div>
+          <div class="wilaya">Tamanrasset</div>
+          <div class="wilaya">Tebessa</div>
+          <div class="wilaya">Tlemcen</div>
+          <div class="wilaya">Tiaret</div>
+          <div class="wilaya">Tizi Ouzou</div>
+          <div class="wilaya">Algiers (Alger)</div>
+          <div class="wilaya">Djelfa</div>
+          <div class="wilaya">Jijel</div>
+          <div class="wilaya">Setif</div>
+          <div class="wilaya">Saida</div>
+          <div class="wilaya">Skikda</div>
+          <div class="wilaya">Sidi Bel Abbes</div>
+          <div class="wilaya">Annaba</div>
+          <div class="wilaya">Guelma</div>
+          <div class="wilaya">Constantine</div>
+          <div class="wilaya">Medea</div>
+          <div class="wilaya">Mostaganem</div>
+          <div class="wilaya">MSila</div>
+          <div class="wilaya">Mascara</div>
+          <div class="wilaya">Ouargla</div>
+          <div class="wilaya">Oran</div>
+          <div class="wilaya">El Bayadh</div>
+          <div class="wilaya">Illizi</div>
+          <div class="wilaya">Bordj Bou Arreridj</div>
+          <div class="wilaya">Boumerdès</div>
+          <div class="wilaya">El Taref</div>
+          <div class="wilaya">Tindouf</div>
+          <div class="wilaya">Tissemsilt</div>
+          <div class="wilaya">El Oued</div>
+          <div class="wilaya">Khenchela</div>
+          <div class="wilaya">Souk Ahras</div>
+          <div class="wilaya">Tipaza</div>
+          <div class="wilaya">Mila</div>
+          <div class="wilaya">Ain Defla</div>
+          <div class="wilaya">Naama</div>
+          <div class="wilaya">Ain Temouchent</div>
+          <div class="wilaya">Ghardaia</div>
+          <div class="wilaya">Relizane</div>
+         
+        </div>
         <div class="vertical"></div>
       
         <img src="pics/pos.svg" class="pos2">
-        <input type="text" class="input4" id="input4" placeholder="Où souhaitez-vous aller ?">
+        <input type="text" class="input4" id="input4" placeholder="Où souhaitez-vous aller ?" required>
+        <div class="suggest2" id="error">
+        </div>
+        <div class="suggest2" id="suggest2">
+          <div class="wilaya">Adrar</div>
+          <div class="wilaya">Chlef</div>
+          <div class="wilaya">Laghouat</div>
+          <div class="wilaya">Oum El Bouaghi</div>
+          <div class="wilaya">Batna</div>
+          <div class="wilaya">Bejaia</div>
+          <div class="wilaya">Biskra</div>
+          <div class="wilaya">Bechar</div>
+          <div class="wilaya">Blida</div>
+          <div class="wilaya">Bouira</div>
+          <div class="wilaya">Tamanrasset</div>
+          <div class="wilaya">Tebessa</div>
+          <div class="wilaya">Tlemcen</div>
+          <div class="wilaya">Tiaret</div>
+          <div class="wilaya">Tizi Ouzou</div>
+          <div class="wilaya">Algiers (Alger)</div>
+          <div class="wilaya">Djelfa</div>
+          <div class="wilaya">Jijel</div>
+          <div class="wilaya">Setif</div>
+          <div class="wilaya">Saida</div>
+          <div class="wilaya">Skikda</div>
+          <div class="wilaya">Sidi Bel Abbes</div>
+          <div class="wilaya">Annaba</div>
+          <div class="wilaya">Guelma</div>
+          <div class="wilaya">Constantine</div>
+          <div class="wilaya">Medea</div>
+          <div class="wilaya">Mostaganem</div>
+          <div class="wilaya">MSila</div>
+          <div class="wilaya">Mascara</div>
+          <div class="wilaya">Ouargla</div>
+          <div class="wilaya">Oran</div>
+          <div class="wilaya">El Bayadh</div>
+          <div class="wilaya">Illizi</div>
+          <div class="wilaya">Bordj Bou Arreridj</div>
+          <div class="wilaya">Boumerdès</div>
+          <div class="wilaya">El Taref</div>
+          <div class="wilaya">Tindouf</div>
+          <div class="wilaya">Tissemsilt</div>
+          <div class="wilaya">El Oued</div>
+          <div class="wilaya">Khenchela</div>
+          <div class="wilaya">Souk Ahras</div>
+          <div class="wilaya">Tipaza</div>
+          <div class="wilaya">Mila</div>
+          <div class="wilaya">Ain Defla</div>
+          <div class="wilaya">Naama</div>
+          <div class="wilaya">Ain Temouchent</div>
+          <div class="wilaya">Ghardaia</div>
+          <div class="wilaya">Relizane</div>
+         
+        </div>
         <div class="vertical"></div>
 
         <img src="pics/cal.svg" class="cal">
-        <input type="date" class="input2" id="input2" placeholder="Aujourd'hui" min="<?php echo date('Y-m-d'); ?>">
+        <input type="date" class="input2" id="input2" placeholder="Aujourd'hui" min="<?php echo date('Y-m-d'); ?>" required>
+        
         <div class="vertical"></div>
 
         <img src="pics/pp.svg" class="pp">
-        <input type="number" class="input3" id="input3" placeholder="01">
+        <input type="number" class="input3" id="input3" placeholder="01" required>
        
         <button class="look" id="look">Recherche</button>
-      </div>
+      </form>
     
     
     </div> 
@@ -80,7 +186,7 @@
         <p class="Tri">Tri par :</p> 
         <div class="in">
           <input type="radio" id="allo1" name="trajet" class="allo" checked>
-          <label for="allo1">Départ le plus tôt</label>
+          <label for="allo1">La date la plus proche</label>
         </div>
         <div class="in">
           <input type="radio" name="trajet" id="allo2" class="allo" >
@@ -88,7 +194,7 @@
         </div>
         <div class="in">
           <input type="radio" name="trajet" id="allo3" class="allo">
-          <label for="allo3">Trajet le plus court</label>
+          <label for="allo3">Rating le plus haut</label>
         </div>
       </div>
       <div class="line2"></div>

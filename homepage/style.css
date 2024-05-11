@@ -1,4 +1,33 @@
+select {
 
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-color: transparent; /* Set background color */
+  
+}
+#error{
+ background-color: transparent;
+ color: rgba(255, 0, 0, 0.6);
+ border: 1px solid rgba(0, 0, 0 ,0.1);
+ top: 64%;
+ left: 27%;
+ font-size: 20px;
+ width: max-content;
+ overflow: hidden;
+ padding: 1px;
+  
+}
+/* Style for when the dropdown is opened */
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: none; /* Change border color on focus */
+}
+
+/* Style for option hover */
+select option:hover {
+  background-color: none; /* Change background color on hover */
+}
 
 /* nice scroll bar */
 ::-webkit-scrollbar {
@@ -862,15 +891,47 @@ margin-bottom: auto;
 
 
 
-pos1{
+.pos1{
   width: 15px;
 }
 
+.suggest1, .suggest2{
+  
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  
+  justify-content: start;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height:190px;
+  position: absolute;
+ left: 3.5%;
+ width: 20%;
+ top: 100%;
+ transition: all 0.3s ease;
+ background-color: white;
+ font-weight: 400;
+}
+.suggest2{
 
-
-
-
-
+  left: 26.5%;
+  width: 22%;
+}
+.wilaya{
+ 
+  width: 100%;
+  padding: 5px;
+  padding-left: 20px;
+  
+}
+.wilaya:hover{
+  background-color: rgba(0, 0, 0 ,0.1);
+  cursor: pointer;
+}
 /* narrow desktop*/
 @media only screen and (min-width: 1025px) and (max-width: 1250px) {
   html {
@@ -1505,6 +1566,7 @@ font-size: 25px;
     height: 1000px;
 
   }
+ 
   .look{
     border-top-right-radius: 0px;
     border-bottom-left-radius: 50px;
