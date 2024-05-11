@@ -332,7 +332,7 @@ let btn6 = document.getElementsByClassName("btn6");
 
 
 
-    
+        
     sig.addEventListener("click",function(){
        
         if(reason === "not yet")

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap">
+  <title >Fi Tri9i</title>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <a class="logo" href="../homepage/pass.html">
+      <p>Fi Tri9i</p>  
+      <img src="pics/car.svg" class="logo_img">
+      </a>
+
+      
+      <a href="../recherche/pass.html" class="pub">
+        <img src="pics/rech.svg" class="plus">
+        <li class="Publiertrajet">Recherche</li>
+      </a>
+
+       <!-- this place is important it change depending on the user-->
+      <div class="auth">
+        <p class="user-name" id="user-name">Kadache ahmed rami</p>
+        <img src="pics/pfp.svg" class="pfp">
+        <img src="pics/arrow.svg" class="arrow" id="arrow">
+      </div>
+    </ul>
+     
+    <div class="menu" id="menu"></div>
+
+  </nav>
+
+
+  <form class="content">
+    <div class="titre">Ajouter votre vehicule</div>
+    <div>
+      <div>
+        <label for="marque" class="marque" id="allo">La marque :</label>
+      </div>
+      <div>
+        <input type="text" class="marque" id="marque" placeholder="   BMW">
+      </div>
+    </div>
+    <div>
+      <div>
+        <label for="modele" id="allo1">Le modèle :</label>
+      </div>
+      <div>
+        <input type="text" class="modele" id="modele" placeholder="   BMW XI">
+      </div>
+    </div>
+    <div>
+      <div>
+        <label for="matricule" id="allo2">Le numéro d'imatriculation :</label>
+      </div>
+      <div>
+        <input type="text" class="matricule" id="matricule" placeholder="   WW-981-KG">
+      </div>
+    </div>
+    <div>
+      <div>
+        <label for="couleur" id="allo3" >La couleur :</label>
+      </div>
+      <div>
+        <select name="couleur" id="couleur" class="couleur">
+          <option value="Noire" selected >Noire</option>
+          <option value="Bleu">Bleu</option>
+          <option value="Jaune">Jaune</option>
+          <option value="Rouge">Rouge</option>
+          <option value="Blanche">Blanche</option>
+        </select>
+      </div>
+    </div><br><br>
+    <div class="titre2">Ajouter la photo votre vehicule :</div>
+    <div class="gova">
+      <div class="vroom"><img src="pics/Ellipse 9.svg" alt=""></div>
+      <!-- <button class="btn">  Ajouter votre vehicule</button> -->
+      <label for="fileInput" class="file-container">
+        <span class="btn">Choose a file</span>
+        <input id="fileInput" type="file" accept="image/*" style="display: none;">
+    </label>
+    
+      <div class="barre"></div>
+      
+
+    </div>
+    <button class="btn1" id="cancelBtn">  Annuler</button>
+    <button class="btn2" type="submit">  Enregistrer</button>
+    <br><br><br><br><br><br>
+
+    
+
+  </form>
+
+  
+
+<script src="script.js"></script>
+</body>
+</html>

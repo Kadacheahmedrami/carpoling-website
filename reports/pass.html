@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap">
+  <title >Fi Tri9i</title>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <a class="logo" href="../homepage/pass.html">
+      <p>Fi Tri9i</p>  
+      <img src="pics/car.svg" class="logo_img">
+      </a>
+
+      
+      <a href="../recherche/pass.html" class="pub">
+        <img src="pics/rech.svg" class="plus">
+        <li class="Publiertrajet">Recherche</li>
+      </a>
+
+       <!-- this place is important it change depending on the user-->
+      <div class="auth">
+        <p class="user-name" id="user-name">Kadache ahmed rami</p>
+        <img src="pics/pfp.svg" class="pfp">
+        <img src="pics/arrow.svg" class="arrow" id="arrow">
+      </div>
+    </ul>
+     
+    <div class="menu" id="menu"></div>
+
+  </nav>
+  <div class="gauche">
+    <div class="lesphotos">
+      <div class="prof"><img src="pics/Ellipse 1 (1).svg" alt=""></div><br><br><br><br><br><br>
+      <div class="maison"><img src="pics/Home.svg" alt=""></div><br><br><br><br><br><br>
+      <div class="pers"><img src="pics/Person.svg" alt=""></div>
+      
+
+    </div>
+  </div>
+  
+
+
+  <main class="content">
+    <div class="titre">Comptes &nbsp;Signalés</div>
+    <div class="search-container">
+      <input type="text" name="query" placeholder="Search" class="search" id="search-input">
+      <label for="search-input" class="search-icon"><img src="pics/search-normal.svg" alt=""></label>
+    </div>
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="entete">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nom du <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conducteur</th>
+          <th class="entete">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date</th>
+          <th class="entete">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nom<br> du  passager</th>
+          <th class="entete">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raison <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; du signalement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+           
+          <td class="psg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John Doe</td>
+          <td class="date">2024-04-28</td>
+          <td class="passager">Jane Smith</td>
+          <td class="motif">Retard important</td>
+          <td class="action"><button class="ban-btn">Bannir</button><button class="ignore-btn">Ignorer</button></td>
+
+          
+        </tr>
+        <tr>
+          
+          <td class="psg"> &nbsp;&nbsp;&nbsp; Alice Johnson</td>
+          <td class="date">2024-04-27</td>
+          <td class="passager">Bob Williams</td>
+          <td class="motif">Comportement agressif</td>
+          <td class="action"><button class="ban-btn">Bannir</button><button class="ignore-btn">Ignorer</button></td>
+
+        </tr>
+        <tr>
+          
+          <td class="psg"> &nbsp;&nbsp;&nbsp;Michael Brown</td>
+          <td class="date">2024-04-26</td>
+          <td class="passager">Emily Davis</td>
+          <td class="motif">Refus de porter la ceinture de sécurité</td>
+          <td class="action"><button class="ban-btn">Bannir</button><button class="ignore-btn">Ignorer</button></td>
+
+        </tr>
+        <tr>
+          
+          <td class="psg"> &nbsp;&nbsp;&nbsp;Sarah Miller</td>
+          <td class="date">2024-04-25</td>
+          <td class="passager">David Wilson</td>
+          <td class="motif">Non-respect du code de la route</td>
+          <td class="action"><button class="ban-btn">Bannir</button><button class="ignore-btn">Ignorer</button></td>
+
+        </tr>
+        <tr>
+          
+          <td class="psg">&nbsp;&nbsp;&nbsp; Chris Taylor</td>
+          <td class="date">2024-04-24</td>
+          <td class="passager">Olivia Martinez</td>
+          <td class="motif">Stationnement illégal</td>
+          <td class="action"><button class="ban-btn">Bannir</button><button class="ignore-btn">Ignorer</button></td>
+
+        </tr>
+        <tr>
+          
+          <td class="psg">&nbsp;&nbsp;&nbsp; Emma White</td>
+          <td class="date">2024-04-23</td>
+          <td class="passager">James Brown</td>
+          <td class="motif">Excès de vitesse</td>
+          <td class="action"><button class="ban-btn">Bannir</button><button class="ignore-btn">Ignorer</button></td>
+
+        </tr>
+      </tbody>
+    </table>
+    <div id="blur-background"></div>
+    <div class="container">
+        <div class="ban">
+          Banner
+        </div>
+        <div class="text"><br><br><br><br><br><br><br><br><br><br><br>
+          Vous êtes sûr que vous voulez bannir cet <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utilisateur ?
+        </div>
+  
+        <button class="oui">oui</button>
+        <button class="Annuler">ANNULER</button>
+  
+      </div>
+
+  </main>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
