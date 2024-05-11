@@ -23,7 +23,7 @@
     padding: 0;
     width: 100%;
     overflow-x:hidden ;
-    background-image: url(pics/body.svg);
+
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 0px 140px;
@@ -255,8 +255,8 @@
     z-index: 1;
   
    
-    margin-top: 120px;
-    height: 1100px;
+    margin-top: 60px;
+    height: max-content;
     position: relative;
     display: flex;
     justify-content: start;
@@ -270,16 +270,16 @@
     background-color: #E3F1F6;
     display: flex;
     position: relative;
-    
+    justify-content: center;
+    align-items: center;
     width: 250px;
-    height: 2000px;
+    height: 120%;
   }
   .lesphotos{
     display: flex;
     position: relative;
     flex-direction: column;
-    top: 210px;
-    left: 90px;
+   
     
   }
   .maison,.pers{
@@ -477,7 +477,7 @@
     border-radius: 8px 8px 0 0;
   
   }
-  .text{
+  .text1{
     display: flex;
     position: relative;
     right: 500px;
