@@ -280,7 +280,7 @@ function appendTripsToTable(tripList) {
           
         });
 
-  
+        
  
     });
 }
