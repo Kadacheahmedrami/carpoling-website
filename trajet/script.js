@@ -535,3 +535,9 @@ signialer.addEventListener("click",function(){
         
     }
 })
+
+
+
+document.querySelector(".info").addEventListener("click",function(){
+    window.location.href="../comment/pass.html"
+})

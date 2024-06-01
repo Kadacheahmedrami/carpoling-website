@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title >Fi Tri9i</title>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <div class="logo">
+      <p>Fi Tri9i</p>  
+      <img src="pics/car.svg" class="logo_img">
+      </div>
+
+      <a href="../recherche/pass.html" class="Recherche" id="rech">
+        <img src="pics/rech.svg" class="rech ">
+        <li class="R">Recherche</li>
+      </a>
+
+      <a href="../publier/pub1/pass.html" class="pub" id="pub">
+        <img src="pics/plus.svg" class="plus">
+        <li class="Publiertrajet">Publier trajet</li>
+      </a>
+       <!-- this place is important it change depending on the user-->
+      <div class="auth">
+        <p class="user-name" id="user-name">Kadache ahmed rami</p>
+        <img src="pics/pfp.svg" class="pfp">
+        <img src="pics/arrow.svg" class="arrow" id="arrow">
+      </div>
+    </ul>
+     
+    <div class="menu" id="menu"></div>
+
+  </nav>
+<main >
+  <div class="container">
+    <div class="left-side">
+      <div class="ret" id="ret">return</div>
+        <h1 id="driver-name">John Doe</h1>
+        <img id="driver-picture" src="pics/pfp.svg" alt="Driver Picture">
+        <h1 id="driver-rating">Rating: <div  class="stars" id="stars" style="color: gold; background-color: rgb(255, 255, 255,0.5); padding: 5px; border-radius: 10px;">
+          4.5 Stars</div></h1>
+        <div class="star-num" id="star-num">☆☆☆☆☆</div>
+      
+    </div>
+    <div class="right-side">
+        <div class="comment-section">
+            <h2>Leave a Comment</h2>
+            <textarea id="comment-input" placeholder="Write your comment here..."></textarea>
+            <div class="rating-input">
+                <label for="rating" >Rating: </label>
+                <div class="card">
+               
+               
+                  <span onclick="gfg(1)"
+                        class="star">★
+                  </span>
+                  <span onclick="gfg(2)"
+                        class="star">★
+                  </span>
+                  <span onclick="gfg(3)"
+                        class="star">★
+                  </span>
+                  <span onclick="gfg(4)"
+                        class="star">★
+                  </span>
+                  <span onclick="gfg(5)"
+                        class="star">★
+                  </span>
+                  <h3 id="output" style="display: none;">
+                      0
+                    </h3>
+              </div>
+            </div>
+            <button class="butt" onclick="submitComment()">Submit</button>
+        </div>
+        <div class="comments-display">
+            <h2>Comments</h2>
+            <div id="comments-list">
+                <!-- Comments will be appended here -->
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<script src="comments.js"></script>
+<script src="script.js">
+ 
+
+</script>
+</body>
+</html>
