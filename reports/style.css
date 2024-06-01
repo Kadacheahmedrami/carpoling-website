@@ -501,7 +501,7 @@
     white-space: nowrap;
     bottom: 20px;
     font-weight: 800;
-    font-size: 20px;
+    
     color: #C00A15;
   
   }
@@ -511,7 +511,7 @@
     height: 40px;
     justify-content: center;
     align-items: center;
-  
+   margin-left: auto;
     font-size: 20px;
     color: white;
     background-color: #C00A15;

@@ -12,7 +12,7 @@ let user={
     nom:'Ziad',
     prenom:'Rafik',
     age:20,    
-    type:types[3], 
+    type:types[1], 
 
 }
 let pub = document.getElementById("pub");
@@ -64,23 +64,23 @@ let guest_imglist=[
 
 let admin_pagelist=[
 '../Vos-trajets/pass.html',
-'notready.html',
+'../notify-client/pass.html',
 '../Profile/pass.html',
 'notready.html',
-'notready.html',
+'../stats/index.html',
 '../reports/pass.html',
 'notready.html'
 ];
 let driver_pagelist=[
 '../Vos-trajets/pass.html',
-'notready.html',
+'../notify-driver/pass.html',
 '../Profile/pass.html',
 'notready.html',
 'notready.html'
 ]
 client_pagelist=[
 '../Vos-trajets/pass.html',
-'notready.html',
+'../notify-client/pass.html',
 '../Profile/pass.html',
 'notready.html'
 ]
@@ -225,7 +225,7 @@ lk.addEventListener('click', function() {
     const currentDay = currentDate.getDate();
     
   
-    if ( parseInt(year) < currentYear  || parseInt( month) < currentMonth || parseInt(day)  < currentDay  ||   input1 === '' || input2 === '' || isNaN(input3) || input3 < 1 || input3 > 5 || input4 === '' || input1===input4 ||
+    if ( parseInt(year) < currentYear  || parseInt( month) < currentMonth  ||   input1 === '' || input2 === '' || isNaN(input3) || input3 < 1 || input3 > 5 || input4 === '' || input1===input4 ||
     input1 !== "Batna" &&
     input1 !== "Adrar" &&
     input1 !== "Chlef" &&
@@ -327,10 +327,26 @@ lk.addEventListener('click', function() {
 
 ) {
        
-    if(parseInt(year) < currentYear  || parseInt( month) < currentMonth || parseInt(day) < currentDay)
+    if(parseInt(year) < currentYear   )
     {
         alert('chose a valiable date');
+  
+        
     }
+    else{
+        if( parseInt( month) < currentMonth)
+   {
+    alert('chose a valiable date');
+   }
+   else{
+    if(parseInt(day) < currentDay && parseInt(year) == currentYear && parseInt( month) == currentMonth)
+    {
+         alert('chose a valiable date'); 
+    }
+   }
+ 
+    }
+
 
     if (input1 !== "Batna" &&
     input1 !== "Adrar" &&

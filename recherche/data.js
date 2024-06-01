@@ -2,7 +2,7 @@
 
 let cardData = [
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "12:06",
       place: "Alger"
@@ -19,7 +19,7 @@ let cardData = [
     available_places: "2 places"
   },
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "13:00",
       place: "Oran"
@@ -36,7 +36,7 @@ let cardData = [
     available_places: "1 places"
   },
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "09:30",
       place: "Constantine"
@@ -53,7 +53,7 @@ let cardData = [
     available_places: "3 places"
   },
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "08:15",
       place: "Annaba"
@@ -70,7 +70,7 @@ let cardData = [
     available_places: "2 places"
   },
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "12:45",
       place: "Batna"
@@ -88,7 +88,7 @@ let cardData = [
   },
  
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "10:45",
       place: "Batna"
@@ -105,7 +105,7 @@ let cardData = [
     available_places: "5 places"
   },
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "9:45",
       place: "Batna"
@@ -122,7 +122,7 @@ let cardData = [
     available_places: "4 places"
   },
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "06:45",
       place: "Batna"
@@ -139,7 +139,7 @@ let cardData = [
     available_places: "1 places"
   },
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "8:45",
       place: "Batna"
@@ -156,7 +156,7 @@ let cardData = [
     available_places: "3 places"
   },
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "7:45",
       place: "Batna"
@@ -173,7 +173,7 @@ let cardData = [
     available_places: "2 places"
   },  
   {
-    date: "2024-05-12",
+    date: "2024-06-04",
     departure: {
       date: "11:45",
       place: "Batna"
