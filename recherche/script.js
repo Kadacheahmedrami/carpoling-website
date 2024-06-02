@@ -574,14 +574,7 @@ document.addEventListener("DOMContentLoaded", function() {
   er= document.getElementById('error');
 
 
-
-
-  lk.addEventListener('click', function() {
-  
-
-    er.style.display="none";
-    
- 
+  function testdate(input_2){
     const [year, month, day] = input_2.value.split('-');
     
     const currentDate = new Date();
@@ -590,9 +583,58 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth() + 1;
     const currentDay = currentDate.getDate();
-    
+
+    if(parseInt(year) > 2025)
+    {
+        alert('2025 est le maximum');
+        return false;
+    }
+
+    if(parseInt(year) > parseInt(currentYear))
+    {
+       
+        return false;
+    }
+    else{
+        if(parseInt(year) < parseInt(currentYear)   )
+        {
+            alert('the year have to be betwen 2024-2025');
+            return false;
+            
+        }
+        else{
+            if( parseInt( month) < parseInt(currentMonth) && parseInt(year) == parseInt(currentYear))
+       {
+       alert('the month has to start from : '+currentMonth);
+        return false;
+       }
+       else{
+        if(parseInt(day) < parseInt(currentDay) && parseInt(year) == parseInt(currentYear) && parseInt( month) ==  parseInt(currentMonth))
+        {
+             alert('the day has to start from : '+currentDay); 
+             return false;
+        }
+      
+      
+      
+       }
+     
+        }
+    }
   
-    if ( parseInt(year) < currentYear  || parseInt( month) < currentMonth || parseInt(day)  < currentDay  ||   input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5 || input_4.value === '' || input_1.value===input_4.value ||
+    return true;
+}
+
+
+  lk.addEventListener('click', function() {
+  
+
+    er.style.display="none";
+    
+ 
+   console.log( testdate(input_2))
+  
+    if (    input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5 || input_4.value === '' || input_1.value===input_4.value ||
     input_1.value !== "Batna" &&
     input_1.value !== "Adrar" &&
     input_1.value !== "Chlef" &&
@@ -697,10 +739,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ) {
        
-    if(parseInt(year) < currentYear  || parseInt( month) < currentMonth || parseInt(day) < currentDay)
-    {
-      
-    }
+ 
 
     if (input_1.value !== "Batna" &&
     input_1.value !== "Adrar" &&

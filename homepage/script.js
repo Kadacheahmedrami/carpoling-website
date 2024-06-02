@@ -193,6 +193,57 @@ arrow.addEventListener('click',function(){
 })
 
 
+    
+function testdate(input2){
+    const [year, month, day] = input2.split('-');
+    
+    const currentDate = new Date();
+
+  
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentDay = currentDate.getDate();
+
+    if(parseInt(year) > 2025)
+    {
+        alert('2025 est le maximum');
+        return false;
+    }
+
+    if(parseInt(year) > parseInt(currentYear))
+    {
+       
+        return false;
+    }
+    else{
+        if(parseInt(year) < parseInt(currentYear)   )
+        {
+            alert('the year have to be betwen 2024-2025');
+            return false;
+            
+        }
+        else{
+            if( parseInt( month) < parseInt(currentMonth) && parseInt(year) == parseInt(currentYear))
+       {
+       alert('the month has to start from : '+currentMonth);
+        return false;
+       }
+       else{
+        if(parseInt(day) < parseInt(currentDay) && parseInt(year) == parseInt(currentYear) && parseInt( month) ==  parseInt(currentMonth))
+        {
+             alert('the day has to start from : '+currentDay); 
+             return false;
+        }
+      
+      
+      
+       }
+     
+        }
+    }
+  
+    return true;
+}
 
 
 const form = document.getElementById('myForm');
@@ -215,17 +266,12 @@ lk.addEventListener('click', function() {
     er.style.display="none";
     
  
-    const [year, month, day] = input2.split('-');
-    
-    const currentDate = new Date();
+
+
+
 
   
-    const currentYear = currentDate.getFullYear();
-    const currentMonth = currentDate.getMonth() + 1;
-    const currentDay = currentDate.getDate();
-    
-  
-    if ( parseInt(year) < currentYear  || parseInt( month) < currentMonth  ||   input1 === '' || input2 === '' || isNaN(input3) || input3 < 1 || input3 > 5 || input4 === '' || input1===input4 ||
+    if ( !testdate(input2) || input1 === '' || input2 === '' || isNaN(input3) || input3 < 1 || input3 > 5 || input4 === '' || input1===input4 ||
     input1 !== "Batna" &&
     input1 !== "Adrar" &&
     input1 !== "Chlef" &&
@@ -327,25 +373,7 @@ lk.addEventListener('click', function() {
 
 ) {
        
-    if(parseInt(year) < currentYear   )
-    {
-        alert('chose a valiable date');
   
-        
-    }
-    else{
-        if( parseInt( month) < currentMonth)
-   {
-    alert('chose a valiable date');
-   }
-   else{
-    if(parseInt(day) < currentDay && parseInt(year) == currentYear && parseInt( month) == currentMonth)
-    {
-         alert('chose a valiable date'); 
-    }
-   }
- 
-    }
 
 
     if (input1 !== "Batna" &&
