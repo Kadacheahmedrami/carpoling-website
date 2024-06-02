@@ -12,7 +12,7 @@ let user={
     nom:'Ziad',
     prenom:'Rafik',
     age:20,    
-    type:types[2], 
+    type:types[3], 
 
 }
 let pub = document.getElementById("pub");
@@ -66,7 +66,7 @@ let admin_pagelist=[
 '../Vos-trajets/client.html',
 '../notify-client/pass.html',
 '../Profile/pass.html',
-'notready.html',
+'../payment-confirmation/pay/pass.html',
 '../stats/index.html',
 '../reports/pass.html',
 'notready.html'
@@ -75,7 +75,7 @@ let driver_pagelist=[
 '../Vos-trajets/pass.html',
 '../notify-driver/pass.html',
 '../Profile/pass.html',
-'notready.html',
+'../payment-confirmation/pay/pass.html',
 'notready.html'
 ]
 client_pagelist=[
