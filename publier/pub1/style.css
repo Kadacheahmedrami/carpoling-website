@@ -285,7 +285,7 @@ main{
   align-items: center;
   flex-direction: row;
 }
-.wilaya{
+.wi{
   display: inline;
   position: relative;
   top: 110px;
@@ -293,7 +293,19 @@ main{
   font-family: Roboto,sans-sherif;
   
 }
-#commencer{
+.wilaya{
+ 
+  width: 100%;
+  padding: 5px;
+  padding-left: 20px;
+  position: relative;
+ 
+}
+.wilaya:hover{
+  background-color: rgba(0, 0, 0 ,0.1);
+  cursor: pointer;
+}
+#input1{
   display: inline;
   position: relative;
   top: 200px;
@@ -358,6 +370,28 @@ input:focus {
 
 
 
+.suggest1{
+  z-index: 2;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  
+  justify-content: start;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height:190px;
+  position: absolute;
+ left: 11.5%;
+ width: 30%;
+ top: 156.5%;
+ transition: all 0.3s ease;
+ background-color: white;
+ font-weight: 400;
+ 
+}
 
 
 

@@ -281,8 +281,89 @@ precedentButton.addEventListener('click', function() {
     window.history.back();
 });
 
-// Add event listener to the "prochaine" button
-prochaineButton.addEventListener('click', function() {
-    // Navigate to a new page
-    window.location.href = '../pub4/pass.html'; // Replace 'new_page.html' with the URL of the new page
+
+const input = document.getElementById('input1');
+const suggestBox = document.getElementById('suggest1');
+ 
+  const suggestions = suggestBox.querySelectorAll('.wilaya');
+  
+  prochaineButton.addEventListener('click', function() {
+    const validWilayas = Array.from(suggestions).map(s => s.textContent);
+    const inputValue = input.value.trim();
+
+    if (validWilayas.includes(inputValue)) {
+        window.location.href = '../pub2/pass.html';
+    } else {
+        alert('Please select a valid Wilaya from the suggestions.');
+    }
+});
+
+
+
+let sug1 = document.getElementById('suggest1');
+let in1 = document.getElementById('input1');
+
+
+in1.addEventListener('click',function(){
+
+  sug1.style.display='flex';
+
+})
+
+
+function slect(){
+  let op1 = document.querySelectorAll('.wilaya');
+  op1.forEach(function(event) {
+      event.addEventListener('click', function() {
+          
+           in1.value = event.innerText;
+          sug1.style.display='none';
+       
+          
+    
+          
+      });
+  });
+  
+  
+}
+slect();
+
+
+
+document.addEventListener('click', function(event) {
+ 
+  let isClickInside = in1.contains(event.target);
+  let isClickInside1 = sug1.contains(event.target);
+
+
+  if(!isClickInside && !isClickInside1){
+      sug1.style.display='none';
+  }
+});
+
+
+
+const input1 = document.getElementById('input1');
+
+const suggest1 = document.getElementById('suggest1');
+
+
+const wilayas = Array.from(suggest1.querySelectorAll('.wilaya'));
+
+input1.addEventListener('input', function() {
+  const inputValue = input1.value.toLowerCase();
+  const matchedWilayas = wilayas.filter(function(wilaya) {
+      return wilaya.textContent.toLowerCase().startsWith(inputValue);
+  });
+
+  // Clear previous suggestions
+  suggest1.innerHTML = '';
+
+  // Append matched wilayas to suggestion container
+  matchedWilayas.forEach(function(matchedWilaya) {
+      suggest1.appendChild(matchedWilaya.cloneNode(true));
+  });
+
+  slect();
 });

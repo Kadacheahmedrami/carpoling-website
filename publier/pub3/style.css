@@ -283,7 +283,12 @@ main{
   margin: 40px;
   top: 50px;
 }
-.wilaya{
+
+input:focus {
+  outline: none; /* Supprime la bordure de focus */
+}
+
+.wi{
   display: inline;
   position: relative;
   top: 110px;
@@ -291,23 +296,32 @@ main{
   font-family: Roboto,sans-sherif;
   
 }
-input:focus {
-  outline: none; /* Supprime la bordure de focus */
+.wilaya{
+  
+  width: 100%;
+  padding: 5px;
+  padding-left: 20px;
+  position: relative;
+ 
 }
-
-#commencer{
+.wilaya:hover{
+  background-color: rgba(0, 0, 0 ,0.1);
+  cursor: pointer;
+}
+#input1{
   display: inline;
   position: relative;
   top: 200px;
   border-radius: 15px;
   border: none;
-  height: 48px;
-  width: 700px;
+  height: 60px;
+  width: 660px;
   padding-left: 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   font-family: Roboto, sans-serif; /* Définit la police de caractères */
   font-size: 16px; /* Définit la taille de la police */
-  font-weight: bold;
+  font-weight: bold; /* Définit le poids de la police (gras) */
+  
 
 }
 #suiv{
@@ -360,6 +374,28 @@ input:focus {
 }
 
 
+.suggest1{
+  z-index: 2;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  
+  justify-content: start;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height:190px;
+  position: absolute;
+ left: 33.2%;
+ width: 11%;
+ top: 49.0%;
+ transition: all 0.3s ease;
+ background-color: white;
+ font-weight: 400;
+
+}
 
 
 
@@ -509,7 +545,7 @@ input:focus {
   font-weight: bold;
 
 }
-.wilaya{
+.wi{
   display: inline;
   position: relative;
   top: 120px;
@@ -660,7 +696,7 @@ display: none;
     margin: 13px;
     top: 52px;
   }
-  .wilaya{
+  .wi{
     display: inline;
     position: relative;
     top: 128px;
