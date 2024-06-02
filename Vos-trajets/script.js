@@ -1,17 +1,12 @@
-
-
-
-
-
-function createCarteElement(date, departure, destination) {
+function createCarteElement(date, heure, departure, destination, passengers) {
     // Create the main div with class "carte"
     const carteDiv = document.createElement('div');
     carteDiv.classList.add('carte');
 
-    // Create and append the departure date div
+    // Create and append the departure date and time div
     const departDiv = document.createElement('div');
     departDiv.classList.add('depart2');
-    departDiv.textContent = date;
+    departDiv.textContent = `${date} à ${heure}`;
     carteDiv.appendChild(departDiv);
 
     // Create and append the departure place div
@@ -55,36 +50,51 @@ function createCarteElement(date, departure, destination) {
     emojieDiv.appendChild(img3);
     carteDiv.appendChild(emojieDiv);
 
+    // Create and append the passengers div
+    const passengersDiv = document.createElement('div');
+    passengersDiv.classList.add('passengers');
+    passengersDiv.textContent = `Passengers: ${passengers}`;
+    passengersDiv.style.display = 'none'; // Make it invisible
+    carteDiv.appendChild(passengersDiv);
+
     // Return the created carte div
     return carteDiv;
 }
 
-
-// Function to fill the Trajet div
+// Function to fill the Trajet divs
 function fillTrajetDiv(trajetsArray) {
-    // Get the Trajet div
-    const trajetDiv = document.querySelector('.Trajet');
+    const currentDate = new Date();
 
-    // Loop through the array of objects
+    // Get the Trajet divs
+    const futureTrajetDiv = document.querySelector('.Trajet.futur');
+    const pastTrajetDiv = document.querySelector('.Trajet.past');
+
+    const currentDay = currentDate.getDate();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentYear = currentDate.getFullYear();
+  
     trajetsArray.forEach(trajet => {
-        // Create a div using the createCarteElement function
-        const carteElement = createCarteElement(trajet.date, trajet.departure, trajet.destination);
+        const [month, day, year] = trajet.date.split('-');
 
-        // Append the created div to the Trajet div
-        trajetDiv.appendChild(carteElement);
+        const carteElement = createCarteElement(trajet.date, trajet.heure, trajet.departure, trajet.destination, trajet.passengers);
+
+        // Append the created div to the appropriate Trajet div
+        if (parseInt(year) >= parseInt(currentYear)) {
+            if (parseInt(month) >= parseInt(currentMonth)) {
+                if (parseInt(day) >= parseInt(currentDay)) {
+                    futureTrajetDiv.appendChild(carteElement);
+                } else {
+                    pastTrajetDiv.appendChild(carteElement);
+                }
+            } else {
+                pastTrajetDiv.appendChild(carteElement);
+            }
+        } else {
+            pastTrajetDiv.appendChild(carteElement);
+        }
     });
 }
 
-// Call the function to fill the Trajet div with the array of objects
+
+
 fillTrajetDiv(trajets);
-
-
-let carts = document.querySelectorAll('.carte')
-
-carts.forEach(cart=>{
-
-cart.addEventListener('click',function(){
-    window.location.href="../plan/pages/planDeRoute.html";
-})
-
-});

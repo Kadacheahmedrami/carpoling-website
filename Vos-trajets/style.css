@@ -23,7 +23,7 @@ body{
   padding: 0;
   width: 100%;
   overflow-x:hidden ;
-  background-image: url(pics/body.svg);
+ 
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0px 140px;
@@ -498,8 +498,6 @@ main{
 
 
 
-
-
 /* narrow desktop*/
 @media only screen and (min-width: 1025px) and (max-width: 1250px) {
   html {
@@ -584,8 +582,14 @@ main{
 @media only screen and (max-width: 667px) {
 
 /* fix this pls*/
+.t{
+  zoom: 0.6;
+}
+.arslane{
+  zoom: 0.6;
+}
    html {
-   
+  
     overflow-x:hidden ;
     width: 100%;
 

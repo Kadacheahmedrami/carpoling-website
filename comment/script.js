@@ -64,7 +64,7 @@ let guest_imglist=[
 
 let admin_pagelist=[
 '../Vos-trajets/pass.html',
-'notready.html',
+'../notify-client/pass.html',
 '../Profile/pass.html',
 'notready.html',
 '../stats/index.html',
