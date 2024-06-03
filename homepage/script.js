@@ -12,7 +12,7 @@ let user={
     nom:'Ziad',
     prenom:'Rafik',
     age:20,    
-    type:types[3], 
+    type:types[1], 
 
 }
 let pub = document.getElementById("pub");
@@ -278,36 +278,36 @@ lk.addEventListener('click', function() {
     input1 !== "Laghouat" &&
     input1 !== "Oum El Bouaghi" &&
     input1 !== "Batna" &&
-    input1 !== "Béjaïa" &&
+    input1 !== "Bejaia" &&
     input1 !== "Biskra" &&
-    input1 !== "Béchar" &&
+    input1 !== "Bechar" &&
     input1 !== "Blida" &&
     input1 !== "Bouira" &&
     input1 !== "Tamanrasset" &&
-    input1 !== "Tébessa" &&
+    input1 !== "Tebessa" &&
     input1 !== "Tlemcen" &&
     input1 !== "Tiaret" &&
     input1 !== "Tizi Ouzou" &&
     input1 !== "Algiers (Alger)" &&
     input1 !== "Djelfa" &&
     input1 !== "Jijel" &&
-    input1 !== "Sétif" &&
-    input1 !== "Saïda" &&
+    input1 !== "Setif" &&
+    input1 !== "Saida" &&
     input1 !== "Skikda" &&
-    input1 !== "Sidi Bel Abbès" &&
+    input1 !== "Sidi Bel Abbes" &&
     input1 !== "Annaba" &&
     input1 !== "Guelma" &&
     input1 !== "Constantine" &&
-    input1 !== "Médéa" &&
+    input1 !== "Medea" &&
     input1 !== "Mostaganem" &&
-    input1 !== "M'Sila" &&
+    input1 !== "MSila" &&
     input1 !== "Mascara" &&
     input1 !== "Ouargla" &&
     input1 !== "Oran" &&
     input1 !== "El Bayadh" &&
     input1 !== "Illizi" &&
-    input1 !== "Bordj Bou Arréridj" &&
-    input1 !== "Boumerdès" &&
+    input1 !== "Bordj Bou Arreridj" &&
+    input1 !== "Boumerdes" &&
     input1 !== "El Taref" &&
     input1 !== "Tindouf" &&
     input1 !== "Tissemsilt" &&
@@ -316,10 +316,10 @@ lk.addEventListener('click', function() {
     input1 !== "Souk Ahras" &&
     input1 !== "Tipaza" &&
     input1 !== "Mila" &&
-    input1 !== "Aïn Defla" &&
-    input1 !== "Naâma" &&
-    input1 !== "Aïn Témouchent" &&
-    input1 !== "Ghardaïa" &&
+    input1 !== "Ain Defla" &&
+    input1 !== "Naama" &&
+    input1 !== "Ain Temouchent" &&
+    input1 !== "Ghardaia" &&
     input1 !== "Relizane" ||
 
     input4 !== "Adrar" &&
@@ -367,7 +367,7 @@ lk.addEventListener('click', function() {
     input4 !== "Mila" &&
     input4 !== "Ain Defla" &&
     input4 !== "Naama" &&
-    input4 !== "Ain Témouchent" &&
+    input4 !== "Ain Temouchent" &&
     input4 !== "Ghardaia" &&
     input4 !== "Relizane"
 

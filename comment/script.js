@@ -250,6 +250,8 @@ function submitComment() {
     // Clear the input fields
     commentInput.value = '';
     ratingInput.value = '1';
+
+    newrating()
 }
 
 
@@ -345,3 +347,27 @@ let l = document.querySelector(".ret");
 
     window.history.back();
   })
+
+
+
+
+function newrating()
+{
+
+    allstar = document.querySelectorAll(".star1");
+    let average=0;
+     allstar.forEach(S => {
+       
+        average= average + S.innerText.length;
+     })
+    
+     
+    
+     document.getElementById("stars").innerText=(average/allstar.length).toFixed(1);
+    
+     let fix = Math.round(innerText=(average/allstar.length).toFixed(1))
+    
+     updateStars(fix)
+    
+}
+newrating()

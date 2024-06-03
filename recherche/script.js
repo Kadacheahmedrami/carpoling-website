@@ -632,9 +632,9 @@ document.addEventListener("DOMContentLoaded", function() {
     er.style.display="none";
     
  
-   console.log( testdate(input_2))
+   
   
-    if (    input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5 || input_4.value === '' || input_1.value===input_4.value ||
+    if (  !testdate(input_2) || input_1.value === '' || input_2.value === '' || isNaN(input_3.value) || input_3.value < 1 || input_3.value > 5 || input_4.value === '' || input_1.value===input_4.value ||
     input_1.value !== "Batna" &&
     input_1.value !== "Adrar" &&
     input_1.value !== "Chlef" &&
