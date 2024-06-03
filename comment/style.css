@@ -25,7 +25,7 @@ body{
   padding: 0;
   width: 100%;
   overflow-x:hidden ;
-
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0px 140px;
@@ -234,7 +234,7 @@ background-color: rgba(0,0,0,0.1);
 
 main{
   margin-top: 100px;
-  height: 830px;
+  height: 100%;
   width: 100%;
  
 }

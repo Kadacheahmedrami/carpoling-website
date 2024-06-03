@@ -1,24 +1,23 @@
-body{
-margin : 0;
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
 
-overflow: hidden;
+html {
+  overflow: hidden;
 }
-html{
-overflow: hidden;
-}
-main{
-  height: 930px;
+
+main {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
-    justify-content: start;
-    align-items: start;
-  
-
+  justify-content: start;
+  align-items: start;
 }
 
-.leftside{
-  
+.leftside {
   height: 100%;
   width: 369px;
   background-color: #149fce;
@@ -26,20 +25,17 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.pp{
+.pp {
   position: relative;
   bottom: 90px;
-
 }
 
-.rightside{
+.rightside {
   zoom: 0.95;
- 
   width: 81%;
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: start;
   align-items: start;
@@ -48,93 +44,99 @@ main{
   margin: 0;
   padding-left: 80px;
 }
-h1{
+
+h1 {
   margin: 0;
 }
-.title{
+
+.title {
   margin-top: 20px;
-width: 500px;
-font-size: 80px;
-font-weight: 900;
-color: #0082AE;
-margin-right:700px;
-margin-left: auto;
+  width: 500px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #0082ae;
+  margin-right: 700px;
+  margin-left: auto;
 }
 
-.row , .row1{
+.row,
+.row1 {
   display: flex;
   justify-content: start;
   align-items: center;
   flex: row;
-background-color: white;
-gap: 20px;
-padding: 20px;
-padding-top: 0px;
-padding-bottom: 0px;
-border-radius: 40px;
-transition: all 0.3s ease;
-width: 70%;
-margin-top: 30px;
+  background-color: white;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  width: 70%;
+  margin-top: 30px;
 }
 
-.row:hover{
+.row:hover {
   border: #149fce 1px solid;
   box-shadow: 0 0 8px #149fce;
   cursor: pointer;
-  background: #E3F1F6;
+  background: #e3f1f6;
   padding: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.im{
-width: 100px;
+
+.im {
+  width: 100px;
 }
-.im1{
+
+.im1 {
   width: 40px;
 }
 
-.column{
+.column {
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
 }
 
-.blu{
+.blu {
   font-size: 30px;
   font-weight: 700;
-  color: #0082AE;
+  color: #0082ae;
 }
-.bla{
+
+.bla {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.4);
 }
 
-.line{
+.line {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 70%;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.row1{
+
+.row1 {
   margin: 0;
 }
-.vertical{
+
+.vertical {
   height: 60px;
   width: 2px;
-  background-color: #0082AE;
+  background-color: #0082ae;
   margin: 5px;
   margin-left: 38px;
-
-}
-.arr{
-color: #0082AE;
-font-size: 50px;
-margin-left: auto;
 }
 
-
+.arr {
+  color: #0082ae;
+  font-size: 50px;
+  margin-left: auto;
+}
 
 #blur-background {
   position: fixed;
@@ -142,17 +144,17 @@ margin-left: auto;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Couleur du fond flou */
-  backdrop-filter: blur(5px); /* Effet de flou */
-  z-index: 1; /* Pour placer le fond flou derrière le conteneur */
-  display: none; /* Démarrez invisible */
-  overflow: hidden; /* Empêcher le débordement */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  display: none;
+  overflow: hidden;
 }
 
 .container {
   position: fixed;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
   left: 30%;
   top: 35%;
@@ -166,71 +168,71 @@ margin-left: auto;
   border-radius: 5px;
   display: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.ban{
- display: flex;
- justify-content: center;
- align-items: center;
 
+.ban {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 27px;
   position: relative;
-  bottom:20px;
+  bottom: 20px;
   font-weight: 800;
   color: white;
-  background-color: #C00A15;
+  background-color: #c00a15;
   height: 75px;
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.row2{
+
+.row2 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   flex-direction: row;
 }
-.text1{
+
+.text1 {
   display: flex;
   position: relative;
- 
-
   white-space: nowrap;
   bottom: 20px;
   font-weight: 800;
-  
-  color: #C00A15;
-
+  color: #c00a15;
 }
-.oui{
+
+.oui {
   display: flex;
   position: relative;
   height: 40px;
   justify-content: center;
   align-items: center;
- margin-left: auto;
+  margin-left: auto;
   font-size: 20px;
   color: white;
-  background-color: #C00A15;
+  background-color: #c00a15;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   width: 120px;
-  
   transition: all 0.3s ease;
 }
-.Annuler{
+
+.Annuler {
   display: flex;
   position: relative;
   height: 40px;
   justify-content: center;
   align-items: center;
   font-size: 17px;
-  color:red;
-  background-color:  white;
+  color: red;
+  background-color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -239,13 +241,80 @@ a{
   width: 120px;
   transition: all 0.3s ease;
 }
-.oui:hover{
+
+.oui:hover {
   border: 2px solid red;
   background-color: white;
   color: red;
   font-size: 28px;
 }
-.Annuler:hover{
+
+.Annuler:hover {
   border: 2px solid red;
   font-size: 21px;
+}
+
+/* Media Query for phones */
+@media (max-width: 768px) {
+  main{
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+   
+  }
+  .line{
+    width: 100%;
+  }
+  .leftside {
+    display: none;
+  }
+
+  .rightside {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .title {
+    font-size: 40px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .row,
+  .row1 {
+    width: 100%;
+    padding: 10px;
+  }
+  .blu{
+    margin-right: auto;
+  }
+  .row:hover {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .column {
+    align-items: center;
+  }
+
+  .bla,
+  .blu {
+    font-size: 20px;
+  }
+
+  .im,
+  .im1 {
+    width: 60px;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  .arr {
+    font-size: 30px;
+  }
 }

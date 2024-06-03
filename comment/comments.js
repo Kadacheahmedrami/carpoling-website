@@ -1,7 +1,7 @@
 const commentsData = [
-    { user: { nom: 'John', prenom: 'Doe' }, commentText: 'Could be better.', rating: 3 },
-    { user: { nom: 'Jane', prenom: 'Smith' }, commentText: 'Not bad.', rating: 2 },
-    { user: { nom: 'Alice', prenom: 'Johnson' }, commentText: 'Great Service!', rating: 5 }
+    {  nom: 'John', commentText: 'Could be better.', rating: 3 },
+    { nom: 'Jane', commentText: 'Not bad.', rating: 2 },
+    {  nom: 'Alice', commentText: 'Great Service!', rating: 5 }
 ];
 
 
@@ -14,7 +14,7 @@ function populateComments(commentsArray) {
         
         const commentWriter = document.createElement('div');
         commentWriter.classList.add('user');
-        commentWriter.textContent = comment.user.nom + ' ' + comment.user.prenom;
+        commentWriter.textContent = comment.nom ;
 
         const commentTextDiv = document.createElement('div');
         commentTextDiv.classList.add('comment-text');
