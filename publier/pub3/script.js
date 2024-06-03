@@ -282,6 +282,22 @@ precedentButton.addEventListener('click', function() {
 });
 
 
+
+function getQueryParams() {
+  const params = {};
+  const queryString = window.location.search.substring(1);
+  const queries = queryString.split("&");
+  queries.forEach(function(query) {
+      const [key, value] = query.split("=");
+      params[key] = decodeURIComponent(value);
+  });
+  return params;
+}
+
+const queryParams = getQueryParams();
+const wilaya = queryParams['wilaya'];
+
+
 const input = document.getElementById('input1');
 const suggestBox = document.getElementById('suggest1');
  
@@ -290,12 +306,18 @@ const suggestBox = document.getElementById('suggest1');
   prochaineButton.addEventListener('click', function() {
     const validWilayas = Array.from(suggestions).map(s => s.textContent);
     const inputValue = input.value.trim();
-
-    if (validWilayas.includes(inputValue)) {
+    if(inputValue == wilaya)
+    {
+      alert('cant go to the same place');
+    }
+    else{
+      if (validWilayas.includes(inputValue)) {
         window.location.href = '../pub4/pass.html';
     } else {
         alert('Please select a valid Wilaya from the suggestions.');
     }
+    }
+   
 });
 
 

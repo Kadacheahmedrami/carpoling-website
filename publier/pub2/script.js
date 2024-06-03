@@ -269,8 +269,30 @@ precedentButton.addEventListener('click', function() {
     window.history.back();
 });
 
+function getQueryParams() {
+    const params = {};
+    const queryString = window.location.search.substring(1);
+    const queries = queryString.split("&");
+    queries.forEach(function(query) {
+        const [key, value] = query.split("=");
+        params[key] = decodeURIComponent(value);
+    });
+    return params;
+}
+
+const queryParams = getQueryParams();
+const wilaya = queryParams['wilaya'];
+
+
 // Add event listener to the "prochaine" button
 prochaineButton.addEventListener('click', function() {
     // Navigate to a new page
-    window.location.href = '../pub3/pass.html'; // Replace 'new_page.html' with the URL of the new page
+    if(document.getElementById("commencer").value=="")
+    {
+        alert("fill the input")
+    }
+    else{
+        window.location.href = `../pub3/pass.html?wilaya=${encodeURIComponent(wilaya)}`;
+    }
+   
 });

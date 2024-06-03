@@ -272,11 +272,12 @@ const suggestBox = document.getElementById('suggest1');
     const inputValue = input.value.trim();
 
     if (validWilayas.includes(inputValue)) {
-        window.location.href = '../pub2/pass.html';
+        window.location.href = `../pub2/pass.html?wilaya=${encodeURIComponent(inputValue)}`;
     } else {
         alert('Please select a valid Wilaya from the suggestions.');
     }
 });
+
 
 
   let sug1 = document.getElementById('suggest1');
