@@ -1,4 +1,5 @@
-function createCarteElement(date, heure, departure, destination, passengers) {
+
+function createCarteElement(date, heure, departure, destination, passengers, gmail) {
     // Create the main div with class "carte"
     const carteDiv = document.createElement('div');
     carteDiv.classList.add('carte');
@@ -57,6 +58,13 @@ function createCarteElement(date, heure, departure, destination, passengers) {
     passengersDiv.style.display = 'none'; // Make it invisible
     carteDiv.appendChild(passengersDiv);
 
+    // Create and append the Gmail div
+    const gmailDiv = document.createElement('div');
+    gmailDiv.classList.add('gmail');
+    gmailDiv.style.display = 'none';
+    gmailDiv.textContent = `Driver: ${gmail}`;
+    carteDiv.appendChild(gmailDiv);
+
     // Return the created carte div
     return carteDiv;
 }
@@ -76,7 +84,7 @@ function fillTrajetDiv(trajetsArray) {
     trajetsArray.forEach(trajet => {
         const [month, day, year] = trajet.date.split('-');
 
-        const carteElement = createCarteElement(trajet.date, trajet.heure, trajet.departure, trajet.destination, trajet.passengers);
+        const carteElement = createCarteElement(trajet.date, trajet.heure, trajet.departure, trajet.destination, trajet.passengers, trajet.gmail);
 
         // Append the created div to the appropriate Trajet div
         if (parseInt(year) >= parseInt(currentYear)) {
@@ -94,7 +102,5 @@ function fillTrajetDiv(trajetsArray) {
         }
     });
 }
-
-
 
 fillTrajetDiv(trajets);
